@@ -8,6 +8,14 @@ TodoList TreeView Editor. Check your todo list with a `TreeView` !
 
 > i18n languages supported: English, 中文（简体）, 中文（繁体）, 日本語, 한국어, Deutsch, Français, Español, Italiano, Português (Brasil), Русский, Türkçe
 
+---
+
+## Download
+
+1. [Vscode Extension](https://marketplace.visualstudio.com/items?itemName=saber2pr.todolist)
+2. [MacOS Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
+3. [Windows Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
+
 ## Overview
 
 Create and edit `*.todo` file.
