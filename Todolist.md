@@ -12,9 +12,11 @@ TodoList TreeView Editor. Check your todo list with a `TreeView` !
 
 ## Download
 
-1. [Vscode Extension](https://marketplace.visualstudio.com/items?itemName=saber2pr.todolist)
-2. [MacOS Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
-3. [Windows Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
+[Vscode Extension](https://marketplace.visualstudio.com/items?itemName=saber2pr.todolist)
+
+[MacOS Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
+
+[Windows Desktop App](https://github.com/Saber2pr/vsc-ext-todolist/releases)
 
 ## Overview
 
