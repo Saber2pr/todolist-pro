@@ -1,3 +1,7 @@
+### Introduction
+
+When your todolist becomes more and more confusing and you don’t know where to start first, timeline appears, which can make your task list orderly and followable.
+
 > Arrange your small tasks in a todolist to complete them in order！
 
 1. When you create multiple tasks in a todolist and set priorities, a lock button will appear above the todolist. You can click it once to unlock it.
