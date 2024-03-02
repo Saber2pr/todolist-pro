@@ -16,3 +16,5 @@
 - Add preview display and hide in the bottom bar of md type
 - Version check update function
 - animation
+- New feature: Cloud storage version
+- New feature: Cloud storage backup
