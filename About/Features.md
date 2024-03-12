@@ -1,5 +1,9 @@
 > The following features are expected to be updated in the next version
 
+### 2024.3.12
+
+1. It is planned to support theme expansion, background images, label packs, and a theme store for download in the next version.
+
 ### 2024.3.11
 
 1. Backup Data: The backup function has been released, you can view the historical version of the current todolist, and it can be accurate to the minute and second. Every edit you make will be recorded as a version, and you can view and safely roll back to the historical version at will. (This feature is only available to pro user)
