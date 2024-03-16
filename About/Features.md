@@ -1,5 +1,15 @@
 > The following features are expected to be updated in the next version
 
+### 2024.3.16
+
+> Here’s a thought about cloud storage
+
+1. The backup function provided by Todolist Tree currently encrypts and saves data in the user directory of your local computer and does not upload cloud backup. Is the cloud backup function a useful feature? Uploading user todolist to the server will involve privacy and security issues. We will seriously consider whether it is necessary to support cloud storage.
+
+If you have any good suggestions, please discuss them on Github ~
+
+[vsc-ext-todolist](https://github.com/Saber2pr/vsc-ext-todolist)
+
 ### 2024.3.12
 
 1. It is planned to support theme expansion, background images, label packs, and a theme store for download in the next version.
