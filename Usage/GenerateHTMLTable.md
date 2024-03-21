@@ -4,6 +4,8 @@ The current function can export to-do items into html table format.
 
 > Generate table in HTML !
 
+> Supported by 0.2.84 or above
+
 1. Open your to-do list and select Settings -> Create Md,
 
 ![todopro-md-1](https://saber2pr.top/MyWeb/resource/image/todopro-md-1.png)
