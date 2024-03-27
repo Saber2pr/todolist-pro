@@ -6,7 +6,7 @@ The web version of TodolistTreeView is coming soon! The current feature is a tea
 
 > Supported by 0.2.84 or above
 
-1. Click the cloud on the bottom toolbar and click Sync. Automatic synchronization will be enabled. When the current file is modified, it will be automatically uploaded to the cloud and saved.
+1. Click the cloud on the bottom toolbar and click Sync. The current file will be uploaded to the cloud and saved.
 
 ![todopro-md-1](https://saber2pr.top/MyWeb/resource/image/todolistpro-cloudsync-1.png)
 
