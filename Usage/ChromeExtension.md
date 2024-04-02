@@ -27,4 +27,4 @@ To load an unpacked extension in developer mode:
 
 #### 2. Overview
 
-![todopro-md-2](https://saber2pr.top/MyWeb/resource/image/chm-todolist-overview.png)
+![todopro-md-2](https://saber2pr.top/MyWeb/resource/image/chm-todolist-view.png)
