@@ -2,7 +2,7 @@
 
 This function allows you to set the background image of the todolist to decorate.
 
-> Supported by v0.2.80 or above
+> Supported by v0.2.86 or above
 
 ![loading](https://cdn.jsdelivr.net/gh/saber2pr/MyWeb@master/resource/image/todopro-bg.png)
 
