@@ -1,3 +1,5 @@
+>  📢 Important Notice: Login and Cloud Sync Services Will Be Discontinued, [detail](https://saber2pr.top/todolist-pro/posts/287994228/2675692612/)
+
 ### Introduction
 
 This feature is designed to share creative and useful tag collections ～

@@ -1,3 +1,5 @@
+>  📢 Important Notice: Login and Cloud Sync Services Will Be Discontinued, [detail](https://saber2pr.top/todolist-pro/posts/287994228/2675692612/)
+
 ### Introduction
 
 The web version allows you to use TodolistTreeView on your browser, and its functions are basically the same as the vscode extension.

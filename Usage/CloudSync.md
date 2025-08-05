@@ -1,3 +1,5 @@
+>  📢 Important Notice: Login and Cloud Sync Services Will Be Discontinued, [detail](https://saber2pr.top/todolist-pro/posts/287994228/2675692612/)
+
 ### Introduction
 
 The current feature allows you to save your to-do list to the cloud, and it's associated with your account! You can log in to your account on other devices and then open cloud storage to view it.
