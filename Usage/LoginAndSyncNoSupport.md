@@ -52,7 +52,7 @@ We sincerely appreciate your understanding and support through this transition. 
 
 If you have any questions or need assistance, feel free to reach out:
 
-- 📧 Email: [support@example.com](saber2pr@gmail.com)
+- 📧 Email: [saber2pr@gmail.com](saber2pr@gmail.com)
 - 💬 Community: [Github](https://github.com/Saber2pr/vsc-ext-todolist)
 
 Thank you again for being with us!
