@@ -1,0 +1,280 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__title = "Auto sort"
+    window.__backgroundImage = ""
+    window.__basename = '/todolist-pro'
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Usage"]
+    window.__wiki = `
+Usage
+  DesktopApp:287994228/667772353
+  CloudSync:287994228/1638689331
+  WebApp:287994228/1859563876
+  GenerateHTMLTable:287994228/1490081406
+  BackgroundImage:287994228/680425711
+  GenerateMarkdown:287994228/2693304080
+  TagsMarket:287994228/3254884841
+  AutoSort:287994228/1707528157
+  Timeline:287994228/3213403184
+  LoginAndSyncNoSupport:287994228/2675692612
+  ShareLink:287994228/603662438
+  ChromeExtension:287994228/1685980731
+  AdvanceCopy:287994228/4081234018
+About
+  Features:1949634023/1186381381
+  PrivacyPolicy:1949634023/886977854
+  AuthorWords:1949634023/2414495387
+Todolist:607884429
+`
+    window.__blog = `%23%23%23%20Introduction%0A%0AThis%20function%20is%20used%20to%20quickly%20sort%20your%20todolist%20according%20to%20priority.%0A%0A%3E%20Automatically%20sort%20your%20to-do%20list%EF%BC%81%0A%0A1.%20Set%20priority%20for%20each%20to-do%20item%0A%0A!%5Btodopro-sort-1%5D(https%3A%2F%2Fsaber2pr.top%2FMyWeb%2Fresource%2Fimage%2Ftodopro-sort-1.png)%0A%0A2.%20Click%20the%20toolbar%20below%2C%20View%20-%3E%20Sort%2C%20click%20the%20Sort%20button%2C%20and%20you%20will%20see%20the%20to-do%20items%20organized%0A%0A!%5Btodopro-sort-2%5D(https%3A%2F%2Fsaber2pr.top%2FMyWeb%2Fresource%2Fimage%2Ftodopro-sort-2.png)%0A%0A3.%20You%20can%20turn%20on%20automatic%20sorting%20in%20the%20settings%20so%20that%20it%20will%20be%20automatically%20sorted%20after%20each%20edit.%0A%0A!%5Btodopro-sort-3%5D(https%3A%2F%2Fsaber2pr.top%2FMyWeb%2Fresource%2Fimage%2Ftodopro-sort-3.png)`
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="量化交易,freqtrade,web3,react,antd,typescript,javascript,css,html,前端学习,前端进阶,个人博客"><meta name="description" content="### Introduction
+
+This function is used to quickly sort your todolist according to priority.
+
+> Automatically sor…"><script async src="/click-mask/click-mask.min.js"></script><title>Auto sort - Todolist TreeView</title><script defer="defer" src="/todolist-pro/release/%5Bname%5D~49d0a29369ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~10451da669ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~0bc0478e69ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~0e5d714b69ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~e5bca7e469ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~2754536869ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/index~bde52cb369ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/index~31743c5a69ee2e2baac08e70c6d3.min.js"></script><link href="/todolist-pro/release/index~e96e9bea69ee2e2baac08e70c6d3.css" rel="stylesheet"><link href="/todolist-pro/release/index~31743c5a69ee2e2baac08e70c6d3.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/todolist-pro/">Todolist</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">AutoSort</h1>
+        <div class="ssr-content-main"><h3 id="introduction">Introduction</h3>
+<p>This function is used to quickly sort your todolist according to priority.</p>
+<blockquote>
+  <p>Automatically sort your to-do list！</p>
+</blockquote>
+<ol>
+<li>Set priority for each to-do item</li>
+</ol>
+<p><img src="https://saber2pr.top/MyWeb/resource/image/todopro-sort-1.png" alt="todopro-sort-1" /></p>
+<ol start="2">
+<li>Click the toolbar below, View -&gt; Sort, click the Sort button, and you will see the to-do items organized</li>
+</ol>
+<p><img src="https://saber2pr.top/MyWeb/resource/image/todopro-sort-2.png" alt="todopro-sort-2" /></p>
+<ol start="3">
+<li>You can turn on automatic sorting in the settings so that it will be automatically sorted after each edit.</li>
+</ol>
+<p><img src="https://saber2pr.top/MyWeb/resource/image/todopro-sort-3.png" alt="todopro-sort-3" /></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Usage</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/todolist-pro/posts/287994228/667772353/" class="ssr-a ">Desktop app</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1638689331/" class="ssr-a ">Cloud sync</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1859563876/" class="ssr-a ">Web app</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1490081406/" class="ssr-a ">Generate htmltable</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/680425711/" class="ssr-a ">Background image</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/2693304080/" class="ssr-a ">Generate markdown</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/3254884841/" class="ssr-a ">Tags market</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1707528157/" class="ssr-a ssr-a-active">Auto sort</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/3213403184/" class="ssr-a ">Timeline</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/2675692612/" class="ssr-a ">Login and sync no support</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/603662438/" class="ssr-a ">Share link</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1685980731/" class="ssr-a ">Chrome extension</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/4081234018/" class="ssr-a ">Advance copy</a></li></ul></li>
+<li class="ssr-li"><div class="ssr-dir ">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">About</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/todolist-pro/posts/1949634023/1186381381/" class="ssr-a ">Features</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/1949634023/886977854/" class="ssr-a ">Privacy policy</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/1949634023/2414495387/" class="ssr-a ">Author words</a></li></ul></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/607884429/" class="ssr-a ">Todolist</a></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

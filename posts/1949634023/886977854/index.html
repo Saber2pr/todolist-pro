@@ -1,0 +1,293 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__title = "Privacy policy"
+    window.__backgroundImage = ""
+    window.__basename = '/todolist-pro'
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/About"]
+    window.__wiki = `
+Usage
+  DesktopApp:287994228/667772353
+  CloudSync:287994228/1638689331
+  WebApp:287994228/1859563876
+  GenerateHTMLTable:287994228/1490081406
+  BackgroundImage:287994228/680425711
+  GenerateMarkdown:287994228/2693304080
+  TagsMarket:287994228/3254884841
+  AutoSort:287994228/1707528157
+  Timeline:287994228/3213403184
+  LoginAndSyncNoSupport:287994228/2675692612
+  ShareLink:287994228/603662438
+  ChromeExtension:287994228/1685980731
+  AdvanceCopy:287994228/4081234018
+About
+  Features:1949634023/1186381381
+  PrivacyPolicy:1949634023/886977854
+  AuthorWords:1949634023/2414495387
+Todolist:607884429
+`
+    window.__blog = `**Privacy%20Policy**%0A%0Abuilt%20the%20Todolist%20TreeView%20app%20as%20a%20Commercial%20app.%20This%20SERVICE%20is%20provided%20by%20and%20is%20intended%20for%20use%20as%20is.%0A%0AThis%20page%20is%20used%20to%20inform%20visitors%20regarding%20my%20policies%20with%20the%20collection%2C%20use%2C%20and%20disclosure%20of%20Personal%20Information%20if%20anyone%20decided%20to%20use%20my%20Service.%0A%0AIf%20you%20choose%20to%20use%20my%20Service%2C%20then%20you%20agree%20to%20the%20collection%20and%20use%20of%20information%20in%20relation%20to%20this%20policy.%20The%20Personal%20Information%20that%20I%20collect%20is%20used%20for%20providing%20and%20improving%20the%20Service.%20I%20will%20not%20use%20or%20share%20your%20information%20with%20anyone%20except%20as%20described%20in%20this%20Privacy%20Policy.%0A%0AThe%20terms%20used%20in%20this%20Privacy%20Policy%20have%20the%20same%20meanings%20as%20in%20our%20Terms%20and%20Conditions%2C%20which%20are%20accessible%20at%20Todolist%20TreeView%20unless%20otherwise%20defined%20in%20this%20Privacy%20Policy.%0A%0A**Information%20Collection%20and%20Use**%0A%0AFor%20a%20better%20experience%2C%20while%20using%20our%20Service%2C%20I%20may%20require%20you%20to%20provide%20us%20with%20certain%20personally%20identifiable%20information.%20The%20information%20that%20I%20request%20will%20be%20retained%20on%20your%20device%20and%20is%20not%20collected%20by%20me%20in%20any%20way.%0A%0A**Log%20Data**%0A%0AI%20want%20to%20inform%20you%20that%20whenever%20you%20use%20my%20Service%2C%20in%20a%20case%20of%20an%20error%20in%20the%20app%20I%20collect%20data%20and%20information%20(through%20third-party%20products)%20on%20your%20phone%20called%20Log%20Data.%20This%20Log%20Data%20may%20include%20information%20such%20as%20your%20device%20Internet%20Protocol%20(%E2%80%9CIP%E2%80%9D)%20address%2C%20device%20name%2C%20operating%20system%20version%2C%20the%20configuration%20of%20the%20app%20when%20utilizing%20my%20Service%2C%20the%20time%20and%20date%20of%20your%20use%20of%20the%20Service%2C%20and%20other%20statistics.%0A%0A**Cookies**%0A%0ACookies%20are%20files%20with%20a%20small%20amount%20of%20data%20that%20are%20commonly%20used%20as%20anonymous%20unique%20identifiers.%20These%20are%20sent%20to%20your%20browser%20from%20the%20websites%20that%20you%20visit%20and%20are%20stored%20on%20your%20device's%20internal%20memory.%0A%0AThis%20Service%20does%20not%20use%20these%20%E2%80%9Ccookies%E2%80%9D%20explicitly.%20However%2C%20the%20app%20may%20use%20third-party%20code%20and%20libraries%20that%20use%20%E2%80%9Ccookies%E2%80%9D%20to%20collect%20information%20and%20improve%20their%20services.%20You%20have%20the%20option%20to%20either%20accept%20or%20refuse%20these%20cookies%20and%20know%20when%20a%20cookie%20is%20being%20sent%20to%20your%20device.%20If%20you%20choose%20to%20refuse%20our%20cookies%2C%20you%20may%20not%20be%20able%20to%20use%20some%20portions%20of%20this%20Service.%0A%0A**Service%20Providers**%0A%0AI%20may%20employ%20third-party%20companies%20and%20individuals%20due%20to%20the%20following%20reasons%3A%0A%0A*%20%20%20To%20facilitate%20our%20Service%3B%0A*%20%20%20To%20provide%20the%20Service%20on%20our%20behalf%3B%0A*%20%20%20To%20perform%20Service-related%20services%3B%20or%0A*%20%20%20To%20assist%20us%20in%20analyzing%20how%20our%20Service%20is%20used.%0A%0AI%20want%20to%20inform%20users%20of%20this%20Service%20that%20these%20third%20parties%20have%20access%20to%20their%20Personal%20Information.%20The%20reason%20is%20to%20perform%20the%20tasks%20assigned%20to%20them%20on%20our%20behalf.%20However%2C%20they%20are%20obligated%20not%20to%20disclose%20or%20use%20the%20information%20for%20any%20other%20purpose.%0A%0A**Security**%0A%0AI%20value%20your%20trust%20in%20providing%20us%20your%20Personal%20Information%2C%20thus%20we%20are%20striving%20to%20use%20commercially%20acceptable%20means%20of%20protecting%20it.%20But%20remember%20that%20no%20method%20of%20transmission%20over%20the%20internet%2C%20or%20method%20of%20electronic%20storage%20is%20100%25%20secure%20and%20reliable%2C%20and%20I%20cannot%20guarantee%20its%20absolute%20security.%0A%0A**Links%20to%20Other%20Sites**%0A%0AThis%20Service%20may%20contain%20links%20to%20other%20sites.%20If%20you%20click%20on%20a%20third-party%20link%2C%20you%20will%20be%20directed%20to%20that%20site.%20Note%20that%20these%20external%20sites%20are%20not%20operated%20by%20me.%20Therefore%2C%20I%20strongly%20advise%20you%20to%20review%20the%20Privacy%20Policy%20of%20these%20websites.%20I%20have%20no%20control%20over%20and%20assume%20no%20responsibility%20for%20the%20content%2C%20privacy%20policies%2C%20or%20practices%20of%20any%20third-party%20sites%20or%20services.%0A%0A**Children%E2%80%99s%20Privacy**%0A%0AI%20do%20not%20knowingly%20collect%20personally%20identifiable%20information%20from%20children.%20I%20encourage%20all%20children%20to%20never%20submit%20any%20personally%20identifiable%20information%20through%20the%20Application%20and%2For%20Services.%20I%20encourage%20parents%20and%20legal%20guardians%20to%20monitor%20their%20children's%20Internet%20usage%20and%20to%20help%20enforce%20this%20Policy%20by%20instructing%20their%20children%20never%20to%20provide%20personally%20identifiable%20information%20through%20the%20Application%20and%2For%20Services%20without%20their%20permission.%20If%20you%20have%20reason%20to%20believe%20that%20a%20child%20has%20provided%20personally%20identifiable%20information%20to%20us%20through%20the%20Application%20and%2For%20Services%2C%20please%20contact%20us.%20You%20must%20also%20be%20at%20least%2016%20years%20of%20age%20to%20consent%20to%20the%20processing%20of%20your%20personally%20identifiable%20information%20in%20your%20country%20(in%20some%20countries%20we%20may%20allow%20your%20parent%20or%20guardian%20to%20do%20so%20on%20your%20behalf).%0A%0A**Changes%20to%20This%20Privacy%20Policy**%0A%0AI%20may%20update%20our%20Privacy%20Policy%20from%20time%20to%20time.%20Thus%2C%20you%20are%20advised%20to%20review%20this%20page%20periodically%20for%20any%20changes.%20I%20will%20notify%20you%20of%20any%20changes%20by%20posting%20the%20new%20Privacy%20Policy%20on%20this%20page.%0A%0AThis%20policy%20is%20effective%20as%20of%202023-08-31%0A%0A**Contact%20Us**%0A%0AIf%20you%20have%20any%20questions%20or%20suggestions%20about%20my%20Privacy%20Policy%2C%20do%20not%20hesitate%20to%20contact%20me%20at%20saber2pr%40gmail.com.%0A`
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="量化交易,freqtrade,web3,react,antd,typescript,javascript,css,html,前端学习,前端进阶,个人博客"><meta name="description" content="**Privacy Policy**
+
+built the Todolist TreeView app as a Commercial app. This SERVICE is provided by and is inten…"><script async src="/click-mask/click-mask.min.js"></script><title>Privacy policy - Todolist TreeView</title><script defer="defer" src="/todolist-pro/release/%5Bname%5D~49d0a29369ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~10451da669ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~0bc0478e69ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~0e5d714b69ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~e5bca7e469ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/%5Bname%5D~2754536869ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/index~bde52cb369ee2e2baac08e70c6d3.min.js"></script><script defer="defer" src="/todolist-pro/release/index~31743c5a69ee2e2baac08e70c6d3.min.js"></script><link href="/todolist-pro/release/index~e96e9bea69ee2e2baac08e70c6d3.css" rel="stylesheet"><link href="/todolist-pro/release/index~31743c5a69ee2e2baac08e70c6d3.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/todolist-pro/">Todolist</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">PrivacyPolicy</h1>
+        <div class="ssr-content-main"><p><strong>Privacy Policy</strong></p>
+<p>built the Todolist TreeView app as a Commercial app. This SERVICE is provided by and is intended for use as is.</p>
+<p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
+<p>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.</p>
+<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Todolist TreeView unless otherwise defined in this Privacy Policy.</p>
+<p><strong>Information Collection and Use</strong></p>
+<p>For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.</p>
+<p><strong>Log Data</strong></p>
+<p>I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.</p>
+<p><strong>Cookies</strong></p>
+<p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.</p>
+<p>This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+<p><strong>Service Providers</strong></p>
+<p>I may employ third-party companies and individuals due to the following reasons:</p>
+<ul>
+<li>To facilitate our Service;</li>
+<li>To provide the Service on our behalf;</li>
+<li>To perform Service-related services; or</li>
+<li>To assist us in analyzing how our Service is used.</li>
+</ul>
+<p>I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+<p><strong>Security</strong></p>
+<p>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.</p>
+<p><strong>Links to Other Sites</strong></p>
+<p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+<p><strong>Children’s Privacy</strong></p>
+<p>I do not knowingly collect personally identifiable information from children. I encourage all children to never submit any personally identifiable information through the Application and/or Services. I encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
+<p><strong>Changes to This Privacy Policy</strong></p>
+<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.</p>
+<p>This policy is effective as of 2023-08-31</p>
+<p><strong>Contact Us</strong></p>
+<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at saber2pr@gmail.com.</p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><div class="ssr-dir ">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Usage</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/todolist-pro/posts/287994228/667772353/" class="ssr-a ">Desktop app</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1638689331/" class="ssr-a ">Cloud sync</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1859563876/" class="ssr-a ">Web app</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1490081406/" class="ssr-a ">Generate htmltable</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/680425711/" class="ssr-a ">Background image</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/2693304080/" class="ssr-a ">Generate markdown</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/3254884841/" class="ssr-a ">Tags market</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1707528157/" class="ssr-a ">Auto sort</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/3213403184/" class="ssr-a ">Timeline</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/2675692612/" class="ssr-a ">Login and sync no support</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/603662438/" class="ssr-a ">Share link</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/1685980731/" class="ssr-a ">Chrome extension</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/287994228/4081234018/" class="ssr-a ">Advance copy</a></li></ul></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">About</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/todolist-pro/posts/1949634023/1186381381/" class="ssr-a ">Features</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/1949634023/886977854/" class="ssr-a ssr-a-active">Privacy policy</a></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/1949634023/2414495387/" class="ssr-a ">Author words</a></li></ul></li>
+<li class="ssr-li"><a href="/todolist-pro/posts/607884429/" class="ssr-a ">Todolist</a></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

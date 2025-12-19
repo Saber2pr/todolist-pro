@@ -1,0 +1,20 @@
+
+Usage
+  DesktopApp
+  CloudSync
+  WebApp
+  GenerateHTMLTable
+  BackgroundImage
+  GenerateMarkdown
+  TagsMarket
+  AutoSort
+  Timeline
+  LoginAndSyncNoSupport
+  ShareLink
+  ChromeExtension
+  AdvanceCopy
+About
+  Features
+  PrivacyPolicy
+  AuthorWords
+Todolist
