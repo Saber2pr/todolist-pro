@@ -6,8 +6,8 @@ The desktop version of the App needs to be purchased to upgrade to the Pro versi
 
 ## Download
 
-[MacOS Desktop App - v0.2.151](https://github.com/Saber2pr/vsc-ext-todolist/releases/download/mac-v0.2.151/Todolist-mac-v0.2.151.tar.gz)
+[MacOS Desktop App - v0.2.153](https://github.com/Saber2pr/vsc-ext-todolist/releases/download/mac-v0.2.153/Todolist-mac-v0.2.153.tar.gz)
 
-[Windows Desktop App - v0.2.151](hthttps://github.com/Saber2pr/vsc-ext-todolist/releases/download/win-v0.2.151/Todolist-win-v0.2.151.tar.gz)
+[Windows Desktop App - v0.2.153](hthttps://github.com/Saber2pr/vsc-ext-todolist/releases/download/win-v0.2.153/Todolist-win-v0.2.153.tar.gz)
 
 [Release History](https://github.com/Saber2pr/vsc-ext-todolist/releases)
