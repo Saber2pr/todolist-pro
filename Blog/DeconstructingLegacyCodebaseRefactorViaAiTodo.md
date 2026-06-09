@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: legacy codebase refactoring, progressive refactoring tool, TypeScript type safety migration, abstract syntax tree mental model, AI todo refactor blueprint, VS Code code extension, dev focus flow
+description: Don't let legacy code trigger a TypeScript type avalanche. Use an AST-inspired defensive refactoring tree with aicupa to break down monolithic codebases into atomic, safe checkpoints right inside your IDE.
 ---
 
 ## Breaking Down a Monolithic Legacy Component with an AST Mental Model

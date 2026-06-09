@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: AI todo, Micro-SaaS MVP tool, indie hacker productivity, scope creep developer, aicupa todo list, task tree generator, VS Code todo extension, build solo product fast
+description: Struggling to launch your MVP? Learn how to use aicupa's AI-driven task tree to ruthlessly cut feature creep and embed your Micro-SaaS launch roadmap directly inside your VS Code coding flow.
 ---
 
 ## The Indie Hacker’s Curse: Why is Your MVP Still Sitting on Localhost After 6 Months?

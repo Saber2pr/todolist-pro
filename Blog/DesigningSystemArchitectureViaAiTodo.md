@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: system design timeline, software architect roadmap, topological sorting tasks, directed acyclic graph project management, visual pixel match audit pipeline, critical path project tool, aicupa
+description: Stop using directionless canvas boards for complex systems. Discover how to use aicupa's topological task trees and interactive timeline views to map system architectures with strict directional dependency.
 ---
 
 ## Architects: Stop Using Flat, Directionless Canvas Boards to Design Distributed Systems

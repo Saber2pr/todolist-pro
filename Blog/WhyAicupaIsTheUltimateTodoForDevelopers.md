@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: best todo list for developers, fractal task tree vs flat array, Notion alternative for programmers, aicupa vs todoist, self hosted docker todo, zero context switching code, minimalist dark theme todo
+description: Why rebuild a todo list? Because 99% of them are built for flat lists. Discover how aicupa delivers infinite fractal task trees, zero context switching via VS Code, and self-hosted Docker support for geeks.
 ---
 
 ## Why Are We Rebuilding a Todo List When There Are Already Hundreds on the Market?

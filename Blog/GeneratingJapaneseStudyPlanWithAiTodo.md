@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: AI todo list, learn Japanese for developers, JLPT task tree, aicupa todo list, VS Code language learning, Bun JS script productivity, zero context switching todo, structured task planner
+description: Stop failing your JLPT goals with flat lists. Learn how to use aicupa's AI task tree and native VS Code extension to deconstruct your Japanese study plan into friction-free, 30-minute milestones without breaking your coding flow.
 ---
 
 ## How to Break Down Your Japanese Study Plan into 30-Minute Tasks with a Single Script

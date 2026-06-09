@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: developer burnout prevention, brain fog biohacking, programmer nutrition supplement, high cohesion low coupling wellness, vscode health extension, chelated magnesium vitamin b dev, aicupa
+description: Tune your body like production code. Eliminate developer brain fog and fatigue with a high-cohesion, low-coupling wellness task tree embedded directly in your VS Code workspace via aicupa.
 ---
 
 ## Tuning Your Biological Server: High-Cohesion, Low-Coupling Personal Wellness for Developers

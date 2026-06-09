@@ -1,5 +1,7 @@
 ---
 nav: blog
+keywords: open source maintainer burnout, GitHub issue triage automation, AI debug workflow, parse stack trace tool, bun js script todo, aicupa vscode, developer context switching
+description: Tired of chaotic GitHub issue logs? Use a lightweight Bun script and aicupa to instantly deconstruct complex crash stack traces into an actionable, low-stress debugging tree inside VS Code.
 ---
 
 ## Open Source Maintenance: Deconstructing a 300-Line Crash Log into an Actionable Pipeline
