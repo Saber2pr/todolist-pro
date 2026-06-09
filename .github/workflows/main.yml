@@ -22,3 +22,4 @@ jobs:
           title: Todolist TreeView
           keywords: todolist,smalltask,tree,manager,vscode-extension,web-app
           description: TodoList TreeView Editor. Check your todo list with a TreeView
+          copyrightName: aicupa
