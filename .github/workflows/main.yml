@@ -15,8 +15,7 @@ jobs:
           fetch-depth: 0 # 拉取完整历史
       - uses: Saber2pr/wiki-builder@v0.0.95
         with:
-          cname: saber2pr.top
-          ignoreCnameFile: true
+          cname: blog.aicupa.com
           basename: /todolist-pro
           gaId: G-6CLMYWGQBH
           iconUrl: //saber2pr.top/MyWeb/resource/image/todolist-logo.png
