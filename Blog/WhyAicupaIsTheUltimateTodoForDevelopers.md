@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## Why Are We Rebuilding a Todo List When There Are Already Hundreds on the Market?
 
 Before starting the **aicupa (Todo List)** project, many people, including fellow developers, asked me the exact same question:
