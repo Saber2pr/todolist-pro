@@ -1,0 +1,22 @@
+Blog/GeneratingMicroSaaSLaunchWithAiTodo.md
+  h_eabc34dcaf7833 1-65
+Blog/DesigningSystemArchitectureViaAiTodo.md
+  h_eabc34dcaf7833 1-40
+Blog/OptimizingDeveloperWellnessPlanWithAiTodo.md
+  h_eabc34dcaf7833 1-46
+Blog/StreamliningOpenSourceIssuesWithAiTodo.md
+  h_eabc34dcaf7833 1-56
+Blog/DeconstructingLegacyCodebaseRefactorViaAiTodo.md
+  h_eabc34dcaf7833 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c43aaf77402bb15eb54f2b5b50871de80efe40b0",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
