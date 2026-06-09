@@ -1,0 +1,26 @@
+Blog/OptimizingDeveloperWellnessPlanWithAiTodo.md
+  h_eabc34dcaf7833 1-4
+Blog/DeconstructingLegacyCodebaseRefactorViaAiTodo.md
+  h_eabc34dcaf7833 1-4
+Blog/GeneratingJapaneseStudyPlanWithAiTodo.md
+  h_eabc34dcaf7833 1-4
+.github/workflows/main.yml
+  h_eabc34dcaf7833 16
+Blog/DesigningSystemArchitectureViaAiTodo.md
+  h_eabc34dcaf7833 1-4
+Blog/GeneratingMicroSaaSLaunchWithAiTodo.md
+  h_eabc34dcaf7833 1-4
+Blog/StreamliningOpenSourceIssuesWithAiTodo.md
+  h_eabc34dcaf7833 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "8706b25715cf3c63ba6abcb7d88fa20ccb438453",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
