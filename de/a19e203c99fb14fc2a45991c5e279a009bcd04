@@ -1,0 +1,14 @@
+Blog/GeneratingJapaneseStudyPlanWithAiTodo.md
+  h_eabc34dcaf7833 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "dea19e203c99fb14fc2a45991c5e279a009bcd04",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
