@@ -16,7 +16,6 @@ jobs:
       - uses: Saber2pr/wiki-builder@v0.0.95
         with:
           cname: blog.aicupa.com
-          basename: /todolist-pro
           gaId: G-6CLMYWGQBH
           iconUrl: //saber2pr.top/MyWeb/resource/image/todolist-logo.png
           expandAllMenu: on
