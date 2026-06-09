@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## Breaking Down a Monolithic Legacy Component with an AST Mental Model
 
 Tackling deep legacy code bases generally leads to one of two outcomes: either you lose yourself halfway through a maze of implicit side effects and abandon the branch, or you touch a single utility function and trigger a massive, cascading TypeScript type avalanche that breaks local compilation entirely.

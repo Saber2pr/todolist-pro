@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## Tuning Your Biological Server: High-Cohesion, Low-Coupling Personal Wellness for Developers
 
 As engineers, hackers, and independent developers, we willingly sacrifice entire weekends to optimize memory allocations, clear up database locks, or shave a few kilobytes off a production compilation bundle.

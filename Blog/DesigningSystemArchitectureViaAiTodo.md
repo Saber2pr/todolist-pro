@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## Architects: Stop Using Flat, Directionless Canvas Boards to Design Distributed Systems
 
 When tech leads and system architects map out an expansive new infrastructure plan—such as an automated D2C (Design-to-Code) rendering pipeline or a multi-node, real-time data sync engine—the brain operates in a highly chaotic, multi-dimensional space.

@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## Open Source Maintenance: Deconstructing a 300-Line Crash Log into an Actionable Pipeline
 
 For creators of open-source projects, packages, or CLI utilities, the absolute worst part of the job isn't writing new code—**it’s waking up to a bright red notification badge on your repository's Issue tracker.**

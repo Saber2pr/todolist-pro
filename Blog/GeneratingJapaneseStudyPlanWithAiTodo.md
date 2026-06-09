@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## How to Break Down Your Japanese Study Plan into 30-Minute Tasks with a Single Script
 
 Have you ever experienced this precise moment of frustration?

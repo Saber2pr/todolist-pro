@@ -1,3 +1,7 @@
+---
+nav: blog
+---
+
 ## The Indie Hacker’s Curse: Why is Your MVP Still Sitting on Localhost After 6 Months?
 
 A bizarre paradox plagues indie hackers and full-stack engineers alike:
