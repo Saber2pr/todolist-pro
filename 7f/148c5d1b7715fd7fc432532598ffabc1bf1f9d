@@ -1,0 +1,26 @@
+Usage/Plugin.md
+  s_3bc68cb99dbf87::t_edbd9347f4e93e 1-27,29-37,39-161
+  s_3bc68cb99dbf87::t_cb3fe738445d77 38
+  s_3bc68cb99dbf87::t_b38b2581c2d237 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7f148c5d1b7715fd7fc432532598ffabc1bf1f9d",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  },
+  "sessions": {
+    "s_3bc68cb99dbf87": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2860a2c1-051c-48d7-8c31-04c1e122a7fc",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
