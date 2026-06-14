@@ -107,6 +107,40 @@ Hook into app-level events. Currently supported:
 
 If `check` returns a non-null node, the app skips the default clipboard paste and calls `handler` instead. After a successful handler call, the tree is reloaded automatically.
 
+#### views
+
+Register plugin views into specific areas of the app UI. The view HTML is loaded from the plugin's `view` directory and rendered inline as an iframe.
+
+```json
+"views": {
+  "head": true
+}
+```
+
+| Field | Description |
+|-------|-------------|
+| `head` | Render the plugin view at the top of the todolist, above the progress bar |
+
+**Head view** receives tree data automatically whenever the todolist updates. The host sends:
+
+```json
+{ "type": "plugin-tree-update", "tree": [...] }
+```
+
+The view can also request the current tree data at any time:
+
+```json
+// View -> Host
+{ "type": "plugin-request-tree" }
+
+// Host -> View (response)
+{ "type": "plugin-tree-update", "tree": [...] }
+```
+
+The `tree` is the full todolist tree in plain format, with each node containing `{ key, children, todo: { id, content, done, date, ... } }`.
+
+Head views also support the standard `plugin-call` / `plugin-result` protocol for calling service methods, and receive `plugin-init` on load.
+
 ## Service
 
 Add `@aicupa/api` as a dependency to get full type hints. Use `createPlugin` to define the service:
