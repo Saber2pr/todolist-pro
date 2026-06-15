@@ -343,3 +343,7 @@ Plugins published to npm with the `@aicupa/plugin-` prefix can be searched and i
 - Plugins are installed to `~/.todoListNative/plugins/`
 - Plugin registry is stored at `~/.todoListNative/plugins.json`
 - The `@aicupa/api` package is automatically provisioned at `~/.todoListNative/plugins/node_modules/@aicupa/api/` so all plugins can `require` it without bundling
+
+## Examples
+
+Official plugin examples are available at [github.com/aicupa](https://github.com/aicupa) for reference.
