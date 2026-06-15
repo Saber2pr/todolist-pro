@@ -1,0 +1,19 @@
+Usage/Plugin.md
+  s_f0b47c3de57389::t_dbf3c5c79cf0b6 346-349
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "6d97b1620365a9a0a7704c618eda8a9bfba58455",
+  "prompts": {},
+  "sessions": {
+    "s_f0b47c3de57389": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "084a6218-a431-4f12-af48-2ea0e997fdc8",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
