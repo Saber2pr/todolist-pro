@@ -26,6 +26,10 @@ my-plugin/
   "description": "My plugin description",
   "view": "./view",
   "main": "./service",
+  "viewSize": {
+    "width": 800,
+    "height": 600
+  },
   "pluginContributes": {
     "contextMenus": [
       {
@@ -54,6 +58,7 @@ my-plugin/
 | `description` | No | Short description |
 | `view` | No | Path to frontend view directory (must contain `index.html`) |
 | `main` | No | Path to backend service directory (Node.js entry) |
+| `viewSize` | No | Custom modal size for plugin view `{ "width": 800, "height": 600 }`, default 600×400 |
 | `pluginContributes` | No | Declare UI extensions and event handlers (see below) |
 
 ### pluginContributes
