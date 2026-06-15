@@ -56,7 +56,7 @@ my-plugin/
 | `name` | Yes | Plugin name, recommended prefix `@aicupa/plugin-` |
 | `version` | Yes | Semver version |
 | `description` | No | Short description |
-| `view` | No | Path to frontend view directory (must contain `index.html`) |
+| `view` | No | Path to frontend view directory (must contain `index.html`), or a URL (`https://...`) to load directly in an iframe |
 | `main` | No | Path to backend service directory (Node.js entry) |
 | `viewSize` | No | Custom modal size for plugin view `{ "width": 800, "height": 600 }`, default 600×400 |
 | `pluginContributes` | No | Declare UI extensions and event handlers (see below) |
@@ -203,7 +203,22 @@ module.exports = function (api) {
 
 ## View
 
-The view is an HTML file rendered inside a sandboxed iframe. It communicates with the service via `postMessage`:
+The `view` field supports two modes:
+
+- **Local directory** (e.g. `"./view"`) — loads `view/index.html` inside a sandboxed `srcDoc` iframe. Supports `postMessage` communication with the service.
+- **URL** (e.g. `"https://example.com/app/"`) — loads the URL directly in an iframe with `src`. No sandboxing or `postMessage` bridge — useful for embedding external web apps.
+
+```json
+// Local view
+"view": "./view"
+
+// URL view
+"view": "https://saber2pr.top/editor/"
+```
+
+### Local View
+
+The local view is an HTML file rendered inside a sandboxed iframe. It communicates with the service via `postMessage`:
 
 ```html
 <script>
@@ -211,11 +226,18 @@ The view is an HTML file rendered inside a sandboxed iframe. It communicates wit
   const pending = {}
   let currentFilePath = ''
 
-  // Call a service method
+  // Call a service method (with timeout to prevent hanging)
   function callPlugin(method, params) {
     return new Promise((resolve, reject) => {
       const id = ++callId
-      pending[id] = { resolve, reject }
+      const timer = setTimeout(() => {
+        delete pending[id]
+        reject(new Error('timeout'))
+      }, 2000)
+      pending[id] = {
+        resolve: (v) => { clearTimeout(timer); resolve(v) },
+        reject: (e) => { clearTimeout(timer); reject(e) },
+      }
       window.parent.postMessage(
         { type: 'plugin-call', id, method, params },
         '*'
@@ -253,6 +275,33 @@ The view is an HTML file rendered inside a sandboxed iframe. It communicates wit
     console.log(result)
   }
 </script>
+```
+
+### Pitfalls
+
+#### callPlugin must have a timeout
+
+The `callPlugin` function uses `postMessage` to communicate with the host. If the host or service is not ready when the message is sent (e.g., `plugin-init` hasn't fired yet, or the service hasn't initialized), the `plugin-result` response will never arrive — causing the Promise to hang forever. This silently blocks all downstream logic (data loading, saving, etc.).
+
+**Always add a timeout** (e.g., 2 seconds) to `callPlugin` so it rejects on time and fallback logic can run.
+
+#### Use localStorage as a fallback for view-side persistence
+
+Because `callPlugin` can fail silently (timeout, service not ready), don't rely solely on the service for persisting view-side data like user input. Write to `localStorage` immediately as a synchronous backup, and attempt the service call in parallel:
+
+```js
+function saveData(val) {
+  localStorage.setItem('my_key', val)               // instant, reliable
+  callPlugin('save', { value: val }).catch(() => {}) // async, best-effort
+}
+
+async function loadData() {
+  try {
+    const res = await callPlugin('load', {})         // try service first
+    if (res?.result?.value) return res.result.value
+  } catch {}
+  return localStorage.getItem('my_key')              // fallback
+}
 ```
 
 ### Message Protocol
