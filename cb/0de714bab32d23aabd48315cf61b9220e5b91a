@@ -1,0 +1,30 @@
+Usage/Plugin.md
+  s_68456ac668d819::t_4d5c2575339492 59
+  s_1225ae3a542c03::t_afc54e1dd622ce 229,233-240
+  s_1225ae3a542c03::t_e3d762437b4d30 280-306
+  s_68456ac668d819::t_d3d2e8a53ffac0 206-221
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "cb0de714bab32d23aabd48315cf61b9220e5b91a",
+  "prompts": {},
+  "sessions": {
+    "s_1225ae3a542c03": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c05e4636-8d2f-4ba0-ac1c-ceba89d5839e",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    },
+    "s_68456ac668d819": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4987d5ef-3f0b-4949-ac65-a4ab41fbcabe",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
