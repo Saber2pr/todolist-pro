@@ -2,7 +2,7 @@
 
 The desktop app supports a plugin system that allows you to extend functionality via npm packages or local directories. Plugins can provide both a frontend view (rendered in an iframe) and a backend service (Node.js code with access to internal APIs).
 
-> Plugin system is available in the **Desktop App** only.
+> Plugin system is available in the **Desktop App** 、**Vscode Extension**.
 
 ## Plugin Structure
 
