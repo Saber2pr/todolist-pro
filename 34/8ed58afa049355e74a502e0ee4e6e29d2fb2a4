@@ -1,0 +1,14 @@
+Usage/Plugin.md
+  h_eabc34dcaf7833 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "348ed58afa049355e74a502e0ee4e6e29d2fb2a4",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
