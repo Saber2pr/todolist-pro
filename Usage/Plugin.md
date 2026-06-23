@@ -4,6 +4,35 @@ The desktop app supports a plugin system that allows you to extend functionality
 
 > Plugin system is available in the **Desktop App** 、**Vscode Extension**.
 
+## AI Skill (for Claude Code / Cursor / etc.)
+
+The todolist-app repo includes a built-in **skill** that packages all todolist knowledge (file format, plugin system, plugin API, view protocol) for AI coding assistants. Once installed, your AI assistant understands how to work with `.todo` files and build plugins.
+
+### Install
+
+```bash
+npx skills add https://github.com/aicupa/skills
+```
+
+### What's Included
+
+The skill provides:
+
+- **`.todo` file format** — complete structure reference (`todotree` wrapper, tree nodes, todo items, tags, timelines)
+- **Plugin system** — directory structure, `package.json` fields, `pluginContributes` (contextMenus, events, views.head)
+- **Plugin API** — all `api.*` methods (`getTree`, `store`, `reload`, `clipboard`, `readFile`, etc.)
+- **View protocol** — `postMessage` message types (`plugin-call`, `plugin-result`, `plugin-init`, `plugin-tree-update`, `plugin-request-tree`)
+- **Best practices** — timeout handling, localStorage fallback, theme adaptation, auto-height for head views
+
+### Usage
+
+After installing the skill, just ask your AI assistant to work with todolist files or plugins — it will automatically use the skill's knowledge. For example:
+
+- "Create a new `.todo` file with a project structure"
+- "Build a plugin that shows overdue tasks"
+- "Add a context menu item to my plugin"
+- "Create a head view that displays task statistics"
+
 ## Plugin Structure
 
 A plugin is a directory with a `package.json`:
@@ -343,35 +372,6 @@ Plugins published to npm with the `@aicupa/plugin-` prefix can be searched and i
 - Plugins are installed to `~/.todoListNative/plugins/`
 - Plugin registry is stored at `~/.todoListNative/plugins.json`
 - The `@aicupa/api` package is automatically provisioned at `~/.todoListNative/plugins/node_modules/@aicupa/api/` so all plugins can `require` it without bundling
-
-## AI Skill (for Claude Code / Cursor / etc.)
-
-The todolist-app repo includes a built-in **skill** that packages all todolist knowledge (file format, plugin system, plugin API, view protocol) for AI coding assistants. Once installed, your AI assistant understands how to work with `.todo` files and build plugins.
-
-### Install
-
-```bash
-npx skills add https://github.com/aicupa/skills
-```
-
-### What's Included
-
-The skill provides:
-
-- **`.todo` file format** — complete structure reference (`todotree` wrapper, tree nodes, todo items, tags, timelines)
-- **Plugin system** — directory structure, `package.json` fields, `pluginContributes` (contextMenus, events, views.head)
-- **Plugin API** — all `api.*` methods (`getTree`, `store`, `reload`, `clipboard`, `readFile`, etc.)
-- **View protocol** — `postMessage` message types (`plugin-call`, `plugin-result`, `plugin-init`, `plugin-tree-update`, `plugin-request-tree`)
-- **Best practices** — timeout handling, localStorage fallback, theme adaptation, auto-height for head views
-
-### Usage
-
-After installing the skill, just ask your AI assistant to work with todolist files or plugins — it will automatically use the skill's knowledge. For example:
-
-- "Create a new `.todo` file with a project structure"
-- "Build a plugin that shows overdue tasks"
-- "Add a context menu item to my plugin"
-- "Create a head view that displays task statistics"
 
 ## Examples
 
