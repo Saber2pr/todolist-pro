@@ -30,7 +30,7 @@ Webhook lets your Todolist app automatically send updates to an external service
 
 ### Common Use Case: Docker Web Sync
 
-If you deployed Todolist as a web app using Docker (see [Docker Deploy](DockerDeploy.md)), you can use Webhook to keep the web version in sync with your desktop or VS Code edits:
+If you deployed Todolist as a web app using Docker (see [Docker Deploy](/posts/287994228/2832432038/)), you can use Webhook to keep the web version in sync with your desktop or VS Code edits:
 
 1. Deploy the web app: `docker run -d -p 3000:3000 saber2pr/todolist-app:master`
 2. Set Webhook URL to `http://localhost:3000/api`
