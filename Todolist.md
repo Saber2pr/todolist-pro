@@ -20,7 +20,7 @@ TodoList TreeView Editor. Check your todo list with a `TreeView` !
 
 ## Web App
 
-[TodolistTreeView Web](https://saber2pr.top/vsc-ext-todolist/)
+[TodolistTreeView Web](https://app.aicupa.com/)
 
 ## Overview
 
