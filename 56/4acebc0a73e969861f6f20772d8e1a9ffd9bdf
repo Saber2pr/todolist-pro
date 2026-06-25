@@ -1,0 +1,49 @@
+Usage/Sharing.md
+  s_fddb0395a9fbff::t_e7efe61d13d3a5 1-6
+  s_fddb0395a9fbff::t_0762bec8094513 7-33
+Todolist.md
+  s_fddb0395a9fbff::t_4ad0c6810d741a 39-144
+Usage/MCPServer.md
+  s_fddb0395a9fbff::t_d0174c969e1c5e 1-8
+  s_fddb0395a9fbff::t_7a186356964085 9-50
+Usage/CloudSync.md
+  s_fddb0395a9fbff::t_194ec864f7f3a3 1-6
+  s_fddb0395a9fbff::t_331a2a0a8f9063 7-37
+Usage/ScriptAutomation.md
+  s_fddb0395a9fbff::t_18afd30897334c 1-6
+  s_fddb0395a9fbff::t_d3f05d2a08318e 7-50
+Usage/BackupVersionHistory.md
+  s_fddb0395a9fbff::t_099fd4e35b3681 1-6
+  s_fddb0395a9fbff::t_9d9ae3432e5426 7-47
+Usage/PlayMode.md
+  s_fddb0395a9fbff::t_997d952c97450c 1-6
+  s_fddb0395a9fbff::t_20347223432944 7-36
+Usage/AgentChat.md
+  s_fddb0395a9fbff::t_65d8323901e67a 7-37
+  s_fddb0395a9fbff::t_c9fe9571485124 1-6
+Usage/Webhook.md
+  s_fddb0395a9fbff::t_15c8133da15f46 1-6
+  s_fddb0395a9fbff::t_5ed8741b1227f6 7-41
+Usage/DailyPlanning.md
+  s_fddb0395a9fbff::t_94e97a8978500d 7-41
+  s_fddb0395a9fbff::t_db44c1968c4491 1-6
+Usage/Search.md
+  s_fddb0395a9fbff::t_099be76ed6ef78 7-27
+  s_fddb0395a9fbff::t_d83de514e6e4bf 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "564acebc0a73e969861f6f20772d8e1a9ffd9bdf",
+  "prompts": {},
+  "sessions": {
+    "s_fddb0395a9fbff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d5d7bc53-d728-47b6-8fa2-96142cc905c7",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
