@@ -1,0 +1,16 @@
+Usage/DesktopApp.md
+  h_eabc34dcaf7833 9,11,13
+Todolist.md
+  h_eabc34dcaf7833 15,17,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "44ffe300f43b6073f6923bdffe62b1f3248d3c38",
+  "prompts": {},
+  "humans": {
+    "h_eabc34dcaf7833": {
+      "author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
