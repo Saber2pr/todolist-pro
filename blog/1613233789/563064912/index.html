@@ -1,0 +1,313 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Generating micro saa slaunch with ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20The%20Indie%20Hacker%E2%80%99s%20Curse%3A%20Why%20is%20Your%20MVP%20Still%20Sitting%20on%20Localhost%20After%206%20Months%3F%0A%0AA%20bizarre%20paradox%20plagues%20indie%20hackers%20and%20full-stack%20engineers%20alike%3A%0AYour%20local%20%60src%2F%60%20directory%20is%20an%20absolute%20masterpiece.%20It%20features%20highly%20scalable%20architectures%2C%20beautifully%20encapsulated%20component%20libraries%2C%20rigid%20TypeScript%20boundaries%2C%20and%20multi-language%20routing%20hooks.%20Yet%2C%20**when%20you%20visit%20your%20production%20domain%2C%20you%20are%20still%20greeted%20by%20a%20generic%20Vercel%20404%20page.**%0A%0AThe%20core%20reason%20your%20project%20remains%20unlaunched%20isn't%20a%20lack%20of%20engineering%20ability%3B%20it's%20**technical%20perfectionism%20acting%20as%20a%20psychological%20shield%20against%20market%20feedback.**%20Every%20time%20you%20approach%20a%20functional%20closed-loop%2C%20your%20brain%20invents%20edge-case%20features%20to%20build%E2%80%94*%22Let%E2%80%99s%20add%20global%20keyboard%20shortcuts%20first%2C%22*%20or%20*%22I%20should%20refactor%20these%20Tailwind%20configuration%20variables%20for%20better%20thematic%20styling.%22*%20This%20is%20how%20scope%20creep%20kills%20products.%0A%0AIn%20software%20engineering%2C%20we%20prevent%20architecture%20drift%20by%20setting%20**Hard%20Boundaries**.%20Building%20a%20business%20requires%20the%20exact%20same%20discipline.%20You%20need%20a%20ruthlessly%20objective%20system%20to%20strip%20your%20product%20down%20to%20its%20bare%2C%20minimum%20viable%20bones.%0A%0A%23%23%23%20%F0%9F%9B%A0%EF%B8%8F%20Halting%20Code%20Bloat%3A%20A%20Runtime%20Guard%20for%20Your%20Scope%0A%0ADo%20not%20use%20heavy%20project%20management%20boards%20like%20Jira%20or%20Trello%20to%20run%20a%20solo%20side%20project%3B%20their%20structural%20friction%20eats%20away%20at%20your%20coding%20momentum.%20Instead%2C%20run%20a%20lightweight%20script%20to%20act%20as%20a%20%22reduction%20gatekeeper%22%20before%20committing%20to%20any%20new%20feature.%20It%20forces%20your%20ideas%20through%20an%20AI-backed%20sanity%20check%20to%20spit%20out%20a%20lean%2C%20uncompromised%20tree%20of%20tasks%3A%0A%0A%60%60%60typescript%0A%2F%2F%20A%20lightweight%20scope%20gatekeeper%20powered%20by%20Bun%0Aimport%20%7B%20fetchAiCli%20%7D%20from%20%22.%2Fai-agent%22%3B%0A%0Ainterface%20FeatureNode%20%7B%0A%20%20title%3A%20string%3B%0A%20%20isMustHave%3A%20boolean%3B%20%2F%2F%20Is%20this%20absolutely%20essential%20to%20close%20the%20functional%20loop%3F%0A%20%20estimatedHours%3A%20number%3B%0A%7D%0A%0A%2F%2F%20Pass%20in%20your%20feature%20idea%20to%20let%20the%20AI%20analyze%20your%20scope%20drift%0Aconst%20verifyMvpScope%20%3D%20async%20(featureDescription%3A%20string)%20%3D%3E%20%7B%0A%20%20const%20check%20%3D%20await%20fetchAiCli%3CFeatureNode%3E(%60%0A%20%20%20%20Analyze%20if%20the%20feature%3A%20%22%24%7BfeatureDescription%7D%22%20is%20an%20absolute%20roadblocker%20for%20the%20initial%20MVP%20release.%0A%20%20%20%20If%20it%20is%20purely%20an%20optimization%20or%20a%20nice-to-have%2C%20flag%20isMustHave%20as%20false%20and%20exclude%20it%20from%20the%20launch%20branch.%0A%20%20%60)%3B%0A%0A%20%20if%20(!check.isMustHave)%20%7B%0A%20%20%20%20console.log(%60%E2%9A%A0%EF%B8%8F%20Scope%20Guard%3A%20Feature%20%5B%24%7Bcheck.title%7D%5D%20ruthlessly%20rejected!%20Push%20it%20to%20the%20post-launch%20backlog.%20Do%20not%20write%20this%20line%20of%20code%20tonight.%60)%3B%0A%20%20%7D%0A%7D%3B%0A%0A%60%60%60%0A%0ARunning%20this%20logic%20ensures%20your%20entire%20deployment%20blueprint%20is%20compressed%20into%20tight%2C%20minimal%20%60*.todo%60%20entries%3A%0A%0A*%20**%F0%9F%94%B4%20MUST-HAVE%20(The%20Launch%20Baseline)**%0A*%20%E2%96%AB%EF%B8%8F%20Wire%20up%20core%20data%20encryption%20and%20save%20payload%20to%20local%20%60LocalStorage%60%20%5B2h%5D%0A*%20%E2%96%AB%EF%B8%8F%20Inject%20a%20static%2C%20raw%20checkout%20button%20pointing%20directly%20to%20Stripe%20Hosted%20Checkout%2C%20bypassing%20complex%20internal%20subscription%20state%20machines%20%5B3h%5D%0A%0A%0A*%20**%E2%9D%8C%20DEFERRED%20(Forbidden%20Pre-Launch)**%0A*%20%E2%96%AB%EF%B8%8F%20Build%20native%20system-level%20dark%20mode%20sync%20hooks%20(Post-launch%20backlog)%0A*%20%E2%96%AB%EF%B8%8F%20Integrate%203rd-party%20social%20OAuth%20providers%20(Stick%20to%20a%20primitive%20magic%20link%20first)%0A%0A%0A%0AYou%20are%20no%20longer%20building%20an%20overwhelming%2C%20endless%20product.%20You%20are%20clearing%20a%20flat%20path%20of%20verified%20milestones%2C%20checking%20them%20off%20like%20a%20green%20suite%20of%20passing%20unit%20tests.%0A%0A%23%23%23%20%F0%9F%92%A1%20Pinning%20Your%20Scope%20Boundaries%20Directly%20in%20Your%20Workspace%0A%0AOnce%20you%20have%20a%20pristine%2C%20minimal%20roadmap%2C%20the%20worst%20thing%20you%20can%20do%20is%20break%20your%20coding%20flow%20state%20by%20constantly%20switching%20to%20an%20external%20browser%20tab%20or%20mobile%20app%20to%20check%20off%20completed%20tasks.%20**Every%20instance%20of%20context%20switching%20destroys%20deep%20focus.**%0A%0AThis%20is%20exactly%20why%20this%20minimalist%20efficiency%20philosophy%20is%20built%20right%20into%20**aicupa%20%C2%B7%20Todo%20List**.%0A%0ADiscarding%20the%20bloated%20social%20trackers%20and%20corporate%20metric%20boards%20of%20typical%20productivity%20apps%2C%20**aicupa**%20is%20an%20**AI-driven%20Todo%20ecosystem**%20engineered%20strictly%20for%20solo%20hackers%20and%20developers.%20The%20minimal%20launch%20trees%20generated%20by%20the%20AI%20agent%20live%20natively%20inside%20your%20**VS%20Code%20Extension**%20sidebar.%20While%20waiting%20for%20a%20local%20Bun%20or%20Webpack%20build%20to%20compile%2C%20you%20can%20glance%20at%20a%20high-contrast%20sidebar%20inside%20your%20IDE%2C%20tick%20off%20a%20completed%20P1%20node%2C%20and%20maintain%20absolute%20terminal%20momentum.%0A%0AWhether%20you%20capture%20raw%20ideas%20on%20your%20phone%20on%20the%20go%2C%20or%20code%20across%20office%20and%20home%20machines%2C%20your%20%60*.todo%60%20trees%20stay%20seamlessly%20updated%20via%20live%20multi-platform%20synchronization%20or%20a%20self-hosted%20Docker%20deployment.%0A%0AStop%20letting%20your%20Micro-SaaS%20collect%20digital%20dust%20on%20a%20local%20hard%20drive.%20Delegate%20the%20scope-cutting%20to%20an%20AI%2C%20and%20leave%20the%20rapid%20path%20to%20production%20to%20a%20clean%20task%20tree%20in%20your%20editor.%0A%0A%F0%9F%91%89%20**%5BGo%20to%20aicupa.com%20and%20start%20tuning%20your%20personal%20biology%20like%20production%20code%20today.%5D(https%3A%2F%2Faicupa.com%2F)**`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="AI todo, Micro-SaaS MVP tool, indie hacker productivity, scope creep developer, aicupa todo list, task tree generator, VS Code todo extension, build solo product fast"><meta name="description" content="Struggling to launch your MVP? Learn how to use aicupa's AI-driven task tree to ruthlessly cut feature creep and embed your Micro-SaaS launch roadmap directly inside your VS Code coding flow."><script async src="/click-mask/click-mask.min.js"></script><title>Generating micro saa slaunch with ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">GeneratingMicroSaaSLaunchWithAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="theindiehackerscursewhyisyourmvpstillsittingonlocalhostafter6months">The Indie Hacker’s Curse: Why is Your MVP Still Sitting on Localhost After 6 Months?</h2>
+<p>A bizarre paradox plagues indie hackers and full-stack engineers alike:
+Your local <code>src/</code> directory is an absolute masterpiece. It features highly scalable architectures, beautifully encapsulated component libraries, rigid TypeScript boundaries, and multi-language routing hooks. Yet, <strong>when you visit your production domain, you are still greeted by a generic Vercel 404 page.</strong></p>
+<p>The core reason your project remains unlaunched isn't a lack of engineering ability; it's <strong>technical perfectionism acting as a psychological shield against market feedback.</strong> Every time you approach a functional closed-loop, your brain invents edge-case features to build—<em>"Let’s add global keyboard shortcuts first,"</em> or <em>"I should refactor these Tailwind configuration variables for better thematic styling."</em> This is how scope creep kills products.</p>
+<p>In software engineering, we prevent architecture drift by setting <strong>Hard Boundaries</strong>. Building a business requires the exact same discipline. You need a ruthlessly objective system to strip your product down to its bare, minimum viable bones.</p>
+<h3 id="haltingcodebloataruntimeguardforyourscope">🛠️ Halting Code Bloat: A Runtime Guard for Your Scope</h3>
+<p>Do not use heavy project management boards like Jira or Trello to run a solo side project; their structural friction eats away at your coding momentum. Instead, run a lightweight script to act as a "reduction gatekeeper" before committing to any new feature. It forces your ideas through an AI-backed sanity check to spit out a lean, uncompromised tree of tasks:</p>
+<pre><code class="typescript language-typescript">// A lightweight scope gatekeeper powered by Bun
+import { fetchAiCli } from "./ai-agent";
+
+interface FeatureNode {
+  title: string;
+  isMustHave: boolean; // Is this absolutely essential to close the functional loop?
+  estimatedHours: number;
+}
+
+// Pass in your feature idea to let the AI analyze your scope drift
+const verifyMvpScope = async (featureDescription: string) =&gt; {
+  const check = await fetchAiCli&lt;FeatureNode&gt;(`
+    Analyze if the feature: "${featureDescription}" is an absolute roadblocker for the initial MVP release.
+    If it is purely an optimization or a nice-to-have, flag isMustHave as false and exclude it from the launch branch.
+  `);
+
+  if (!check.isMustHave) {
+    console.log(`⚠️ Scope Guard: Feature [${check.title}] ruthlessly rejected! Push it to the post-launch backlog. Do not write this line of code tonight.`);
+  }
+};
+</code></pre>
+<p>Running this logic ensures your entire deployment blueprint is compressed into tight, minimal <code>*.todo</code> entries:</p>
+<ul>
+<li><p><strong>🔴 MUST-HAVE (The Launch Baseline)</strong></p></li>
+<li><p>▫️ Wire up core data encryption and save payload to local <code>LocalStorage</code> [2h]</p></li>
+<li><p>▫️ Inject a static, raw checkout button pointing directly to Stripe Hosted Checkout, bypassing complex internal subscription state machines [3h]</p></li>
+<li><p><strong>❌ DEFERRED (Forbidden Pre-Launch)</strong></p></li>
+<li><p>▫️ Build native system-level dark mode sync hooks (Post-launch backlog)</p></li>
+<li><p>▫️ Integrate 3rd-party social OAuth providers (Stick to a primitive magic link first)</p></li>
+</ul>
+<p>You are no longer building an overwhelming, endless product. You are clearing a flat path of verified milestones, checking them off like a green suite of passing unit tests.</p>
+<h3 id="pinningyourscopeboundariesdirectlyinyourworkspace">💡 Pinning Your Scope Boundaries Directly in Your Workspace</h3>
+<p>Once you have a pristine, minimal roadmap, the worst thing you can do is break your coding flow state by constantly switching to an external browser tab or mobile app to check off completed tasks. <strong>Every instance of context switching destroys deep focus.</strong></p>
+<p>This is exactly why this minimalist efficiency philosophy is built right into <strong>aicupa · Todo List</strong>.</p>
+<p>Discarding the bloated social trackers and corporate metric boards of typical productivity apps, <strong>aicupa</strong> is an <strong>AI-driven Todo ecosystem</strong> engineered strictly for solo hackers and developers. The minimal launch trees generated by the AI agent live natively inside your <strong>VS Code Extension</strong> sidebar. While waiting for a local Bun or Webpack build to compile, you can glance at a high-contrast sidebar inside your IDE, tick off a completed P1 node, and maintain absolute terminal momentum.</p>
+<p>Whether you capture raw ideas on your phone on the go, or code across office and home machines, your <code>*.todo</code> trees stay seamlessly updated via live multi-platform synchronization or a self-hosted Docker deployment.</p>
+<p>Stop letting your Micro-SaaS collect digital dust on a local hard drive. Delegate the scope-cutting to an AI, and leave the rapid path to production to a clean task tree in your editor.</p>
+<p>👉 <strong><a href="https://aicupa.com/">Go to aicupa.com and start tuning your personal biology like production code today.</a></strong></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ssr-a-active">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

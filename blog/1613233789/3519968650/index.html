@@ -1,0 +1,291 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Designing system architecture via ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20Architects%3A%20Stop%20Using%20Flat%2C%20Directionless%20Canvas%20Boards%20to%20Design%20Distributed%20Systems%0A%0AWhen%20tech%20leads%20and%20system%20architects%20map%20out%20an%20expansive%20new%20infrastructure%20plan%E2%80%94such%20as%20an%20automated%20D2C%20(Design-to-Code)%20rendering%20pipeline%20or%20a%20multi-node%2C%20real-time%20data%20sync%20engine%E2%80%94the%20brain%20operates%20in%20a%20highly%20chaotic%2C%20multi-dimensional%20space.%0A%0AAST%20parsing%20trees%2C%20pixel-matching%20visual%20audit%20runners%2C%20eventual%20consistency%20merges%2C%20and%20fallback%20disaster%20recovery%20strategies%20all%20fight%20for%20mental%20real%20estate%20simultaneously.%0A%0AThe%20default%20reaction%20is%20to%20spin%20up%20an%20online%20canvas%20board%20and%20cover%20it%20with%20a%20colorful%20array%20of%20boxes%20and%20intersecting%20arrows.%20**However%2C%20flat%20canvas%20boards%20suffer%20from%20a%20fatal%20flaw%3A%20they%20cannot%20accurately%20represent%20the%20core%20engineering%20realities%20of%20chronological%20order%20(Timeline)%20and%20structural%20dependency%20(Dependencies).**%20The%20resulting%20diagrams%20look%20exceptional%20during%20presentations%2C%20but%20leave%20development%20teams%20completely%20blind%20as%20to%20what%20base%20layer%20modules%20need%20to%20be%20committed%20in%20week%20one.%0A%0AIn%20software%20engineering%2C%20data%20and%20execution%20flows%20are%20directional%20and%20sequential.%20Your%20deployment%20roadmap%20must%20mirror%20this%20reality%20through%20a%20strict%20**Architecture%20Chrono%20Tree**.%0A%0A%23%23%23%20%F0%9F%9B%A0%EF%B8%8F%20Driving%20Technical%20Roadmaps%20via%20Topological%20Ordering%0A%0ARather%20than%20drawing%20loose%20lines%20on%20an%20open%20canvas%2C%20you%20can%20treat%20your%20architecture%20plan%20like%20a%20directed%20graph.%20Using%20an%20AI-driven%20deconstruction%20pipeline%2C%20you%20can%20flatten%20complex%20technical%20goals%20into%20a%20sequential%20topology%20where%20no%20node%20can%20be%20built%20until%20its%20absolute%20prerequisites%20are%20satisfied%3A%0A%0A%60%60%60text%0A%5BBase%20Layer%3A%20Core%20Data%20Pipeline%5D%20%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%3E%20Build%20underlying%20raw%20JSON%20parser%20to%20extract%20structural%20node%20trees.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%96%BC%20(Unlock%20downstream%20tasks%20upon%20completion)%0A%5BQuality%20Assurance%3A%20Visual%20Auditing%5D%20%E2%94%80%E2%94%80%3E%20Inject%20Playwright%20headless%20runners%20to%20trigger%20pixel-match%20regressions.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%96%BC%20%0A%5BInfrastructure%3A%20CI%2FCD%20Deployment%5D%20%20%20%E2%94%80%E2%94%80%3E%20Containerize%20system%20via%20Docker%20and%20wire%20up%20Prometheus%20metrics%20telemetry.%0A%0A%60%60%60%0A%0AThis%20approach%20transforms%20a%20complex%20system%20architecture%20plan%20from%20an%20unpredictable%2C%20confusing%20maze%20into%20a%20**highly%20systematic%2C%20step-by-step%20path%20to%20production**.%20The%20engineering%20team%20understands%20exactly%20where%20the%20critical%20path%20lies%2C%20and%20development%20cycles%20scale%20without%20friction.%0A%0A%23%23%23%20%F0%9F%92%A1%20Controlling%20Project%20Timelines%20Like%20a%20Data%20Stream%0A%0AFor%20technical%20leaders%20who%20juggle%20code%20reviews%2C%20architectural%20planning%2C%20and%20active%20production%20incidents%2C%20standard%20flat%20todo%20lists%20are%20completely%20useless.%20The%20moment%20an%20unexpected%20production%20bug%20derails%20your%20day%2C%20a%20flat%20list%20fails%20to%20help%20you%20recalculate%20your%20broader%20engineering%20timeline%20in%20real%20time.%0A%0AThis%20exact%20constraint%20is%20why%20**aicupa%20%C2%B7%20Todo%20List**%20introduces%20a%20native%20**Timeline%20View%20with%20Directed%20Task%20Dependencies**.%0A%0AWithin%20this%20**AI%20Todo%20ecosystem**%20engineered%20for%20full-stack%20architects%2C%20you%20don't%20just%20generate%20task%20trees%20from%20textual%20ideas%3B%20you%20gain%20a%20fully%20interactive%20**dependency%20timeline**.%20You%20draw%20explicit%20arrows%20between%20your%20milestones%20exactly%20like%20routing%20control%20flows%20in%20a%20system%20diagram.%20If%20a%20critical%20base-layer%20component%20runs%20into%20an%20unexpected%20hitch%2C%20moving%20its%20block%20on%20the%20timeline%20dynamically%20adjusts%20all%20downstream%20engineering%20tasks%2C%20instantly%20wiping%20out%20scheduling%20anxiety.%0A%0ABecause%20it%20runs%20natively%20as%20a%20**VS%20Code%20Extension**%2C%20tech%20leads%20can%20manage%20high-level%20team%20milestones%20without%20ever%20leaving%20their%20primary%20development%20workspace.%20It%20delivers%20an%20uncompromised%2C%20minimal%20dark%20aesthetic%20across%20its%20web%20client%20(%60app.aicupa.com%60)%2C%20native%20desktop%20builds%2C%20and%20self-hosted%20Docker%20environments.%0A%0AStop%20drifting%20across%20chaotic%20canvas%20diagrams.%20Offload%20the%20chronological%20sequence%20modeling%20to%20an%20AI%2C%20and%20maintain%20an%20organized%20path%20to%20deployment%20with%20a%20structured%20task%20tree.%0A%0A%F0%9F%91%89%20**%5BGo%20to%20aicupa.com%20and%20start%20tuning%20your%20personal%20biology%20like%20production%20code%20today.%5D(https%3A%2F%2Faicupa.com%2F)**%0A`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="system design timeline, software architect roadmap, topological sorting tasks, directed acyclic graph project management, visual pixel match audit pipeline, critical path project tool, aicupa"><meta name="description" content="Stop using directionless canvas boards for complex systems. Discover how to use aicupa's topological task trees and interactive timeline views to map system architectures with strict directional dependency."><script async src="/click-mask/click-mask.min.js"></script><title>Designing system architecture via ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">DesigningSystemArchitectureViaAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="architectsstopusingflatdirectionlesscanvasboardstodesigndistributedsystems">Architects: Stop Using Flat, Directionless Canvas Boards to Design Distributed Systems</h2>
+<p>When tech leads and system architects map out an expansive new infrastructure plan—such as an automated D2C (Design-to-Code) rendering pipeline or a multi-node, real-time data sync engine—the brain operates in a highly chaotic, multi-dimensional space.</p>
+<p>AST parsing trees, pixel-matching visual audit runners, eventual consistency merges, and fallback disaster recovery strategies all fight for mental real estate simultaneously.</p>
+<p>The default reaction is to spin up an online canvas board and cover it with a colorful array of boxes and intersecting arrows. <strong>However, flat canvas boards suffer from a fatal flaw: they cannot accurately represent the core engineering realities of chronological order (Timeline) and structural dependency (Dependencies).</strong> The resulting diagrams look exceptional during presentations, but leave development teams completely blind as to what base layer modules need to be committed in week one.</p>
+<p>In software engineering, data and execution flows are directional and sequential. Your deployment roadmap must mirror this reality through a strict <strong>Architecture Chrono Tree</strong>.</p>
+<h3 id="drivingtechnicalroadmapsviatopologicalordering">🛠️ Driving Technical Roadmaps via Topological Ordering</h3>
+<p>Rather than drawing loose lines on an open canvas, you can treat your architecture plan like a directed graph. Using an AI-driven deconstruction pipeline, you can flatten complex technical goals into a sequential topology where no node can be built until its absolute prerequisites are satisfied:</p>
+<pre><code class="text language-text">[Base Layer: Core Data Pipeline] ──────&gt; Build underlying raw JSON parser to extract structural node trees.
+                                            │
+                                            ▼ (Unlock downstream tasks upon completion)
+[Quality Assurance: Visual Auditing] ──&gt; Inject Playwright headless runners to trigger pixel-match regressions.
+                                            │
+                                            ▼ 
+[Infrastructure: CI/CD Deployment]   ──&gt; Containerize system via Docker and wire up Prometheus metrics telemetry.
+</code></pre>
+<p>This approach transforms a complex system architecture plan from an unpredictable, confusing maze into a <strong>highly systematic, step-by-step path to production</strong>. The engineering team understands exactly where the critical path lies, and development cycles scale without friction.</p>
+<h3 id="controllingprojecttimelineslikeadatastream">💡 Controlling Project Timelines Like a Data Stream</h3>
+<p>For technical leaders who juggle code reviews, architectural planning, and active production incidents, standard flat todo lists are completely useless. The moment an unexpected production bug derails your day, a flat list fails to help you recalculate your broader engineering timeline in real time.</p>
+<p>This exact constraint is why <strong>aicupa · Todo List</strong> introduces a native <strong>Timeline View with Directed Task Dependencies</strong>.</p>
+<p>Within this <strong>AI Todo ecosystem</strong> engineered for full-stack architects, you don't just generate task trees from textual ideas; you gain a fully interactive <strong>dependency timeline</strong>. You draw explicit arrows between your milestones exactly like routing control flows in a system diagram. If a critical base-layer component runs into an unexpected hitch, moving its block on the timeline dynamically adjusts all downstream engineering tasks, instantly wiping out scheduling anxiety.</p>
+<p>Because it runs natively as a <strong>VS Code Extension</strong>, tech leads can manage high-level team milestones without ever leaving their primary development workspace. It delivers an uncompromised, minimal dark aesthetic across its web client (<code>app.aicupa.com</code>), native desktop builds, and self-hosted Docker environments.</p>
+<p>Stop drifting across chaotic canvas diagrams. Offload the chronological sequence modeling to an AI, and maintain an organized path to deployment with a structured task tree.</p>
+<p>👉 <strong><a href="https://aicupa.com/">Go to aicupa.com and start tuning your personal biology like production code today.</a></strong></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ssr-a-active">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

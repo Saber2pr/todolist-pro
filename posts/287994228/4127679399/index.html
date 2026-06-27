@@ -1,0 +1,326 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "posts"
+    window.__title = "Agent chat"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Usage","/blog/Usage"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%23%23%23%20Supported%20Platforms%0A%0A%7C%20Web%20App%20%7C%20Desktop%20App%20%7C%20VS%20Code%20Extension%20%7C%20github.dev%20%7C%0A%7C%3A-------%3A%7C%3A-----------%3A%7C%3A-----------------%3A%7C%3A----------%3A%7C%0A%7C%20%E2%9C%85%20%7C%20-%20%7C%20-%20%7C%20-%20%7C%0A%0A%23%23%23%20Introduction%0A%0AAgent%20Chat%20is%20a%20built-in%20AI%20assistant%20that%20helps%20you%20manage%20your%20todo%20list%20through%20conversation.%20You%20can%20tell%20it%20what%20you%20want%20to%20do%20in%20natural%20language%2C%20and%20it%20will%20directly%20create%2C%20modify%2C%20or%20reorganize%20your%20tasks%20for%20you.%0A%0A%3E%20Chat%20with%20AI%20to%20manage%20your%20tasks!%0A%0A%23%23%23%20How%20to%20Use%0A%0A1.%20Click%20the%20**Agent**%20button%20(%F0%9F%92%AC)%20in%20the%20toolbar%20to%20open%20the%20chat%20panel.%0A%0A2.%20Type%20your%20request%20in%20the%20input%20box.%20For%20example%3A%0A%0A%20%20%20-%20%22Help%20me%20plan%20a%20weekend%20trip%22%0A%20%20%20-%20%22Break%20down%20this%20project%20into%20smaller%20tasks%22%0A%20%20%20-%20%22Mark%20all%20the%20design%20tasks%20as%20done%22%0A%20%20%20-%20%22Reorganize%20my%20tasks%20by%20priority%22%0A%0A3.%20Press%20**Enter**%20to%20send.%20The%20AI%20will%20respond%20and%20update%20your%20todo%20list%20automatically.%0A%0A%23%23%23%20Features%0A%0A-%20**Natural%20language**%3A%20Just%20describe%20what%20you%20want%20in%20plain%20words%20%E2%80%94%20no%20commands%20to%20memorize.%0A-%20**Real-time%20updates**%3A%20Watch%20your%20todo%20list%20change%20as%20the%20AI%20works%20%E2%80%94%20tasks%20appear%20and%20update%20live.%0A-%20**Multi-language**%3A%20The%20AI%20responds%20in%20the%20same%20language%20as%20your%20app%20(English%2C%20%E4%B8%AD%E6%96%87%2C%20%E6%97%A5%E6%9C%AC%E8%AA%9E%2C%20etc.).%0A-%20**Multi-turn%20conversation**%3A%20Ask%20follow-up%20questions%20or%20refine%20your%20request%20%E2%80%94%20the%20AI%20remembers%20the%20context.%0A%0A%23%23%23%20Tips%0A%0A-%20Be%20specific%20about%20what%20you%20want.%20%22Add%205%20sub-tasks%20for%20learning%20React%22%20works%20better%20than%20%22help%20me%20learn%20React%22.%0A-%20You%20can%20ask%20the%20AI%20to%20restructure%20existing%20tasks%2C%20not%20just%20create%20new%20ones.%0A-%20The%20chat%20panel%20can%20be%20closed%20and%20reopened%20without%20losing%20your%20conversation.%0A`
+    window.__updateTime = "1782356090"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="todolist,smalltask,tree,manager,vscode-extension,web-app"><meta name="description" content="### Supported Platforms
+
+| Web App | Desktop App | VS Code Extension | github.dev |
+|:-------:|:-----------:|:---…"><script async src="/click-mask/click-mask.min.js"></script><title>Agent chat - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">AgentChat</h1>
+        <div class="ssr-content-main"><h3 id="supportedplatforms">Supported Platforms</h3>
+<p>| Web App | Desktop App | VS Code Extension | github.dev |
+|:-------:|:-----------:|:-----------------:|:----------:|
+| ✅ | - | - | - |</p>
+<h3 id="introduction">Introduction</h3>
+<p>Agent Chat is a built-in AI assistant that helps you manage your todo list through conversation. You can tell it what you want to do in natural language, and it will directly create, modify, or reorganize your tasks for you.</p>
+<blockquote>
+  <p>Chat with AI to manage your tasks!</p>
+</blockquote>
+<h3 id="howtouse">How to Use</h3>
+<ol>
+<li><p>Click the <strong>Agent</strong> button (💬) in the toolbar to open the chat panel.</p></li>
+<li><p>Type your request in the input box. For example:</p></li>
+</ol>
+<ul>
+<li>"Help me plan a weekend trip"</li>
+<li>"Break down this project into smaller tasks"</li>
+<li>"Mark all the design tasks as done"</li>
+<li>"Reorganize my tasks by priority"</li>
+</ul>
+<ol>
+<li>Press <strong>Enter</strong> to send. The AI will respond and update your todo list automatically.</li>
+</ol>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>Natural language</strong>: Just describe what you want in plain words — no commands to memorize.</li>
+<li><strong>Real-time updates</strong>: Watch your todo list change as the AI works — tasks appear and update live.</li>
+<li><strong>Multi-language</strong>: The AI responds in the same language as your app (English, 中文, 日本語, etc.).</li>
+<li><strong>Multi-turn conversation</strong>: Ask follow-up questions or refine your request — the AI remembers the context.</li>
+</ul>
+<h3 id="tips">Tips</h3>
+<ul>
+<li>Be specific about what you want. "Add 5 sub-tasks for learning React" works better than "help me learn React".</li>
+<li>You can ask the AI to restructure existing tasks, not just create new ones.</li>
+<li>The chat panel can be closed and reopened without losing your conversation.</li>
+</ul></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">About</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/1949634023/1186381381/" class="ssr-a ">Features</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/2414495387/" class="ssr-a ">Author words</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/886977854/" class="ssr-a ">Privacy policy</a></li></ul></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Usage</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/287994228/3009207953/" class="ssr-a ">Search</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1707528157/" class="ssr-a ">Auto sort</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4127679399/" class="ssr-a ssr-a-active">Agent chat</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1490081406/" class="ssr-a ">Generate htmltable</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1498034918/" class="ssr-a ">Backup version history</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2025200286/" class="ssr-a ">Aiexecution</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1170812618/" class="ssr-a ">Webhook</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2693304080/" class="ssr-a ">Generate markdown</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2702224676/" class="ssr-a ">Mcpserver</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1573151734/" class="ssr-a ">Play mode</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4128846036/" class="ssr-a ">In github dev</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1638689331/" class="ssr-a ">Cloud sync</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4081234018/" class="ssr-a ">Advance copy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2832432038/" class="ssr-a ">Docker deploy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/680425711/" class="ssr-a ">Background image</a></li>
+<li class="ssr-li"><a href="/posts/287994228/3541821642/" class="ssr-a ">Script automation</a></li>
+<li class="ssr-li"><a href="/posts/287994228/667772353/" class="ssr-a ">Desktop app</a></li>
+<li class="ssr-li"><a href="/posts/287994228/602927981/" class="ssr-a ">App troubleshooting guide</a></li>
+<li class="ssr-li"><a href="/posts/287994228/892905180/" class="ssr-a ">Daily planning</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4005700258/" class="ssr-a ">Plugin</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

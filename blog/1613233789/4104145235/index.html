@@ -1,0 +1,305 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Streamlining open source issues with ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20Open%20Source%20Maintenance%3A%20Deconstructing%20a%20300-Line%20Crash%20Log%20into%20an%20Actionable%20Pipeline%0A%0AFor%20creators%20of%20open-source%20projects%2C%20packages%2C%20or%20CLI%20utilities%2C%20the%20absolute%20worst%20part%20of%20the%20job%20isn't%20writing%20new%20code%E2%80%94**it%E2%80%99s%20waking%20up%20to%20a%20bright%20red%20notification%20badge%20on%20your%20repository's%20Issue%20tracker.**%0A%0ABug%20reports%20from%20the%20community%20are%20notoriously%20chaotic.%20A%20typical%20submission%20consists%20of%20a%20brief%2C%20vague%20description%20followed%20by%20an%20unformatted%20200-line%20stack%20trace%20and%20a%20massive%20dump%20of%20non-standard%20environment%20variables.%20Facing%20this%20massive%20cognitive%20load%20after%20a%20long%20day%20of%20primary%20work%20triggers%20instant%20procrastination.%20You%20close%20the%20tab%2C%20the%20issue%20rots%2C%20and%20your%20project's%20technical%20debt%20mounts.%0A%0AOpen-source%20contributions%20run%20purely%20on%20limited%20spare%20energy.%20To%20prevent%20maintainer%20burnout%2C%20you%20must%20intercept%20these%20raw%20logs%20and%20**flatten%20them%20into%20a%20highly%20predictable%2C%20mechanical%20debug%20checklist.**%0A%0A%23%23%23%20%F0%9F%9B%A0%EF%B8%8F%20Scripting%20the%20Deconstruction%20of%20GitHub%20Issues%0A%0AYou%20don%E2%80%99t%20have%20time%20to%20manually%20organize%20GitHub%20Project%20boards%20for%20every%20bug.%20By%20using%20a%20lightweight%20runner%20powered%20by%20Bun%2C%20you%20can%20parse%20the%20raw%20Markdown%20payload%20of%20an%20incoming%20issue%20through%20an%20LLM%20to%20extract%20the%20exact%20points%20of%20failure%20and%20organize%20them%20into%20an%20explicit%20life%20cycle%3A%0A%0A%60%60%60typescript%0A%2F%2F%20A%20lightweight%20automated%20workflow%20utility%20for%20OSS%20maintainers%0Aimport%20%7B%20readGitHubIssue%2C%20generateTodoJson%20%7D%20from%20%22.%2Foss-utils%22%3B%0A%0Aasync%20function%20mapIssueToWorkflow(issueNumber%3A%20number)%20%7B%0A%20%20const%20issueMarkdown%20%3D%20await%20readGitHubIssue(issueNumber)%3B%0A%20%20%0A%20%20%2F%2F%20Strip%20away%20emotional%20chatter%20and%20extract%20the%20raw%20architectural%20failure%20points%0A%20%20const%20debugPipeline%20%3D%20await%20generateTodoJson(issueMarkdown%2C%20%7B%0A%20%20%20%20format%3A%20%22Tree%22%2C%0A%20%20%20%20phases%3A%20%5B%22Isolate%22%2C%20%22Test%22%2C%20%22Patch%22%2C%20%22Release%22%5D%0A%20%20%7D)%3B%0A%0A%20%20%2F%2F%20Persist%20directly%20into%20a%20light%2C%20local%20task%20format%0A%20%20await%20Bun.write(%60.%2Fdebug%2Fissue-%24%7BissueNumber%7D.todo%60%2C%20JSON.stringify(debugPipeline))%3B%0A%20%20console.log(%60%F0%9F%9A%80%20Issue%20%23%24%7BissueNumber%7D%20successfully%20flattened%20into%20an%20atomic%20debug%20tree!%60)%3B%0A%7D%0A%0A%60%60%60%0A%0ARunning%20this%20script%20converts%20a%20messy%2C%20unreadable%20bug%20report%20into%20a%20sequential%2C%20actionable%20task%20tree%3A%0A%0A%60%60%60text%0A%E2%94%94%E2%94%80%20%F0%9F%90%9B%20Bug-Hunting%3A%20Bun%20Build%20Path%20Error%20(%23412)%0A%20%20%20%E2%94%9C%E2%94%80%20%F0%9F%94%B4%20%5BCRITICAL%5D%20Minimum%20Isolation%20%E2%94%80%E2%94%80%3E%20Spin%20up%20a%20bare-bones%20local%20environment%20replicating%20the%20Bun%20v1.1%20flags%20from%20the%20report.%0A%20%20%20%E2%94%9C%E2%94%80%20%F0%9F%94%B4%20%5BCRITICAL%5D%20Assert%20Failures%20%20%E2%94%80%E2%94%80%3E%20Inject%20a%20set%20of%20boundary%20unit%20assertions%20targeting%20the%20failing%20%60path.resolve%60%20node.%0A%20%20%20%E2%94%9C%E2%94%80%20%F0%9F%9F%A1%20%5BROUTINE%5D%20%20Runtime%20Patch%20%20%20%E2%94%80%E2%94%80%3E%20Substitute%20platform-specific%20string%20operations%20with%20an%20explicit%20cross-runtime%20path%20system.%0A%20%20%20%E2%94%94%E2%94%80%20%F0%9F%94%B5%20%5BDEFER%5D%20%20%20%20Community%20Loop%20%20%20%E2%94%80%E2%94%80%3E%20Deploy%20a%20semantic%20patch%20version%20tag%20and%20trigger%20an%20automated%20reply%20to%20notify%20the%20author.%0A%0A%60%60%60%0A%0AThis%20structural%20transformation%20changes%20the%20entire%20psychology%20of%20debugging%3A%20**it%20downgrades%20an%20overwhelming%20architectural%20puzzle%20into%20a%20series%20of%20minor%2C%20low-stress%20operational%20checks.**%0A%0A%23%23%23%20%F0%9F%92%A1%20A%20Pure%2C%20Distraction-Free%20Debugging%20Environment%0A%0AThe%20ultimate%20friction%20point%20when%20patching%20a%20library%20occurs%20when%20you%20are%20forced%20to%20cycle%20your%20window%20focus%20between%20your%20terminal%20runner%2C%20your%20source%20files%2C%20and%20a%20browser-based%20management%20dashboard.%20This%20constant%20cycling%20fragments%20your%20focus.%0A%0A**aicupa%20%C2%B7%20Todo%20List**%20was%20created%20specifically%20to%20eliminate%20this%20systemic%20fragmentation.%0A%0AOperating%20as%20a%20streamlined%20**AI%20Todo%20ecosystem**%2C%20it%20integrates%20directly%20as%20a%20native%20**VS%20Code%20Extension**.%20The%20%60*.todo%60%20structures%20generated%20from%20your%20automated%20issue%20triaging%20scripts%20render%20cleanly%20in%20your%20editor's%20sidebar%20panel.%20Your%20hands%20stay%20locked%20on%20your%20keyboard%3B%20you%20review%20code%20in%20the%20center%20pane%20and%20check%20off%20isolated%20debug%20steps%20on%20the%20right.%0A%0AIt%20features%20an%20ultra-clean%2C%20high-contrast%20dark%20theme%20completely%20stripped%20of%20social%20notifications%2C%20gamified%20stats%2C%20or%20heavy%20UI%20layouts.%20Backed%20by%20live%20cloud%20sync%20architecture%20running%20through%20%60app.aicupa.com%60%20or%20private%20self-hosted%20Docker%20containers%2C%20your%20task%20states%20stay%20instantly%20locked%20in%20across%20all%20your%20screens.%0A%0AStop%20allowing%20open-source%20issues%20to%20drain%20your%20mental%20energy.%20Pass%20the%20raw%20stack%20traces%20to%20an%20AI%20to%20flatten%2C%20and%20handle%20the%20actual%20debugging%20within%20the%20deep%20focus%20of%20your%20terminal%20tree.%0A`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="open source maintainer burnout, GitHub issue triage automation, AI debug workflow, parse stack trace tool, bun js script todo, aicupa vscode, developer context switching"><meta name="description" content="Tired of chaotic GitHub issue logs? Use a lightweight Bun script and aicupa to instantly deconstruct complex crash stack traces into an actionable, low-stress debugging tree inside VS Code."><script async src="/click-mask/click-mask.min.js"></script><title>Streamlining open source issues with ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">StreamliningOpenSourceIssuesWithAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="opensourcemaintenancedeconstructinga300linecrashlogintoanactionablepipeline">Open Source Maintenance: Deconstructing a 300-Line Crash Log into an Actionable Pipeline</h2>
+<p>For creators of open-source projects, packages, or CLI utilities, the absolute worst part of the job isn't writing new code—<strong>it’s waking up to a bright red notification badge on your repository's Issue tracker.</strong></p>
+<p>Bug reports from the community are notoriously chaotic. A typical submission consists of a brief, vague description followed by an unformatted 200-line stack trace and a massive dump of non-standard environment variables. Facing this massive cognitive load after a long day of primary work triggers instant procrastination. You close the tab, the issue rots, and your project's technical debt mounts.</p>
+<p>Open-source contributions run purely on limited spare energy. To prevent maintainer burnout, you must intercept these raw logs and <strong>flatten them into a highly predictable, mechanical debug checklist.</strong></p>
+<h3 id="scriptingthedeconstructionofgithubissues">🛠️ Scripting the Deconstruction of GitHub Issues</h3>
+<p>You don’t have time to manually organize GitHub Project boards for every bug. By using a lightweight runner powered by Bun, you can parse the raw Markdown payload of an incoming issue through an LLM to extract the exact points of failure and organize them into an explicit life cycle:</p>
+<pre><code class="typescript language-typescript">// A lightweight automated workflow utility for OSS maintainers
+import { readGitHubIssue, generateTodoJson } from "./oss-utils";
+
+async function mapIssueToWorkflow(issueNumber: number) {
+  const issueMarkdown = await readGitHubIssue(issueNumber);
+
+  // Strip away emotional chatter and extract the raw architectural failure points
+  const debugPipeline = await generateTodoJson(issueMarkdown, {
+    format: "Tree",
+    phases: ["Isolate", "Test", "Patch", "Release"]
+  });
+
+  // Persist directly into a light, local task format
+  await Bun.write(`./debug/issue-${issueNumber}.todo`, JSON.stringify(debugPipeline));
+  console.log(`🚀 Issue #${issueNumber} successfully flattened into an atomic debug tree!`);
+}
+</code></pre>
+<p>Running this script converts a messy, unreadable bug report into a sequential, actionable task tree:</p>
+<pre><code class="text language-text">└─ 🐛 Bug-Hunting: Bun Build Path Error (#412)
+   ├─ 🔴 [CRITICAL] Minimum Isolation ──&gt; Spin up a bare-bones local environment replicating the Bun v1.1 flags from the report.
+   ├─ 🔴 [CRITICAL] Assert Failures  ──&gt; Inject a set of boundary unit assertions targeting the failing `path.resolve` node.
+   ├─ 🟡 [ROUTINE]  Runtime Patch   ──&gt; Substitute platform-specific string operations with an explicit cross-runtime path system.
+   └─ 🔵 [DEFER]    Community Loop   ──&gt; Deploy a semantic patch version tag and trigger an automated reply to notify the author.
+</code></pre>
+<p>This structural transformation changes the entire psychology of debugging: <strong>it downgrades an overwhelming architectural puzzle into a series of minor, low-stress operational checks.</strong></p>
+<h3 id="apuredistractionfreedebuggingenvironment">💡 A Pure, Distraction-Free Debugging Environment</h3>
+<p>The ultimate friction point when patching a library occurs when you are forced to cycle your window focus between your terminal runner, your source files, and a browser-based management dashboard. This constant cycling fragments your focus.</p>
+<p><strong>aicupa · Todo List</strong> was created specifically to eliminate this systemic fragmentation.</p>
+<p>Operating as a streamlined <strong>AI Todo ecosystem</strong>, it integrates directly as a native <strong>VS Code Extension</strong>. The <code>*.todo</code> structures generated from your automated issue triaging scripts render cleanly in your editor's sidebar panel. Your hands stay locked on your keyboard; you review code in the center pane and check off isolated debug steps on the right.</p>
+<p>It features an ultra-clean, high-contrast dark theme completely stripped of social notifications, gamified stats, or heavy UI layouts. Backed by live cloud sync architecture running through <code>app.aicupa.com</code> or private self-hosted Docker containers, your task states stay instantly locked in across all your screens.</p>
+<p>Stop allowing open-source issues to drain your mental energy. Pass the raw stack traces to an AI to flatten, and handle the actual debugging within the deep focus of your terminal tree.</p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ssr-a-active">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

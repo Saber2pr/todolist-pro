@@ -1,0 +1,331 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "posts"
+    window.__title = "Backup version history"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Usage","/blog/Usage"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%23%23%23%20Supported%20Platforms%0A%0A%7C%20Web%20App%20%7C%20Desktop%20App%20%7C%20VS%20Code%20Extension%20%7C%20github.dev%20%7C%0A%7C%3A-------%3A%7C%3A-----------%3A%7C%3A-----------------%3A%7C%3A----------%3A%7C%0A%7C%20%E2%9C%85%20%7C%20%E2%9C%85%20%7C%20%E2%9C%85%20%7C%20%E2%9C%85%20%7C%0A%0A%23%23%23%20Introduction%0A%0ATodolist%20automatically%20saves%20a%20version%20of%20your%20file%20every%20time%20you%20make%20an%20edit.%20You%20can%20browse%20your%20full%20edit%20history%2C%20compare%20changes%2C%20and%20restore%20any%20previous%20version%20with%20one%20click.%0A%0A%3E%20Never%20lose%20your%20work%20%E2%80%94%20every%20edit%20is%20saved!%0A%0A%23%23%23%20How%20to%20Use%0A%0A1.%20Open%20your%20todo%20file%2C%20then%20go%20to%20**Settings%20%3E%20Backup**%20to%20see%20all%20saved%20versions.%0A%0A2.%20Each%20version%20is%20listed%20with%20a%20timestamp%20(date%20and%20time)%2C%20so%20you%20can%20find%20exactly%20when%20a%20change%20was%20made.%0A%0A3.%20Click%20on%20any%20version%20to%20preview%20it.%0A%0A%23%23%23%20Comparing%20Versions%0A%0AWhen%20you%20select%20a%20version%2C%20the%20app%20shows%20a%20**side-by-side%20diff%20view**%3A%0A%0A-%20**Left%20side**%3A%20your%20current%20file%0A-%20**Right%20side**%3A%20the%20selected%20backup%20version%0A-%20Lines%20highlighted%20in%20**green**%20are%20additions%2C%20**red**%20are%20removals%0A%0AThis%20makes%20it%20easy%20to%20see%20exactly%20what%20changed.%0A%0A%23%23%23%20Restoring%20a%20Version%0A%0A1.%20Find%20the%20version%20you%20want%20to%20go%20back%20to.%0A2.%20Click%20the%20**Undo**%20(%E2%86%A9)%20icon%20next%20to%20that%20version.%0A3.%20Confirm%20the%20restore%20%E2%80%94%20your%20file%20will%20be%20reverted%20to%20that%20version.%0A%0A%23%23%23%20Managing%20Backups%0A%0A-%20The%20app%20shows%20the%20total%20backup%20size%20(in%20MB)%20at%20the%20top.%0A-%20If%20backups%20grow%20too%20large%2C%20you%20can%20use%20**Clear%20Backup**%20to%20free%20up%20space.%0A-%20Backups%20are%20stored%20locally%20on%20your%20computer%20for%20fast%20access.%0A%0A%23%23%23%20Tips%0A%0A-%20Backups%20are%20created%20automatically%20%E2%80%94%20no%20need%20to%20manually%20save.%0A-%20Use%20the%20diff%20view%20to%20quickly%20find%20when%20a%20task%20was%20added%20or%20removed.%0A-%20This%20feature%20is%20available%20for%20**Pro**%20users.%0A`
+    window.__updateTime = "1782356090"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="todolist,smalltask,tree,manager,vscode-extension,web-app"><meta name="description" content="### Supported Platforms
+
+| Web App | Desktop App | VS Code Extension | github.dev |
+|:-------:|:-----------:|:---…"><script async src="/click-mask/click-mask.min.js"></script><title>Backup version history - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">BackupVersionHistory</h1>
+        <div class="ssr-content-main"><h3 id="supportedplatforms">Supported Platforms</h3>
+<p>| Web App | Desktop App | VS Code Extension | github.dev |
+|:-------:|:-----------:|:-----------------:|:----------:|
+| ✅ | ✅ | ✅ | ✅ |</p>
+<h3 id="introduction">Introduction</h3>
+<p>Todolist automatically saves a version of your file every time you make an edit. You can browse your full edit history, compare changes, and restore any previous version with one click.</p>
+<blockquote>
+  <p>Never lose your work — every edit is saved!</p>
+</blockquote>
+<h3 id="howtouse">How to Use</h3>
+<ol>
+<li><p>Open your todo file, then go to <strong>Settings > Backup</strong> to see all saved versions.</p></li>
+<li><p>Each version is listed with a timestamp (date and time), so you can find exactly when a change was made.</p></li>
+<li><p>Click on any version to preview it.</p></li>
+</ol>
+<h3 id="comparingversions">Comparing Versions</h3>
+<p>When you select a version, the app shows a <strong>side-by-side diff view</strong>:</p>
+<ul>
+<li><strong>Left side</strong>: your current file</li>
+<li><strong>Right side</strong>: the selected backup version</li>
+<li>Lines highlighted in <strong>green</strong> are additions, <strong>red</strong> are removals</li>
+</ul>
+<p>This makes it easy to see exactly what changed.</p>
+<h3 id="restoringaversion">Restoring a Version</h3>
+<ol>
+<li>Find the version you want to go back to.</li>
+<li>Click the <strong>Undo</strong> (↩) icon next to that version.</li>
+<li>Confirm the restore — your file will be reverted to that version.</li>
+</ol>
+<h3 id="managingbackups">Managing Backups</h3>
+<ul>
+<li>The app shows the total backup size (in MB) at the top.</li>
+<li>If backups grow too large, you can use <strong>Clear Backup</strong> to free up space.</li>
+<li>Backups are stored locally on your computer for fast access.</li>
+</ul>
+<h3 id="tips">Tips</h3>
+<ul>
+<li>Backups are created automatically — no need to manually save.</li>
+<li>Use the diff view to quickly find when a task was added or removed.</li>
+<li>This feature is available for <strong>Pro</strong> users.</li>
+</ul></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">About</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/1949634023/1186381381/" class="ssr-a ">Features</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/2414495387/" class="ssr-a ">Author words</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/886977854/" class="ssr-a ">Privacy policy</a></li></ul></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Usage</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/287994228/3009207953/" class="ssr-a ">Search</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1707528157/" class="ssr-a ">Auto sort</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4127679399/" class="ssr-a ">Agent chat</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1490081406/" class="ssr-a ">Generate htmltable</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1498034918/" class="ssr-a ssr-a-active">Backup version history</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2025200286/" class="ssr-a ">Aiexecution</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1170812618/" class="ssr-a ">Webhook</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2693304080/" class="ssr-a ">Generate markdown</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2702224676/" class="ssr-a ">Mcpserver</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1573151734/" class="ssr-a ">Play mode</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4128846036/" class="ssr-a ">In github dev</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1638689331/" class="ssr-a ">Cloud sync</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4081234018/" class="ssr-a ">Advance copy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2832432038/" class="ssr-a ">Docker deploy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/680425711/" class="ssr-a ">Background image</a></li>
+<li class="ssr-li"><a href="/posts/287994228/3541821642/" class="ssr-a ">Script automation</a></li>
+<li class="ssr-li"><a href="/posts/287994228/667772353/" class="ssr-a ">Desktop app</a></li>
+<li class="ssr-li"><a href="/posts/287994228/602927981/" class="ssr-a ">App troubleshooting guide</a></li>
+<li class="ssr-li"><a href="/posts/287994228/892905180/" class="ssr-a ">Daily planning</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4005700258/" class="ssr-a ">Plugin</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

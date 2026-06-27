@@ -1,0 +1,587 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "posts"
+    window.__title = "Plugin"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Usage","/blog/Usage"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%23%23%23%20Plugin%20System%0A%0AThe%20desktop%20app%20supports%20a%20plugin%20system%20that%20allows%20you%20to%20extend%20functionality%20via%20npm%20packages%20or%20local%20directories.%20Plugins%20can%20provide%20both%20a%20frontend%20view%20(rendered%20in%20an%20iframe)%20and%20a%20backend%20service%20(Node.js%20code%20with%20access%20to%20internal%20APIs).%0A%0A%3E%20Plugin%20system%20is%20available%20in%20the%20**Desktop%20App**%20%E3%80%81**Vscode%20Extension**.%0A%0A%23%23%20AI%20Skill%20(for%20Claude%20Code%20%2F%20Cursor%20%2F%20etc.)%0A%0AThe%20todolist-app%20repo%20includes%20a%20built-in%20**skill**%20that%20packages%20all%20todolist%20knowledge%20(file%20format%2C%20plugin%20system%2C%20plugin%20API%2C%20view%20protocol)%20for%20AI%20coding%20assistants.%20Once%20installed%2C%20your%20AI%20assistant%20understands%20how%20to%20work%20with%20%60.todo%60%20files%20and%20build%20plugins.%0A%0A%23%23%23%20Install%0A%0A%60%60%60bash%0Anpx%20skills%20add%20https%3A%2F%2Fgithub.com%2Faicupa%2Fskills%0A%60%60%60%0A%0A%23%23%23%20What's%20Included%0A%0AThe%20skill%20provides%3A%0A%0A-%20**%60.todo%60%20file%20format**%20%E2%80%94%20complete%20structure%20reference%20(%60todotree%60%20wrapper%2C%20tree%20nodes%2C%20todo%20items%2C%20tags%2C%20timelines)%0A-%20**Plugin%20system**%20%E2%80%94%20directory%20structure%2C%20%60package.json%60%20fields%2C%20%60pluginContributes%60%20(contextMenus%2C%20events%2C%20views.head)%0A-%20**Plugin%20API**%20%E2%80%94%20all%20%60api.*%60%20methods%20(%60getTree%60%2C%20%60store%60%2C%20%60reload%60%2C%20%60clipboard%60%2C%20%60readFile%60%2C%20etc.)%0A-%20**View%20protocol**%20%E2%80%94%20%60postMessage%60%20message%20types%20(%60plugin-call%60%2C%20%60plugin-result%60%2C%20%60plugin-init%60%2C%20%60plugin-tree-update%60%2C%20%60plugin-request-tree%60)%0A-%20**Best%20practices**%20%E2%80%94%20timeout%20handling%2C%20localStorage%20fallback%2C%20theme%20adaptation%2C%20auto-height%20for%20head%20views%0A%0A%23%23%23%20Usage%0A%0AAfter%20installing%20the%20skill%2C%20just%20ask%20your%20AI%20assistant%20to%20work%20with%20todolist%20files%20or%20plugins%20%E2%80%94%20it%20will%20automatically%20use%20the%20skill's%20knowledge.%20For%20example%3A%0A%0A-%20%22Create%20a%20new%20%60.todo%60%20file%20with%20a%20project%20structure%22%0A-%20%22Build%20a%20plugin%20that%20shows%20overdue%20tasks%22%0A-%20%22Add%20a%20context%20menu%20item%20to%20my%20plugin%22%0A-%20%22Create%20a%20head%20view%20that%20displays%20task%20statistics%22%0A%0A%23%23%20Plugin%20Structure%0A%0AA%20plugin%20is%20a%20directory%20with%20a%20%60package.json%60%3A%0A%0A%60%60%60%0Amy-plugin%2F%0A%20%20package.json%0A%20%20view%2F%0A%20%20%20%20index.html%0A%20%20service%2F%0A%20%20%20%20index.js%0A%60%60%60%0A%0A%23%23%23%20package.json%0A%0A%60%60%60json%0A%7B%0A%20%20%22name%22%3A%20%22%40aicupa%2Fplugin-my-plugin%22%2C%0A%20%20%22version%22%3A%20%221.0.0%22%2C%0A%20%20%22description%22%3A%20%22My%20plugin%20description%22%2C%0A%20%20%22view%22%3A%20%22.%2Fview%22%2C%0A%20%20%22main%22%3A%20%22.%2Fservice%22%2C%0A%20%20%22viewSize%22%3A%20%7B%0A%20%20%20%20%22width%22%3A%20800%2C%0A%20%20%20%20%22height%22%3A%20600%0A%20%20%7D%2C%0A%20%20%22pluginContributes%22%3A%20%7B%0A%20%20%20%20%22contextMenus%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22My%20Action%22%2C%0A%20%20%20%20%20%20%20%20%22title_zh%22%3A%20%22%E6%88%91%E7%9A%84%E6%93%8D%E4%BD%9C%22%2C%0A%20%20%20%20%20%20%20%20%22command%22%3A%20%22myServiceMethod%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22events%22%3A%20%7B%0A%20%20%20%20%20%20%22paste%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22check%22%3A%20%22hasPendingData%22%2C%0A%20%20%20%20%20%20%20%20%22handler%22%3A%20%22onPaste%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22dependencies%22%3A%20%7B%0A%20%20%20%20%22%40aicupa%2Fapi%22%3A%20%22%5E1.0.1%22%0A%20%20%7D%0A%7D%0A%60%60%60%0A%0A%7C%20Field%20%7C%20Required%20%7C%20Description%20%7C%0A%7C-------%7C----------%7C-------------%7C%0A%7C%20%60name%60%20%7C%20Yes%20%7C%20Plugin%20name%2C%20recommended%20prefix%20%60%40aicupa%2Fplugin-%60%20%7C%0A%7C%20%60version%60%20%7C%20Yes%20%7C%20Semver%20version%20%7C%0A%7C%20%60description%60%20%7C%20No%20%7C%20Short%20description%20%7C%0A%7C%20%60view%60%20%7C%20No%20%7C%20Path%20to%20frontend%20view%20directory%20(must%20contain%20%60index.html%60)%2C%20or%20a%20URL%20(%60https%3A%2F%2F...%60)%20to%20load%20directly%20in%20an%20iframe%20%7C%0A%7C%20%60main%60%20%7C%20No%20%7C%20Path%20to%20backend%20service%20directory%20(Node.js%20entry)%20%7C%0A%7C%20%60viewSize%60%20%7C%20No%20%7C%20Custom%20modal%20size%20for%20plugin%20view%20%60%7B%20%22width%22%3A%20800%2C%20%22height%22%3A%20600%20%7D%60%2C%20default%20600%C3%97400%20%7C%0A%7C%20%60pluginContributes%60%20%7C%20No%20%7C%20Declare%20UI%20extensions%20and%20event%20handlers%20(see%20below)%20%7C%0A%0A%23%23%23%20pluginContributes%0A%0AThe%20%60pluginContributes%60%20field%20lets%20a%20plugin%20extend%20the%20app%20UI%20and%20hook%20into%20app%20events%20declaratively.%0A%0A%23%23%23%23%20contextMenus%0A%0ARegister%20items%20in%20the%20tree%20node%20right-click%20context%20menu.%20Each%20item%20maps%20to%20a%20service%20method.%0A%0A%60%60%60json%0A%22contextMenus%22%3A%20%5B%0A%20%20%7B%0A%20%20%20%20%22title%22%3A%20%22Cut%22%2C%0A%20%20%20%20%22title_zh%22%3A%20%22%E5%89%AA%E5%88%87%22%2C%0A%20%20%20%20%22command%22%3A%20%22cutNode%22%0A%20%20%7D%0A%5D%0A%60%60%60%0A%0A%7C%20Field%20%7C%20Required%20%7C%20Description%20%7C%0A%7C-------%7C----------%7C-------------%7C%0A%7C%20%60title%60%20%7C%20Yes%20%7C%20Menu%20item%20label%20(English)%20%7C%0A%7C%20%60title_zh%60%20%7C%20No%20%7C%20Menu%20item%20label%20(Chinese)%2C%20falls%20back%20to%20%60title%60%20%7C%0A%7C%20%60command%60%20%7C%20Yes%20%7C%20Service%20method%20name%20to%20call.%20Receives%20%60%7B%20node%2C%20filePath%20%7D%60%20%7C%0A%0AWhen%20clicked%2C%20the%20app%20calls%20the%20plugin's%20service%20method%20with%3A%0A%60%60%60js%0A%7B%20node%3A%20%7B%20key%2C%20children%2C%20todo%3A%20%7B%20id%2C%20content%2C%20done%2C%20...%20%7D%20%7D%2C%20filePath%3A%20%22%2Fpath%2Fto%2Ffile%22%20%7D%0A%60%60%60%0A%0A%23%23%23%23%20events%0A%0AHook%20into%20app-level%20events.%20Currently%20supported%3A%0A%0A**%60paste%60**%20%E2%80%94%20Intercept%20the%20paste%20action%20on%20tree%20nodes.%20When%20a%20user%20clicks%20%22Paste%22%2C%20the%20app%20checks%20all%20plugins%20with%20a%20%60paste%60%20event%20before%20performing%20the%20default%20clipboard%20paste.%0A%0A%60%60%60json%0A%22events%22%3A%20%7B%0A%20%20%22paste%22%3A%20%7B%0A%20%20%20%20%22check%22%3A%20%22getCutBuffer%22%2C%0A%20%20%20%20%22handler%22%3A%20%22pasteNode%22%0A%20%20%7D%0A%7D%0A%60%60%60%0A%0A%7C%20Field%20%7C%20Description%20%7C%0A%7C-------%7C-------------%7C%0A%7C%20%60check%60%20%7C%20Service%20method%20called%20to%20check%20if%20this%20plugin%20has%20pending%20data.%20Must%20return%20%60%7B%20ok%3A%20true%2C%20result%3A%20%7B%20node%3A%20...%20%7D%20%7D%60%20if%20active%2C%20%60%7B%20ok%3A%20true%2C%20result%3A%20%7B%20node%3A%20null%20%7D%20%7D%60%20if%20not%20%7C%0A%7C%20%60handler%60%20%7C%20Service%20method%20called%20to%20perform%20the%20paste.%20Receives%20%60%7B%20targetNode%2C%20filePath%20%7D%60%20%7C%0A%0AIf%20%60check%60%20returns%20a%20non-null%20node%2C%20the%20app%20skips%20the%20default%20clipboard%20paste%20and%20calls%20%60handler%60%20instead.%20After%20a%20successful%20handler%20call%2C%20the%20tree%20is%20reloaded%20automatically.%0A%0A%23%23%23%23%20views%0A%0ARegister%20plugin%20views%20into%20specific%20areas%20of%20the%20app%20UI.%20The%20view%20HTML%20is%20loaded%20from%20the%20plugin's%20%60view%60%20directory%20and%20rendered%20inline%20as%20an%20iframe.%0A%0A%60%60%60json%0A%22views%22%3A%20%7B%0A%20%20%22head%22%3A%20true%0A%7D%0A%60%60%60%0A%0A%7C%20Field%20%7C%20Description%20%7C%0A%7C-------%7C-------------%7C%0A%7C%20%60head%60%20%7C%20Render%20the%20plugin%20view%20at%20the%20top%20of%20the%20todolist%2C%20above%20the%20progress%20bar%20%7C%0A%0A**Head%20view**%20receives%20tree%20data%20automatically%20whenever%20the%20todolist%20updates.%20The%20host%20sends%3A%0A%0A%60%60%60json%0A%7B%20%22type%22%3A%20%22plugin-tree-update%22%2C%20%22tree%22%3A%20%5B...%5D%20%7D%0A%60%60%60%0A%0AThe%20view%20can%20also%20request%20the%20current%20tree%20data%20at%20any%20time%3A%0A%0A%60%60%60json%0A%2F%2F%20View%20-%3E%20Host%0A%7B%20%22type%22%3A%20%22plugin-request-tree%22%20%7D%0A%0A%2F%2F%20Host%20-%3E%20View%20(response)%0A%7B%20%22type%22%3A%20%22plugin-tree-update%22%2C%20%22tree%22%3A%20%5B...%5D%20%7D%0A%60%60%60%0A%0AThe%20%60tree%60%20is%20the%20full%20todolist%20tree%20in%20plain%20format%2C%20with%20each%20node%20containing%20%60%7B%20key%2C%20children%2C%20todo%3A%20%7B%20id%2C%20content%2C%20done%2C%20date%2C%20...%20%7D%20%7D%60.%0A%0AHead%20views%20also%20support%20the%20standard%20%60plugin-call%60%20%2F%20%60plugin-result%60%20protocol%20for%20calling%20service%20methods%2C%20and%20receive%20%60plugin-init%60%20on%20load.%0A%0A%23%23%20Service%0A%0AAdd%20%60%40aicupa%2Fapi%60%20as%20a%20dependency%20to%20get%20full%20type%20hints.%20Use%20%60createPlugin%60%20to%20define%20the%20service%3A%0A%0A%60%60%60js%0Aconst%20%7B%20createPlugin%20%7D%20%3D%20require('%40aicupa%2Fapi')%0A%0Amodule.exports%20%3D%20createPlugin((api)%20%3D%3E%20%7B%0A%20%20return%20%7B%0A%20%20%20%20async%20myMethod(params)%20%7B%0A%20%20%20%20%20%20%2F%2F%20api%20has%20full%20type%20hints%20(PluginApi)%0A%20%20%20%20%20%20const%20tree%20%3D%20await%20api.getTree(params.filePath)%0A%20%20%20%20%20%20%2F%2F%20...%0A%20%20%20%20%20%20return%20%7B%20ok%3A%20true%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%7D%0A%7D)%0A%60%60%60%0A%0AThe%20%60createPlugin%60%20wrapper%20is%20optional%20(it's%20an%20identity%20function%20at%20runtime)%2C%20but%20it%20provides%20TypeScript%2FIDE%20type%20inference%20for%20the%20%60api%60%20parameter.%0A%0AYou%20can%20also%20use%20the%20plain%20export%20format%3A%0A%0A%60%60%60js%0Amodule.exports%20%3D%20function%20(api)%20%7B%0A%20%20return%20%7B%0A%20%20%20%20async%20myMethod(params)%20%7B%0A%20%20%20%20%20%20const%20tree%20%3D%20await%20api.getTree(params.filePath)%0A%20%20%20%20%20%20return%20%7B%20ok%3A%20true%20%7D%0A%20%20%20%20%7D%2C%0A%20%20%7D%0A%7D%0A%60%60%60%0A%0A%23%23%23%20API%20Reference%0A%0A%7C%20API%20%7C%20Description%20%7C%0A%7C-----%7C-------------%7C%0A%7C%20%60api.reload(filePath)%60%20%7C%20Refresh%20the%20todolist%20view%20(without%20full%20page%20reload)%20%7C%0A%7C%20%60api.getTree(filePath)%60%20%7C%20Get%20the%20todolist%20JSON%20tree%20data%20for%20the%20given%20file%20%7C%0A%7C%20%60api.store(key%2C%20value%2C%20filePath)%60%20%7C%20Save%20data%20to%20the%20todolist%20store%20%7C%0A%7C%20%60api.relaunch()%60%20%7C%20Restart%20the%20entire%20Electron%20app%20%7C%0A%7C%20%60api.setTitle(title%2C%20filePath)%60%20%7C%20Set%20the%20window%20title%20%7C%0A%7C%20%60api.getConfig()%60%20%7C%20Get%20app%20configuration%20%7C%0A%7C%20%60api.readFile(path)%60%20%7C%20Read%20a%20file%20(returns%20string)%20%7C%0A%7C%20%60api.writeFile(path%2C%20content)%60%20%7C%20Write%20content%20to%20a%20file%20%7C%0A%7C%20%60api.readdir(dir)%60%20%7C%20List%20files%20in%20a%20directory%20%7C%0A%7C%20%60api.mkdir(dir)%60%20%7C%20Create%20a%20directory%20(recursive)%20%7C%0A%7C%20%60api.remove(path)%60%20%7C%20Remove%20a%20file%20or%20directory%20%7C%0A%7C%20%60api.pathJoin(...args)%60%20%7C%20Join%20path%20segments%20%7C%0A%7C%20%60api.mapTree(tree%2C%20fn)%60%20%7C%20Recursively%20map%20over%20a%20tree%20structure%20%7C%0A%7C%20%60api.getArray(val)%60%20%7C%20Safely%20convert%20a%20value%20to%20an%20array%20%7C%0A%7C%20%60api.base64(str)%60%20%7C%20Encode%20a%20string%20to%20base64%20%7C%0A%7C%20%60api.isWindows%60%20%7C%20%60true%60%20if%20running%20on%20Windows%20%7C%0A%0A%23%23%20View%0A%0AThe%20%60view%60%20field%20supports%20two%20modes%3A%0A%0A-%20**Local%20directory**%20(e.g.%20%60%22.%2Fview%22%60)%20%E2%80%94%20loads%20%60view%2Findex.html%60%20inside%20a%20sandboxed%20%60srcDoc%60%20iframe.%20Supports%20%60postMessage%60%20communication%20with%20the%20service.%0A-%20**URL**%20(e.g.%20%60%22https%3A%2F%2Fexample.com%2Fapp%2F%22%60)%20%E2%80%94%20loads%20the%20URL%20directly%20in%20an%20iframe%20with%20%60src%60.%20No%20sandboxing%20or%20%60postMessage%60%20bridge%20%E2%80%94%20useful%20for%20embedding%20external%20web%20apps.%0A%0A%60%60%60json%0A%2F%2F%20Local%20view%0A%22view%22%3A%20%22.%2Fview%22%0A%0A%2F%2F%20URL%20view%0A%22view%22%3A%20%22https%3A%2F%2Fsaber2pr.top%2Feditor%2F%22%0A%60%60%60%0A%0A%23%23%23%20Local%20View%0A%0AThe%20local%20view%20is%20an%20HTML%20file%20rendered%20inside%20a%20sandboxed%20iframe.%20It%20communicates%20with%20the%20service%20via%20%60postMessage%60%3A%0A%0A%60%60%60html%0A%3Cscript%3E%0A%20%20let%20callId%20%3D%200%0A%20%20const%20pending%20%3D%20%7B%7D%0A%20%20let%20currentFilePath%20%3D%20''%0A%0A%20%20%2F%2F%20Call%20a%20service%20method%20(with%20timeout%20to%20prevent%20hanging)%0A%20%20function%20callPlugin(method%2C%20params)%20%7B%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0A%20%20%20%20%20%20const%20id%20%3D%20%2B%2BcallId%0A%20%20%20%20%20%20const%20timer%20%3D%20setTimeout(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20delete%20pending%5Bid%5D%0A%20%20%20%20%20%20%20%20reject(new%20Error('timeout'))%0A%20%20%20%20%20%20%7D%2C%202000)%0A%20%20%20%20%20%20pending%5Bid%5D%20%3D%20%7B%0A%20%20%20%20%20%20%20%20resolve%3A%20(v)%20%3D%3E%20%7B%20clearTimeout(timer)%3B%20resolve(v)%20%7D%2C%0A%20%20%20%20%20%20%20%20reject%3A%20(e)%20%3D%3E%20%7B%20clearTimeout(timer)%3B%20reject(e)%20%7D%2C%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20window.parent.postMessage(%0A%20%20%20%20%20%20%20%20%7B%20type%3A%20'plugin-call'%2C%20id%2C%20method%2C%20params%20%7D%2C%0A%20%20%20%20%20%20%20%20'*'%0A%20%20%20%20%20%20)%0A%20%20%20%20%7D)%0A%20%20%7D%0A%0A%20%20%2F%2F%20Handle%20responses%20and%20init%0A%20%20window.addEventListener('message'%2C%20(event)%20%3D%3E%20%7B%0A%20%20%20%20const%20msg%20%3D%20event.data%0A%0A%20%20%20%20%2F%2F%20Receive%20filePath%20from%20host%20on%20init%0A%20%20%20%20if%20(msg%3F.type%20%3D%3D%3D%20'plugin-init')%20%7B%0A%20%20%20%20%20%20currentFilePath%20%3D%20msg.filePath%20%7C%7C%20''%0A%20%20%20%20%20%20return%0A%20%20%20%20%7D%0A%0A%20%20%20%20%2F%2F%20Handle%20service%20call%20results%0A%20%20%20%20if%20(msg%3F.type%20%3D%3D%3D%20'plugin-result'%20%26%26%20pending%5Bmsg.id%5D)%20%7B%0A%20%20%20%20%20%20const%20%7B%20resolve%2C%20reject%20%7D%20%3D%20pending%5Bmsg.id%5D%0A%20%20%20%20%20%20delete%20pending%5Bmsg.id%5D%0A%20%20%20%20%20%20if%20(msg.error)%20%7B%0A%20%20%20%20%20%20%20%20reject(new%20Error(msg.error))%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20resolve(msg.result)%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D)%0A%0A%20%20%2F%2F%20Example%3A%20call%20service%20method%0A%20%20async%20function%20doSomething()%20%7B%0A%20%20%20%20const%20result%20%3D%20await%20callPlugin('myMethod'%2C%20%7B%0A%20%20%20%20%20%20filePath%3A%20currentFilePath%2C%0A%20%20%20%20%7D)%0A%20%20%20%20console.log(result)%0A%20%20%7D%0A%3C%2Fscript%3E%0A%60%60%60%0A%0A%23%23%23%20Pitfalls%0A%0A%23%23%23%23%20callPlugin%20must%20have%20a%20timeout%0A%0AThe%20%60callPlugin%60%20function%20uses%20%60postMessage%60%20to%20communicate%20with%20the%20host.%20If%20the%20host%20or%20service%20is%20not%20ready%20when%20the%20message%20is%20sent%20(e.g.%2C%20%60plugin-init%60%20hasn't%20fired%20yet%2C%20or%20the%20service%20hasn't%20initialized)%2C%20the%20%60plugin-result%60%20response%20will%20never%20arrive%20%E2%80%94%20causing%20the%20Promise%20to%20hang%20forever.%20This%20silently%20blocks%20all%20downstream%20logic%20(data%20loading%2C%20saving%2C%20etc.).%0A%0A**Always%20add%20a%20timeout**%20(e.g.%2C%202%20seconds)%20to%20%60callPlugin%60%20so%20it%20rejects%20on%20time%20and%20fallback%20logic%20can%20run.%0A%0A%23%23%23%23%20Use%20localStorage%20as%20a%20fallback%20for%20view-side%20persistence%0A%0ABecause%20%60callPlugin%60%20can%20fail%20silently%20(timeout%2C%20service%20not%20ready)%2C%20don't%20rely%20solely%20on%20the%20service%20for%20persisting%20view-side%20data%20like%20user%20input.%20Write%20to%20%60localStorage%60%20immediately%20as%20a%20synchronous%20backup%2C%20and%20attempt%20the%20service%20call%20in%20parallel%3A%0A%0A%60%60%60js%0Afunction%20saveData(val)%20%7B%0A%20%20localStorage.setItem('my_key'%2C%20val)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20instant%2C%20reliable%0A%20%20callPlugin('save'%2C%20%7B%20value%3A%20val%20%7D).catch(()%20%3D%3E%20%7B%7D)%20%2F%2F%20async%2C%20best-effort%0A%7D%0A%0Aasync%20function%20loadData()%20%7B%0A%20%20try%20%7B%0A%20%20%20%20const%20res%20%3D%20await%20callPlugin('load'%2C%20%7B%7D)%20%20%20%20%20%20%20%20%20%2F%2F%20try%20service%20first%0A%20%20%20%20if%20(res%3F.result%3F.value)%20return%20res.result.value%0A%20%20%7D%20catch%20%7B%7D%0A%20%20return%20localStorage.getItem('my_key')%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2F%2F%20fallback%0A%7D%0A%60%60%60%0A%0A%23%23%23%20Message%20Protocol%0A%0A**View%20-%3E%20Host**%20(call%20service)%3A%0A%60%60%60json%0A%7B%20%22type%22%3A%20%22plugin-call%22%2C%20%22id%22%3A%201%2C%20%22method%22%3A%20%22myMethod%22%2C%20%22params%22%3A%20%7B%7D%20%7D%0A%60%60%60%0A%0A**Host%20-%3E%20View**%20(init%20with%20filePath)%3A%0A%60%60%60json%0A%7B%20%22type%22%3A%20%22plugin-init%22%2C%20%22filePath%22%3A%20%22%2Fpath%2Fto%2Ffile%22%20%7D%0A%60%60%60%0A%0A**Host%20-%3E%20View**%20(service%20result)%3A%0A%60%60%60json%0A%7B%20%22type%22%3A%20%22plugin-result%22%2C%20%22id%22%3A%201%2C%20%22result%22%3A%20%7B%7D%20%7D%0A%60%60%60%0A%0A%23%23%20Installation%0A%0A%23%23%23%20From%20npm%0A%0APlugins%20published%20to%20npm%20with%20the%20%60%40aicupa%2Fplugin-%60%20prefix%20can%20be%20searched%20and%20installed%20from%20the%20Plugin%20Marketplace%20(click%20the%20plugin%20icon%20in%20the%20bottom%20toolbar).%0A%0A-%20Searching%20a%20full%20package%20name%20(e.g.%20%60%40aicupa%2Fplugin-overdue-tasks%60)%20uses%20a%20direct%20registry%20lookup%20for%20faster%20results%0A-%20Installation%20downloads%20the%20tarball%20directly%20from%20%60registry.npmjs.org%60%20(bypasses%20local%20npm%20config%20%2F%20private%20registries)%0A-%20Before%20installing%2C%20the%20app%20validates%20that%20the%20package%20has%20a%20%60view%60%20field%20in%20its%20%60package.json%60.%20Packages%20without%20it%20are%20rejected%20as%20invalid%20plugins%0A%0A%23%23%23%20From%20local%20directory%0A%0A1.%20Click%20the%20plugin%20icon%20in%20the%20bottom%20toolbar%0A2.%20Select%20%22Plugin%20Market%22%20from%20the%20dropdown%0A3.%20Click%20%22Install%20from%20local%22%20in%20the%20bottom%20bar%0A4.%20Select%20the%20plugin%20directory%0A%0A%23%23%20Storage%0A%0A-%20Plugins%20are%20installed%20to%20%60~%2F.todoListNative%2Fplugins%2F%60%0A-%20Plugin%20registry%20is%20stored%20at%20%60~%2F.todoListNative%2Fplugins.json%60%0A-%20The%20%60%40aicupa%2Fapi%60%20package%20is%20automatically%20provisioned%20at%20%60~%2F.todoListNative%2Fplugins%2Fnode_modules%2F%40aicupa%2Fapi%2F%60%20so%20all%20plugins%20can%20%60require%60%20it%20without%20bundling%0A%0A%23%23%20Examples%0A%0AOfficial%20plugin%20examples%20are%20available%20at%20%5Bgithub.com%2Faicupa%5D(https%3A%2F%2Fgithub.com%2Faicupa)%20for%20reference.%0A`
+    window.__updateTime = "1782182023"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="todolist,smalltask,tree,manager,vscode-extension,web-app"><meta name="description" content="### Plugin System
+
+The desktop app supports a plugin system that allows you to extend functionality via npm packa…"><script async src="/click-mask/click-mask.min.js"></script><title>Plugin - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">Plugin</h1>
+        <div class="ssr-content-main"><h3 id="pluginsystem">Plugin System</h3>
+<p>The desktop app supports a plugin system that allows you to extend functionality via npm packages or local directories. Plugins can provide both a frontend view (rendered in an iframe) and a backend service (Node.js code with access to internal APIs).</p>
+<blockquote>
+  <p>Plugin system is available in the <strong>Desktop App</strong> 、<strong>Vscode Extension</strong>.</p>
+</blockquote>
+<h2 id="aiskillforclaudecodecursoretc">AI Skill (for Claude Code / Cursor / etc.)</h2>
+<p>The todolist-app repo includes a built-in <strong>skill</strong> that packages all todolist knowledge (file format, plugin system, plugin API, view protocol) for AI coding assistants. Once installed, your AI assistant understands how to work with <code>.todo</code> files and build plugins.</p>
+<h3 id="install">Install</h3>
+<pre><code class="bash language-bash">npx skills add https://github.com/aicupa/skills
+</code></pre>
+<h3 id="whatsincluded">What's Included</h3>
+<p>The skill provides:</p>
+<ul>
+<li><strong><code>.todo</code> file format</strong> — complete structure reference (<code>todotree</code> wrapper, tree nodes, todo items, tags, timelines)</li>
+<li><strong>Plugin system</strong> — directory structure, <code>package.json</code> fields, <code>pluginContributes</code> (contextMenus, events, views.head)</li>
+<li><strong>Plugin API</strong> — all <code>api.*</code> methods (<code>getTree</code>, <code>store</code>, <code>reload</code>, <code>clipboard</code>, <code>readFile</code>, etc.)</li>
+<li><strong>View protocol</strong> — <code>postMessage</code> message types (<code>plugin-call</code>, <code>plugin-result</code>, <code>plugin-init</code>, <code>plugin-tree-update</code>, <code>plugin-request-tree</code>)</li>
+<li><strong>Best practices</strong> — timeout handling, localStorage fallback, theme adaptation, auto-height for head views</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>After installing the skill, just ask your AI assistant to work with todolist files or plugins — it will automatically use the skill's knowledge. For example:</p>
+<ul>
+<li>"Create a new <code>.todo</code> file with a project structure"</li>
+<li>"Build a plugin that shows overdue tasks"</li>
+<li>"Add a context menu item to my plugin"</li>
+<li>"Create a head view that displays task statistics"</li>
+</ul>
+<h2 id="pluginstructure">Plugin Structure</h2>
+<p>A plugin is a directory with a <code>package.json</code>:</p>
+<pre><code>my-plugin/
+  package.json
+  view/
+    index.html
+  service/
+    index.js
+</code></pre>
+<h3 id="packagejson">package.json</h3>
+<pre><code class="json language-json">{
+  "name": "@aicupa/plugin-my-plugin",
+  "version": "1.0.0",
+  "description": "My plugin description",
+  "view": "./view",
+  "main": "./service",
+  "viewSize": {
+    "width": 800,
+    "height": 600
+  },
+  "pluginContributes": {
+    "contextMenus": [
+      {
+        "title": "My Action",
+        "title_zh": "我的操作",
+        "command": "myServiceMethod"
+      }
+    ],
+    "events": {
+      "paste": {
+        "check": "hasPendingData",
+        "handler": "onPaste"
+      }
+    }
+  },
+  "dependencies": {
+    "@aicupa/api": "^1.0.1"
+  }
+}
+</code></pre>
+<p>| Field | Required | Description |
+|-------|----------|-------------|
+| <code>name</code> | Yes | Plugin name, recommended prefix <code>@aicupa/plugin-</code> |
+| <code>version</code> | Yes | Semver version |
+| <code>description</code> | No | Short description |
+| <code>view</code> | No | Path to frontend view directory (must contain <code>index.html</code>), or a URL (<code>https://...</code>) to load directly in an iframe |
+| <code>main</code> | No | Path to backend service directory (Node.js entry) |
+| <code>viewSize</code> | No | Custom modal size for plugin view <code>{ "width": 800, "height": 600 }</code>, default 600×400 |
+| <code>pluginContributes</code> | No | Declare UI extensions and event handlers (see below) |</p>
+<h3 id="plugincontributes">pluginContributes</h3>
+<p>The <code>pluginContributes</code> field lets a plugin extend the app UI and hook into app events declaratively.</p>
+<h4 id="contextmenus">contextMenus</h4>
+<p>Register items in the tree node right-click context menu. Each item maps to a service method.</p>
+<pre><code class="json language-json">"contextMenus": [
+  {
+    "title": "Cut",
+    "title_zh": "剪切",
+    "command": "cutNode"
+  }
+]
+</code></pre>
+<p>| Field | Required | Description |
+|-------|----------|-------------|
+| <code>title</code> | Yes | Menu item label (English) |
+| <code>title_zh</code> | No | Menu item label (Chinese), falls back to <code>title</code> |
+| <code>command</code> | Yes | Service method name to call. Receives <code>{ node, filePath }</code> |</p>
+<p>When clicked, the app calls the plugin's service method with:</p>
+<pre><code class="js language-js">{ node: { key, children, todo: { id, content, done, ... } }, filePath: "/path/to/file" }
+</code></pre>
+<h4 id="events">events</h4>
+<p>Hook into app-level events. Currently supported:</p>
+<p><strong><code>paste</code></strong> — Intercept the paste action on tree nodes. When a user clicks "Paste", the app checks all plugins with a <code>paste</code> event before performing the default clipboard paste.</p>
+<pre><code class="json language-json">"events": {
+  "paste": {
+    "check": "getCutBuffer",
+    "handler": "pasteNode"
+  }
+}
+</code></pre>
+<p>| Field | Description |
+|-------|-------------|
+| <code>check</code> | Service method called to check if this plugin has pending data. Must return <code>{ ok: true, result: { node: ... } }</code> if active, <code>{ ok: true, result: { node: null } }</code> if not |
+| <code>handler</code> | Service method called to perform the paste. Receives <code>{ targetNode, filePath }</code> |</p>
+<p>If <code>check</code> returns a non-null node, the app skips the default clipboard paste and calls <code>handler</code> instead. After a successful handler call, the tree is reloaded automatically.</p>
+<h4 id="views">views</h4>
+<p>Register plugin views into specific areas of the app UI. The view HTML is loaded from the plugin's <code>view</code> directory and rendered inline as an iframe.</p>
+<pre><code class="json language-json">"views": {
+  "head": true
+}
+</code></pre>
+<p>| Field | Description |
+|-------|-------------|
+| <code>head</code> | Render the plugin view at the top of the todolist, above the progress bar |</p>
+<p><strong>Head view</strong> receives tree data automatically whenever the todolist updates. The host sends:</p>
+<pre><code class="json language-json">{ "type": "plugin-tree-update", "tree": [...] }
+</code></pre>
+<p>The view can also request the current tree data at any time:</p>
+<pre><code class="json language-json">// View -&gt; Host
+{ "type": "plugin-request-tree" }
+
+// Host -&gt; View (response)
+{ "type": "plugin-tree-update", "tree": [...] }
+</code></pre>
+<p>The <code>tree</code> is the full todolist tree in plain format, with each node containing <code>{ key, children, todo: { id, content, done, date, ... } }</code>.</p>
+<p>Head views also support the standard <code>plugin-call</code> / <code>plugin-result</code> protocol for calling service methods, and receive <code>plugin-init</code> on load.</p>
+<h2 id="service">Service</h2>
+<p>Add <code>@aicupa/api</code> as a dependency to get full type hints. Use <code>createPlugin</code> to define the service:</p>
+<pre><code class="js language-js">const { createPlugin } = require('@aicupa/api')
+
+module.exports = createPlugin((api) =&gt; {
+  return {
+    async myMethod(params) {
+      // api has full type hints (PluginApi)
+      const tree = await api.getTree(params.filePath)
+      // ...
+      return { ok: true }
+    },
+  }
+})
+</code></pre>
+<p>The <code>createPlugin</code> wrapper is optional (it's an identity function at runtime), but it provides TypeScript/IDE type inference for the <code>api</code> parameter.</p>
+<p>You can also use the plain export format:</p>
+<pre><code class="js language-js">module.exports = function (api) {
+  return {
+    async myMethod(params) {
+      const tree = await api.getTree(params.filePath)
+      return { ok: true }
+    },
+  }
+}
+</code></pre>
+<h3 id="apireference">API Reference</h3>
+<p>| API | Description |
+|-----|-------------|
+| <code>api.reload(filePath)</code> | Refresh the todolist view (without full page reload) |
+| <code>api.getTree(filePath)</code> | Get the todolist JSON tree data for the given file |
+| <code>api.store(key, value, filePath)</code> | Save data to the todolist store |
+| <code>api.relaunch()</code> | Restart the entire Electron app |
+| <code>api.setTitle(title, filePath)</code> | Set the window title |
+| <code>api.getConfig()</code> | Get app configuration |
+| <code>api.readFile(path)</code> | Read a file (returns string) |
+| <code>api.writeFile(path, content)</code> | Write content to a file |
+| <code>api.readdir(dir)</code> | List files in a directory |
+| <code>api.mkdir(dir)</code> | Create a directory (recursive) |
+| <code>api.remove(path)</code> | Remove a file or directory |
+| <code>api.pathJoin(...args)</code> | Join path segments |
+| <code>api.mapTree(tree, fn)</code> | Recursively map over a tree structure |
+| <code>api.getArray(val)</code> | Safely convert a value to an array |
+| <code>api.base64(str)</code> | Encode a string to base64 |
+| <code>api.isWindows</code> | <code>true</code> if running on Windows |</p>
+<h2 id="view">View</h2>
+<p>The <code>view</code> field supports two modes:</p>
+<ul>
+<li><strong>Local directory</strong> (e.g. <code>"./view"</code>) — loads <code>view/index.html</code> inside a sandboxed <code>srcDoc</code> iframe. Supports <code>postMessage</code> communication with the service.</li>
+<li><strong>URL</strong> (e.g. <code>"https://example.com/app/"</code>) — loads the URL directly in an iframe with <code>src</code>. No sandboxing or <code>postMessage</code> bridge — useful for embedding external web apps.</li>
+</ul>
+<pre><code class="json language-json">// Local view
+"view": "./view"
+
+// URL view
+"view": "https://saber2pr.top/editor/"
+</code></pre>
+<h3 id="localview">Local View</h3>
+<p>The local view is an HTML file rendered inside a sandboxed iframe. It communicates with the service via <code>postMessage</code>:</p>
+<pre><code class="html language-html">&lt;script&gt;
+  let callId = 0
+  const pending = {}
+  let currentFilePath = ''
+
+  // Call a service method (with timeout to prevent hanging)
+  function callPlugin(method, params) {
+    return new Promise((resolve, reject) =&gt; {
+      const id = ++callId
+      const timer = setTimeout(() =&gt; {
+        delete pending[id]
+        reject(new Error('timeout'))
+      }, 2000)
+      pending[id] = {
+        resolve: (v) =&gt; { clearTimeout(timer); resolve(v) },
+        reject: (e) =&gt; { clearTimeout(timer); reject(e) },
+      }
+      window.parent.postMessage(
+        { type: 'plugin-call', id, method, params },
+        '*'
+      )
+    })
+  }
+
+  // Handle responses and init
+  window.addEventListener('message', (event) =&gt; {
+    const msg = event.data
+
+    // Receive filePath from host on init
+    if (msg?.type === 'plugin-init') {
+      currentFilePath = msg.filePath || ''
+      return
+    }
+
+    // Handle service call results
+    if (msg?.type === 'plugin-result' &amp;&amp; pending[msg.id]) {
+      const { resolve, reject } = pending[msg.id]
+      delete pending[msg.id]
+      if (msg.error) {
+        reject(new Error(msg.error))
+      } else {
+        resolve(msg.result)
+      }
+    }
+  })
+
+  // Example: call service method
+  async function doSomething() {
+    const result = await callPlugin('myMethod', {
+      filePath: currentFilePath,
+    })
+    console.log(result)
+  }
+&lt;/script&gt;
+</code></pre>
+<h3 id="pitfalls">Pitfalls</h3>
+<h4 id="callpluginmusthaveatimeout">callPlugin must have a timeout</h4>
+<p>The <code>callPlugin</code> function uses <code>postMessage</code> to communicate with the host. If the host or service is not ready when the message is sent (e.g., <code>plugin-init</code> hasn't fired yet, or the service hasn't initialized), the <code>plugin-result</code> response will never arrive — causing the Promise to hang forever. This silently blocks all downstream logic (data loading, saving, etc.).</p>
+<p><strong>Always add a timeout</strong> (e.g., 2 seconds) to <code>callPlugin</code> so it rejects on time and fallback logic can run.</p>
+<h4 id="uselocalstorageasafallbackforviewsidepersistence">Use localStorage as a fallback for view-side persistence</h4>
+<p>Because <code>callPlugin</code> can fail silently (timeout, service not ready), don't rely solely on the service for persisting view-side data like user input. Write to <code>localStorage</code> immediately as a synchronous backup, and attempt the service call in parallel:</p>
+<pre><code class="js language-js">function saveData(val) {
+  localStorage.setItem('my_key', val)               // instant, reliable
+  callPlugin('save', { value: val }).catch(() =&gt; {}) // async, best-effort
+}
+
+async function loadData() {
+  try {
+    const res = await callPlugin('load', {})         // try service first
+    if (res?.result?.value) return res.result.value
+  } catch {}
+  return localStorage.getItem('my_key')              // fallback
+}
+</code></pre>
+<h3 id="messageprotocol">Message Protocol</h3>
+<p><strong>View -> Host</strong> (call service):</p>
+<pre><code class="json language-json">{ "type": "plugin-call", "id": 1, "method": "myMethod", "params": {} }
+</code></pre>
+<p><strong>Host -> View</strong> (init with filePath):</p>
+<pre><code class="json language-json">{ "type": "plugin-init", "filePath": "/path/to/file" }
+</code></pre>
+<p><strong>Host -> View</strong> (service result):</p>
+<pre><code class="json language-json">{ "type": "plugin-result", "id": 1, "result": {} }
+</code></pre>
+<h2 id="installation">Installation</h2>
+<h3 id="fromnpm">From npm</h3>
+<p>Plugins published to npm with the <code>@aicupa/plugin-</code> prefix can be searched and installed from the Plugin Marketplace (click the plugin icon in the bottom toolbar).</p>
+<ul>
+<li>Searching a full package name (e.g. <code>@aicupa/plugin-overdue-tasks</code>) uses a direct registry lookup for faster results</li>
+<li>Installation downloads the tarball directly from <code>registry.npmjs.org</code> (bypasses local npm config / private registries)</li>
+<li>Before installing, the app validates that the package has a <code>view</code> field in its <code>package.json</code>. Packages without it are rejected as invalid plugins</li>
+</ul>
+<h3 id="fromlocaldirectory">From local directory</h3>
+<ol>
+<li>Click the plugin icon in the bottom toolbar</li>
+<li>Select "Plugin Market" from the dropdown</li>
+<li>Click "Install from local" in the bottom bar</li>
+<li>Select the plugin directory</li>
+</ol>
+<h2 id="storage">Storage</h2>
+<ul>
+<li>Plugins are installed to <code>~/.todoListNative/plugins/</code></li>
+<li>Plugin registry is stored at <code>~/.todoListNative/plugins.json</code></li>
+<li>The <code>@aicupa/api</code> package is automatically provisioned at <code>~/.todoListNative/plugins/node_modules/@aicupa/api/</code> so all plugins can <code>require</code> it without bundling</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p>Official plugin examples are available at <a href="https://github.com/aicupa">github.com/aicupa</a> for reference.</p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">About</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/1949634023/1186381381/" class="ssr-a ">Features</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/2414495387/" class="ssr-a ">Author words</a></li>
+<li class="ssr-li"><a href="/posts/1949634023/886977854/" class="ssr-a ">Privacy policy</a></li></ul></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Usage</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/287994228/3009207953/" class="ssr-a ">Search</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1707528157/" class="ssr-a ">Auto sort</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4127679399/" class="ssr-a ">Agent chat</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1490081406/" class="ssr-a ">Generate htmltable</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1498034918/" class="ssr-a ">Backup version history</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2025200286/" class="ssr-a ">Aiexecution</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1170812618/" class="ssr-a ">Webhook</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2693304080/" class="ssr-a ">Generate markdown</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2702224676/" class="ssr-a ">Mcpserver</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1573151734/" class="ssr-a ">Play mode</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4128846036/" class="ssr-a ">In github dev</a></li>
+<li class="ssr-li"><a href="/posts/287994228/1638689331/" class="ssr-a ">Cloud sync</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4081234018/" class="ssr-a ">Advance copy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/2832432038/" class="ssr-a ">Docker deploy</a></li>
+<li class="ssr-li"><a href="/posts/287994228/680425711/" class="ssr-a ">Background image</a></li>
+<li class="ssr-li"><a href="/posts/287994228/3541821642/" class="ssr-a ">Script automation</a></li>
+<li class="ssr-li"><a href="/posts/287994228/667772353/" class="ssr-a ">Desktop app</a></li>
+<li class="ssr-li"><a href="/posts/287994228/602927981/" class="ssr-a ">App troubleshooting guide</a></li>
+<li class="ssr-li"><a href="/posts/287994228/892905180/" class="ssr-a ">Daily planning</a></li>
+<li class="ssr-li"><a href="/posts/287994228/4005700258/" class="ssr-a ssr-a-active">Plugin</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

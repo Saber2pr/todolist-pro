@@ -1,0 +1,337 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Generating japanese study plan with ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20How%20to%20Break%20Down%20Your%20Japanese%20Study%20Plan%20into%2030-Minute%20Tasks%20with%20a%20Single%20Script%0A%0AHave%20you%20ever%20experienced%20this%20precise%20moment%20of%20frustration%3F%0A%0A*%20You%20enthusiastically%20set%20a%20massive%20milestone%3A%20*%22I%20will%20pass%20the%20JLPT%20N2%2FN1%20this%20year!%22*%0A*%20Then%2C%20you%20open%20a%20500-page%20textbook%2C%20a%20massive%20grammar%20guide%2C%20and%20an%20endless%20vocabulary%20list.%20Your%20mind%20goes%20completely%20blank.%0A*%20The%20result%3A%20You%20practice%20the%20Hiragana%20chart%20(*%22A-I-U-E-O%22*)%20for%20five%20days%2C%20lose%20momentum%2C%20and%20the%20plan%20dies.%0A%0AThe%20vast%20majority%20of%20Japanese%20language%20learners%20give%20up%20at%20the%20very%20beginning%E2%80%94not%20due%20to%20a%20lack%20of%20willpower%2C%20but%20because%20**the%20goal%20is%20too%20macro%20and%20the%20task%20list%20is%20too%20flat%20for%20the%20brain%20to%20find%20an%20immediate%20path%20to%20execution**.%20In%20software%20architecture%2C%20we%20decouple%20monolithic%20systems%20into%20microservices%20or%20granular%20task%20trees.%20Why%2C%20then%2C%20do%20we%20dump%20massive%2C%20unexecutable%20%22monoliths%22%20onto%20our%20personal%20growth%20plans%3F%0A%0ALet%E2%80%99s%20solve%20this%20like%20an%20engineer.%20You%20don't%20need%20a%20bloated%2C%20color-coded%20bullet%20journal%20or%20an%20overly%20complex%20Notion%20setup.%20All%20you%20need%20is%20a%20structured%20logic%20that%20directs%20an%20AI%20to%20instantly%20map%20your%20vague%20%22Pass%20N2%22%20ambition%20into%20an%20actionable%2C%20highly%20organized%20**Task%20Tree**.%0A%0A---%0A%0A%23%23%20%F0%9F%9B%A0%EF%B8%8F%20The%20Engineer's%20Fix%3A%20An%20AI-Driven%20Japanese%20Study%20Tree%20Generator%0A%0ABy%20passing%20your%20real-world%20constraints%20into%20a%20structured%20Prompt%20or%20an%20automated%20agent%20pipeline%2C%20you%20can%20seamlessly%20map%20fuzzy%20learning%20goals%20into%20a%20pristine%20hierarchy%20complete%20with%20**Priorities%20(P1%2FP2%2FP3)**%20and%20**Time%20Ranges**.%0A%0AHere%20is%20an%20illustrative%20shape%20of%20the%20automation%20and%20patching%20logic%3A%0A%0A%60%60%60typescript%0A%2F%2F%20Environment%3A%20Bun%20%2F%20TS%20%2F%20Node.js%0A%2F%2F%20Core%20Logic%3A%20Accepting%20user%20scenario%20inputs%20to%20generate%20a%20structured%20todo%20tree%0Ainterface%20TodoItem%20%7B%0A%20%20content%3A%20string%3B%0A%20%20done%3A%20boolean%3B%0A%20%20priority%3F%3A%20'P1'%20%7C%20'P2'%20%7C%20'P3'%3B%0A%20%20timeRange%3F%3A%20string%3B%0A%20%20children%3F%3A%20TodoItem%5B%5D%3B%0A%7D%0A%0Aasync%20function%20generateJapaneseStudyTree(goal%3A%20string%2C%20dailyMinutes%3A%20number)%3A%20Promise%3CTodoItem%3E%20%7B%0A%20%20%2F%2F%20Call%20an%20LLM%2FAI%20Agent%20tasked%20as%20a%20senior%20language%20instructor%20%26%20productivity%20architect%0A%20%20%2F%2F%20It%20micro-targets%20the%20%7Bgoal%7D%20based%20on%20your%20available%20%7BdailyMinutes%7D%0A%20%20const%20aiGeneratedTree%20%3D%20await%20aiAgent.call(%7B%0A%20%20%20%20prompt%3A%20%60Break%20down%20the%20Japanese%20learning%20goal%20%22%24%7Bgoal%7D%22%20into%20a%20hierarchical%20todo%20tree.%20Daily%20availability%3A%20%24%7BdailyMinutes%7D%20minutes.%60%2C%0A%20%20%20%20responseFormat%3A%20%22json%22%0A%20%20%7D)%3B%0A%20%20%0A%20%20return%20%7B%0A%20%20%20%20content%3A%20%60%F0%9F%8E%AF%20JLPT%20Target%3A%20%24%7Bgoal%7D%60%2C%0A%20%20%20%20done%3A%20false%2C%0A%20%20%20%20children%3A%20aiGeneratedTree.children%20%2F%2F%20Automatically%20maps%20P1%20grammar%2C%20P2%20listening%2C%20P3%20passive%20immersion%0A%20%20%7D%3B%0A%7D%0A%0A%60%60%60%0A%0AWhen%20you%20feed%20a%20scenario%20like%20*%22Zero%20to%20N3%20in%207%20months%2C%20with%20only%2045%20minutes%20of%20free%20time%20per%20day%22*%20into%20this%20flow%2C%20it%20doesn't%20return%20a%20discouraging%20wall%20of%20text.%20Instead%2C%20it%20patches%20a%20clean%2C%20manageable%20tree%20directly%20into%20your%20workspace%3A%0A%0A%60%60%60text%0A%E2%94%94%E2%94%80%20%F0%9F%8E%AF%20JLPT%20Target%3A%20Zero%20to%20N3%20Plan%0A%20%20%20%E2%94%9C%E2%94%80%20%F0%9F%94%B4%20%5BP1%5D%20Core%20Sprint%3A%20Mastering%20Katakana%20%26%20Hiragana%20(Weeks%201-2)%0A%20%20%20%E2%94%82%20%20%E2%94%9C%E2%94%80%20%E2%96%AB%EF%B8%8F%20Memorize%20cross-references%20for%20phonetic%20characters%20%E3%80%9030min%E3%80%91%0A%20%20%20%E2%94%82%20%20%E2%94%94%E2%94%80%20%E2%96%AB%EF%B8%8F%20Shadows%20basic%20vocabulary%20audio%20for%20pitch%20accent%20correction%20%E3%80%9015min%E3%80%91%0A%20%20%20%E2%94%9C%E2%94%80%20%F0%9F%9F%A1%20%5BP2%5D%20Structural%20Backbone%3A%20Elementary%20Grammar%20Blocks%20(Weeks%203-8)%0A%20%20%20%E2%94%82%20%20%E2%94%9C%E2%94%80%20%E2%96%AB%EF%B8%8F%20Master%20standard%20predicate%20states%20(~wa%20~desu)%20and%20verb%20conjugations%0A%20%20%20%E2%94%82%20%20%E2%94%94%E2%94%80%20%E2%96%AB%EF%B8%8F%20Review%2020%20high-frequency%20core%20vocabulary%20items%20via%20spaced%20repetition%0A%20%20%20%E2%94%94%E2%94%80%20%F0%9F%94%B5%20%5BP3%5D%20Passive%20Immersion%3A%20Audio%20Exposure%20(Ongoing)%0A%20%20%20%20%20%20%E2%94%94%E2%94%80%20%E2%96%AB%EF%B8%8F%20Stream%20NHK%20Easy%20News%20audio%20during%20daily%20commute%0A%0A%60%60%60%0A%0AThe%20brilliance%20of%20this%20structural%20layout%20is%20that%20**it%20completely%20eliminates%20the%20cognitive%20load%20the%20moment%20you%20sit%20down%20to%20study**.%20You%20never%20waste%20energy%20debating%20*what*%20to%20do%20next.%20Every%20micro-action%E2%80%94like%20reviewing%2020%20words%E2%80%94is%20safely%20nested%20inside%20a%20macro-milestone.%20You%20simply%20follow%20the%20branches%20of%20the%20tree%2C%20execute%2C%20and%20check%20them%20off%20in%20real%20time.%0A%0A---%0A%0A%23%23%20%E2%9A%A0%EF%B8%8F%20The%20Hidden%20Pitfalls%20of%20DIY%20Task%20Scripts%0A%0AWhile%20spinning%20up%20a%20local%20script%20or%20managing%20raw%20text%20files%20sounds%20great%20in%20theory%2C%20real-world%20deployment%20hits%20an%20inevitable%20friction%20point%3A%0A%0A1.%20**Sync%20Conflicts**%3A%20You%20tweak%20your%20%22long-vowel%20accent%22%20task%20on%20your%20office%20laptop%2C%20come%20home%2C%20and%20realize%20your%20local%20file%20state%20has%20diverged%2C%20creating%20a%20giant%20git%20or%20cloud%20sync%20conflict%20that%20wipes%20out%20today's%20vocabulary%20progress.%0A2.%20**Context%20Switching%20Costs**%3A%20Suppose%20you%20have%20a%205-minute%20gap%20while%20waiting%20for%20a%20production%20build%20to%20compile%2C%20and%20you%20want%20to%20review%20a%20few%20grammar%20points.%20Having%20to%20completely%20switch%20out%20of%20your%20development%20workspace%20to%20open%20a%20browser%20tab%20or%20heavy%20note-taking%20app%20breaks%20your%20flow%20state.%20**The%20second%20you%20switch%20contexts%2C%20your%20deep%20focus%20is%20gone.**%0A%0AWhen%20you%20spend%20more%20time%20debugging%20your%20custom%20sync%20configurations%20and%20productivity%20scripts%20than%20actually%20learning%20your%20target%20language%2C%20your%20efficiency%20tool%20becomes%20your%20biggest%20source%20of%20friction.%0A%0A---%0A%0A%23%23%20%F0%9F%92%A1%20The%20Ultimate%20Fix%3A%20Embed%20Your%20Goals%20Straight%20into%20Your%20Workflow%0A%0AIf%20you%20believe%20in%20this%20tree-based%20task%20philosophy%20but%20want%20to%20avoid%20spending%20hours%20maintaining%20custom%20sync%20scripts%20or%20dealing%20with%20conflicting%20files%2C%20it's%20time%20to%20shift%20to%20**aicupa%20%C2%B7%20Todo%20List**.%0A%0ABuilt%20specifically%20for%20developers%2C%20hackers%2C%20and%20deep-focus%20professionals%2C%20**aicupa**%20is%20an%20**AI-powered%20Todo%20ecosystem**%20designed%20to%20bridge%20the%20gap%20between%20thinking%20and%20executing.%20It%20takes%20the%20exact%20concept%20of%20%22one%20sentence%20to%20structured%20task%20tree%22%20and%20integrates%20it%20deeply%20into%20your%20everyday%20environment%3A%0A%0A*%20**Built%20Right%20Inside%20Your%20IDE**%3A%20It%20runs%20as%20a%20native%20**VS%20Code%20Extension**.%20You%20don't%20need%20to%20cycle%20through%20windows.%20While%20waiting%20for%20a%20terminal%20task%20or%20a%20code%20review%2C%20simply%20expand%20your%20Japanese%20study%20tree%20in%20your%20editor's%20sidebar%20%60TreeView%60%2C%20use%20a%20quick%205%20minutes%20to%20review%2C%20check%20it%20off%2C%20and%20instantly%20jump%20back%20to%20your%20code%20without%20breaking%20focus.%0A*%20**Real-Time%20Live%20Sync%20%26%20Multi-Platform%20Reach**%3A%20Whether%20you%20manage%20your%20roadmap%20via%20the%20web%20interface%20(%60app.aicupa.com%60)%2C%20stay%20immersed%20inside%20native%20Windows%20or%20macOS%20desktop%20builds%2C%20or%20self-host%20your%20backend%20infrastructure%20using%20Docker%2C%20your%20underlying%20%60*.todo%60%20tree%20structure%20stays%20unified%2C%20frictionless%2C%20and%20completely%20synchronized%20everywhere.%0A*%20**Visual%20Lanes%20%26%20Intentional%20Ordering**%3A%20When%20your%20daily%20language%20milestones%20collide%20with%20urgent%20production%20bugs%2C%20you%20can%20unlock%20the%20built-in%20**Timeline%20view**%2C%20click%20your%20tasks%20to%20chain%20them%20sequentially%20with%20arrows%2C%20and%20lock%20them%20in%20place%20to%20create%20a%20clear%2C%20linear%20path%20through%20a%20hectic%20day.%0A%0AStop%20fighting%20complex%2C%20manual%20configuration%20templates%20that%20you%20ultimately%20forget%20to%20open.%20Delegate%20the%20structural%20layout%20of%20your%20grand%20milestones%20to%20an%20AI%20agent%2C%20and%20focus%20entirely%20on%20climbing%20the%20tree%2C%20branch%20by%20branch.%0A%0A%F0%9F%91%89%20**%5BGo%20to%20aicupa.com%20and%20generate%20your%20first%20structured%20learning%20tree%20today.%5D(https%3A%2F%2Faicupa.com%2F)**`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="AI todo list, learn Japanese for developers, JLPT task tree, aicupa todo list, VS Code language learning, Bun JS script productivity, zero context switching todo, structured task planner"><meta name="description" content="Stop failing your JLPT goals with flat lists. Learn how to use aicupa's AI task tree and native VS Code extension to deconstruct your Japanese study plan into friction-free, 30-minute milestones without breaking your coding flow."><script async src="/click-mask/click-mask.min.js"></script><title>Generating japanese study plan with ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">GeneratingJapaneseStudyPlanWithAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="howtobreakdownyourjapanesestudyplaninto30minutetaskswithasinglescript">How to Break Down Your Japanese Study Plan into 30-Minute Tasks with a Single Script</h2>
+<p>Have you ever experienced this precise moment of frustration?</p>
+<ul>
+<li>You enthusiastically set a massive milestone: <em>"I will pass the JLPT N2/N1 this year!"</em></li>
+<li>Then, you open a 500-page textbook, a massive grammar guide, and an endless vocabulary list. Your mind goes completely blank.</li>
+<li>The result: You practice the Hiragana chart (<em>"A-I-U-E-O"</em>) for five days, lose momentum, and the plan dies.</li>
+</ul>
+<p>The vast majority of Japanese language learners give up at the very beginning—not due to a lack of willpower, but because <strong>the goal is too macro and the task list is too flat for the brain to find an immediate path to execution</strong>. In software architecture, we decouple monolithic systems into microservices or granular task trees. Why, then, do we dump massive, unexecutable "monoliths" onto our personal growth plans?</p>
+<p>Let’s solve this like an engineer. You don't need a bloated, color-coded bullet journal or an overly complex Notion setup. All you need is a structured logic that directs an AI to instantly map your vague "Pass N2" ambition into an actionable, highly organized <strong>Task Tree</strong>.</p>
+<hr />
+<h2 id="theengineersfixanaidrivenjapanesestudytreegenerator">🛠️ The Engineer's Fix: An AI-Driven Japanese Study Tree Generator</h2>
+<p>By passing your real-world constraints into a structured Prompt or an automated agent pipeline, you can seamlessly map fuzzy learning goals into a pristine hierarchy complete with <strong>Priorities (P1/P2/P3)</strong> and <strong>Time Ranges</strong>.</p>
+<p>Here is an illustrative shape of the automation and patching logic:</p>
+<pre><code class="typescript language-typescript">// Environment: Bun / TS / Node.js
+// Core Logic: Accepting user scenario inputs to generate a structured todo tree
+interface TodoItem {
+  content: string;
+  done: boolean;
+  priority?: 'P1' | 'P2' | 'P3';
+  timeRange?: string;
+  children?: TodoItem[];
+}
+
+async function generateJapaneseStudyTree(goal: string, dailyMinutes: number): Promise&lt;TodoItem&gt; {
+  // Call an LLM/AI Agent tasked as a senior language instructor &amp; productivity architect
+  // It micro-targets the {goal} based on your available {dailyMinutes}
+  const aiGeneratedTree = await aiAgent.call({
+    prompt: `Break down the Japanese learning goal "${goal}" into a hierarchical todo tree. Daily availability: ${dailyMinutes} minutes.`,
+    responseFormat: "json"
+  });
+
+  return {
+    content: `🎯 JLPT Target: ${goal}`,
+    done: false,
+    children: aiGeneratedTree.children // Automatically maps P1 grammar, P2 listening, P3 passive immersion
+  };
+}
+</code></pre>
+<p>When you feed a scenario like <em>"Zero to N3 in 7 months, with only 45 minutes of free time per day"</em> into this flow, it doesn't return a discouraging wall of text. Instead, it patches a clean, manageable tree directly into your workspace:</p>
+<pre><code class="text language-text">└─ 🎯 JLPT Target: Zero to N3 Plan
+   ├─ 🔴 [P1] Core Sprint: Mastering Katakana &amp; Hiragana (Weeks 1-2)
+   │  ├─ ▫️ Memorize cross-references for phonetic characters 【30min】
+   │  └─ ▫️ Shadows basic vocabulary audio for pitch accent correction 【15min】
+   ├─ 🟡 [P2] Structural Backbone: Elementary Grammar Blocks (Weeks 3-8)
+   │  ├─ ▫️ Master standard predicate states (~wa ~desu) and verb conjugations
+   │  └─ ▫️ Review 20 high-frequency core vocabulary items via spaced repetition
+   └─ 🔵 [P3] Passive Immersion: Audio Exposure (Ongoing)
+      └─ ▫️ Stream NHK Easy News audio during daily commute
+</code></pre>
+<p>The brilliance of this structural layout is that <strong>it completely eliminates the cognitive load the moment you sit down to study</strong>. You never waste energy debating <em>what</em> to do next. Every micro-action—like reviewing 20 words—is safely nested inside a macro-milestone. You simply follow the branches of the tree, execute, and check them off in real time.</p>
+<hr />
+<h2 id="thehiddenpitfallsofdiytaskscripts">⚠️ The Hidden Pitfalls of DIY Task Scripts</h2>
+<p>While spinning up a local script or managing raw text files sounds great in theory, real-world deployment hits an inevitable friction point:</p>
+<ol>
+<li><strong>Sync Conflicts</strong>: You tweak your "long-vowel accent" task on your office laptop, come home, and realize your local file state has diverged, creating a giant git or cloud sync conflict that wipes out today's vocabulary progress.</li>
+<li><strong>Context Switching Costs</strong>: Suppose you have a 5-minute gap while waiting for a production build to compile, and you want to review a few grammar points. Having to completely switch out of your development workspace to open a browser tab or heavy note-taking app breaks your flow state. <strong>The second you switch contexts, your deep focus is gone.</strong></li>
+</ol>
+<p>When you spend more time debugging your custom sync configurations and productivity scripts than actually learning your target language, your efficiency tool becomes your biggest source of friction.</p>
+<hr />
+<h2 id="theultimatefixembedyourgoalsstraightintoyourworkflow">💡 The Ultimate Fix: Embed Your Goals Straight into Your Workflow</h2>
+<p>If you believe in this tree-based task philosophy but want to avoid spending hours maintaining custom sync scripts or dealing with conflicting files, it's time to shift to <strong>aicupa · Todo List</strong>.</p>
+<p>Built specifically for developers, hackers, and deep-focus professionals, <strong>aicupa</strong> is an <strong>AI-powered Todo ecosystem</strong> designed to bridge the gap between thinking and executing. It takes the exact concept of "one sentence to structured task tree" and integrates it deeply into your everyday environment:</p>
+<ul>
+<li><strong>Built Right Inside Your IDE</strong>: It runs as a native <strong>VS Code Extension</strong>. You don't need to cycle through windows. While waiting for a terminal task or a code review, simply expand your Japanese study tree in your editor's sidebar <code>TreeView</code>, use a quick 5 minutes to review, check it off, and instantly jump back to your code without breaking focus.</li>
+<li><strong>Real-Time Live Sync & Multi-Platform Reach</strong>: Whether you manage your roadmap via the web interface (<code>app.aicupa.com</code>), stay immersed inside native Windows or macOS desktop builds, or self-host your backend infrastructure using Docker, your underlying <code>*.todo</code> tree structure stays unified, frictionless, and completely synchronized everywhere.</li>
+<li><strong>Visual Lanes & Intentional Ordering</strong>: When your daily language milestones collide with urgent production bugs, you can unlock the built-in <strong>Timeline view</strong>, click your tasks to chain them sequentially with arrows, and lock them in place to create a clear, linear path through a hectic day.</li>
+</ul>
+<p>Stop fighting complex, manual configuration templates that you ultimately forget to open. Delegate the structural layout of your grand milestones to an AI agent, and focus entirely on climbing the tree, branch by branch.</p>
+<p>👉 <strong><a href="https://aicupa.com/">Go to aicupa.com and generate your first structured learning tree today.</a></strong></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ssr-a-active">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

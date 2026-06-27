@@ -1,0 +1,296 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Optimizing developer wellness plan with ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20Tuning%20Your%20Biological%20Server%3A%20High-Cohesion%2C%20Low-Coupling%20Personal%20Wellness%20for%20Developers%0A%0AAs%20engineers%2C%20hackers%2C%20and%20independent%20developers%2C%20we%20willingly%20sacrifice%20entire%20weekends%20to%20optimize%20memory%20allocations%2C%20clear%20up%20database%20locks%2C%20or%20shave%20a%20few%20kilobytes%20off%20a%20production%20compilation%20bundle.%0A%0A**Yet%2C%20ironically%2C%20we%20treat%20our%20own%20bodies%E2%80%94the%20most%20complex%20and%20critical%20bio-server%20we%20own%E2%80%94like%20an%20unmonitored%20legacy%20system%20running%20on%20over-allocated%2C%20thermal-throttling%20hardware.**%0A%0AWe%20stare%20at%20high-contrast%20displays%20for%20twelve%20hours%20straight%2C%20sit%20completely%20motionless%2C%20and%20ignore%20basic%20hydration.%20By%20mid-afternoon%2C%20the%20inevitable%20%22Brain%20Fog%22%20sets%20in%3A%20memory%20access%20times%20slow%20down%2C%20debugging%20speeds%20plummet%2C%20and%20creative%20processing%20hits%20a%20complete%20wall.%0A%0AMost%20developers%20want%20to%20fix%20this%2C%20but%20the%20wellness%20apps%20on%20the%20market%20are%20**bloated%2C%20intrusive%2C%20and%20structurally%20incompatible%20with%20a%20developer's%20workflow.**%20They%20force%20you%20to%20manually%20track%20macro-calories%2C%20write%20long%20mindfulness%20journals%2C%20and%20navigate%20heavy%20UI%20animations.%20This%20high%20**Cognitive%20Load**%20interrupts%20your%20work%20patterns%2C%20causing%20you%20to%20delete%20the%20app%20within%2072%20hours.%0A%0AWe%20need%20a%20solution%20that%20aligns%20with%20clean%20software%20design%20principles%3A%20**High%20Cohesion%20(targeting%20core%20neurochemical%20baselines)%20and%20Low%20Coupling%20(never%20interrupting%20your%20development%20flow).**%0A%0A%23%23%23%20%F0%9F%9B%A0%EF%B8%8F%20Refactoring%20the%20Bio-Server%3A%20A%20Pragmatic%20Runtime%20Configuration%0A%0AStop%20attempting%20massive%2C%20disruptive%20lifestyle%20transformations.%20Instead%2C%20treat%20symptoms%20like%20sluggishness%20or%20brain%20fog%20as%20system%20error%20logs%2C%20and%20use%20an%20AI%20engine%20to%20compile%20them%20into%20low-friction%2C%20script-like%20micro-actions%20that%20run%20silently%20in%20the%20background%3A%0A%0A%60%60%60typescript%0A%2F%2F%20Treat%20personal%20health%20tracking%20like%20a%20collection%20of%20low-overhead%20cron%20tasks%0Aconst%20developerWellnessConfig%20%3D%20%7B%0A%20%20cron%3A%20%7B%0A%20%20%20%20%220%209%20*%20*%20*%22%3A%20%22mitochondrial_boost%22%2C%20%20%2F%2F%20Morning%3A%20Co-enzyme%20B-complex%20(Activates%20energy%20metabolism%2C%20targets%20brain%20fog)%0A%20%20%20%20%220%2022%20*%20*%20*%22%3A%20%22neurological_relax%22%20%20%2F%2F%20Night%3A%20Highly%20bioavailable%20Chelated%20Magnesium%20(Calms%20sympathetic%20nervous%20system)%0A%20%20%7D%2C%0A%20%20workflow%3A%20%7B%0A%20%20%20%20lunch_macro%3A%20%22High%20lean%20protein%20%2B%20zero%20refined%20carbs%20%2B%20dark%20greens%20(Prevents%20postprandial%20insulin%20spikes%20and%20afternoon%20fatigue)%22%2C%0A%20%20%20%20hardware_flush%3A%20%22Every%2090%20minutes%20of%20active%20terminal%20input%2C%20trigger%20a%202-minute%20standing%20stretch%20to%20clear%20visual%20cache%22%0A%20%20%7D%0A%7D%3B%0A%0A%60%60%60%0A%0AThe%20genius%20of%20this%20configuration%20lies%20in%20its%20**near-zero%20execution%20cost**.%20Swallowing%20a%20supplement%20takes%205%20seconds%3B%20standing%20up%20to%20stretch%20takes%202%20minutes.%20It%20requires%20zero%20nutritional%20obsessing.%20You%20simply%20follow%20the%20tasks%20in%20sequence%20and%20check%20them%20off%20like%20a%20simple%20deployment%20script.%0A%0A%23%23%23%20%F0%9F%92%A1%20Embedding%20Your%20Personal%20Runtime%20Directly%20in%20Your%20Workspace%0A%0AHowever%2C%20if%20checking%20off%20these%20health%20tasks%20requires%20you%20to%20fish%20your%20phone%20out%20of%20your%20pocket%20and%20open%20a%20colorful%2C%20gamified%20lifestyle%20tracking%20app%20every%20couple%20of%20hours%2C%20your%20deep%20development%20flow%20state%20is%20instantly%20broken.%0A%0ATo%20achieve%20absolute%20%22low%20coupling%2C%22%20**aicupa%20%C2%B7%20Todo%20List**%20embeds%20your%20wellness%20plan%20directly%20inside%20your%20**VS%20Code%20Extension**%20sidebar.%0A%0AOperating%20as%20an%20uncompromised%20**AI%20Todo%20ecosystem**%2C%20it%20lets%20you%20track%20your%20daily%20personal%20runtime%20without%20ever%20looking%20away%20from%20your%20terminal.%20Your%20AI-compiled%20energy%20recovery%20tree%20sits%20quietly%20within%20your%20editor's%20native%20%60TreeView%60.%20While%20a%20test%20suite%20executes%20or%20a%20container%20spins%20up%2C%20you%20check%20your%20P1%20node%2C%20take%20a%20drink%20of%20water%2C%20tap%20a%20checkbox%20inside%20your%20IDE%2C%20and%20keep%20typing%20code%20without%20breaking%20your%20stride.%0A%0AIt%20contains%20absolutely%20zero%20social%20feeds%20or%20marketing%20distractions%E2%80%94just%20a%20clean%2C%20high-contrast%2C%20dark-mode%20layout%20that%20blends%20seamlessly%20into%20your%20existing%20development%20theme.%20Combined%20with%20frictionless%20live%20synchronization%20across%20%60app.aicupa.com%60%2C%20native%20desktop%20builds%2C%20and%20private%20self-hosted%20Docker%20nodes%2C%20your%20performance%20data%20stays%20locked%2C%20secure%2C%20and%20unified.%0A%0AStop%20letting%20your%20primary%20bio-engine%20run%20into%20critical%20thermal%20failure.%20Delegate%20the%20structural%20optimization%20to%20an%20AI%2C%20and%20keep%20your%20focus%20locked%20on%20a%20clean%20execution%20tree.%0A%0A%F0%9F%91%89%20**%5BGo%20to%20aicupa.com%20and%20start%20tuning%20your%20personal%20biology%20like%20production%20code%20today.%5D(https%3A%2F%2Faicupa.com%2F)**`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="developer burnout prevention, brain fog biohacking, programmer nutrition supplement, high cohesion low coupling wellness, vscode health extension, chelated magnesium vitamin b dev, aicupa"><meta name="description" content="Tune your body like production code. Eliminate developer brain fog and fatigue with a high-cohesion, low-coupling wellness task tree embedded directly in your VS Code workspace via aicupa."><script async src="/click-mask/click-mask.min.js"></script><title>Optimizing developer wellness plan with ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">OptimizingDeveloperWellnessPlanWithAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="tuningyourbiologicalserverhighcohesionlowcouplingpersonalwellnessfordevelopers">Tuning Your Biological Server: High-Cohesion, Low-Coupling Personal Wellness for Developers</h2>
+<p>As engineers, hackers, and independent developers, we willingly sacrifice entire weekends to optimize memory allocations, clear up database locks, or shave a few kilobytes off a production compilation bundle.</p>
+<p><strong>Yet, ironically, we treat our own bodies—the most complex and critical bio-server we own—like an unmonitored legacy system running on over-allocated, thermal-throttling hardware.</strong></p>
+<p>We stare at high-contrast displays for twelve hours straight, sit completely motionless, and ignore basic hydration. By mid-afternoon, the inevitable "Brain Fog" sets in: memory access times slow down, debugging speeds plummet, and creative processing hits a complete wall.</p>
+<p>Most developers want to fix this, but the wellness apps on the market are <strong>bloated, intrusive, and structurally incompatible with a developer's workflow.</strong> They force you to manually track macro-calories, write long mindfulness journals, and navigate heavy UI animations. This high <strong>Cognitive Load</strong> interrupts your work patterns, causing you to delete the app within 72 hours.</p>
+<p>We need a solution that aligns with clean software design principles: <strong>High Cohesion (targeting core neurochemical baselines) and Low Coupling (never interrupting your development flow).</strong></p>
+<h3 id="refactoringthebioserverapragmaticruntimeconfiguration">🛠️ Refactoring the Bio-Server: A Pragmatic Runtime Configuration</h3>
+<p>Stop attempting massive, disruptive lifestyle transformations. Instead, treat symptoms like sluggishness or brain fog as system error logs, and use an AI engine to compile them into low-friction, script-like micro-actions that run silently in the background:</p>
+<pre><code class="typescript language-typescript">// Treat personal health tracking like a collection of low-overhead cron tasks
+const developerWellnessConfig = {
+  cron: {
+    "0 9 * * *": "mitochondrial_boost",  // Morning: Co-enzyme B-complex (Activates energy metabolism, targets brain fog)
+    "0 22 * * *": "neurological_relax"  // Night: Highly bioavailable Chelated Magnesium (Calms sympathetic nervous system)
+  },
+  workflow: {
+    lunch_macro: "High lean protein + zero refined carbs + dark greens (Prevents postprandial insulin spikes and afternoon fatigue)",
+    hardware_flush: "Every 90 minutes of active terminal input, trigger a 2-minute standing stretch to clear visual cache"
+  }
+};
+</code></pre>
+<p>The genius of this configuration lies in its <strong>near-zero execution cost</strong>. Swallowing a supplement takes 5 seconds; standing up to stretch takes 2 minutes. It requires zero nutritional obsessing. You simply follow the tasks in sequence and check them off like a simple deployment script.</p>
+<h3 id="embeddingyourpersonalruntimedirectlyinyourworkspace">💡 Embedding Your Personal Runtime Directly in Your Workspace</h3>
+<p>However, if checking off these health tasks requires you to fish your phone out of your pocket and open a colorful, gamified lifestyle tracking app every couple of hours, your deep development flow state is instantly broken.</p>
+<p>To achieve absolute "low coupling," <strong>aicupa · Todo List</strong> embeds your wellness plan directly inside your <strong>VS Code Extension</strong> sidebar.</p>
+<p>Operating as an uncompromised <strong>AI Todo ecosystem</strong>, it lets you track your daily personal runtime without ever looking away from your terminal. Your AI-compiled energy recovery tree sits quietly within your editor's native <code>TreeView</code>. While a test suite executes or a container spins up, you check your P1 node, take a drink of water, tap a checkbox inside your IDE, and keep typing code without breaking your stride.</p>
+<p>It contains absolutely zero social feeds or marketing distractions—just a clean, high-contrast, dark-mode layout that blends seamlessly into your existing development theme. Combined with frictionless live synchronization across <code>app.aicupa.com</code>, native desktop builds, and private self-hosted Docker nodes, your performance data stays locked, secure, and unified.</p>
+<p>Stop letting your primary bio-engine run into critical thermal failure. Delegate the structural optimization to an AI, and keep your focus locked on a clean execution tree.</p>
+<p>👉 <strong><a href="https://aicupa.com/">Go to aicupa.com and start tuning your personal biology like production code today.</a></strong></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ssr-a-active">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

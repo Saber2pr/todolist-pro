@@ -1,0 +1,289 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Deconstructing legacy codebase refactor via ai todo"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+Usage
+  Search:287994228/3009207953
+  AutoSort:287994228/1707528157
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  BackupVersionHistory:287994228/1498034918
+  AIExecution:287994228/2025200286
+  Webhook:287994228/1170812618
+  GenerateMarkdown:287994228/2693304080
+  MCPServer:287994228/2702224676
+  PlayMode:287994228/1573151734
+  InGithubDev:287994228/4128846036
+  CloudSync:287994228/1638689331
+  AdvanceCopy:287994228/4081234018
+  DockerDeploy:287994228/2832432038
+  BackgroundImage:287994228/680425711
+  ScriptAutomation:287994228/3541821642
+  DesktopApp:287994228/667772353
+  AppTroubleshootingGuide:287994228/602927981
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+`
+    window.__blog = `%0A%23%23%20Breaking%20Down%20a%20Monolithic%20Legacy%20Component%20with%20an%20AST%20Mental%20Model%0A%0ATackling%20deep%20legacy%20code%20bases%20generally%20leads%20to%20one%20of%20two%20outcomes%3A%20either%20you%20lose%20yourself%20halfway%20through%20a%20maze%20of%20implicit%20side%20effects%20and%20abandon%20the%20branch%2C%20or%20you%20touch%20a%20single%20utility%20function%20and%20trigger%20a%20massive%2C%20cascading%20TypeScript%20type%20avalanche%20that%20breaks%20local%20compilation%20entirely.%0A%0ARefactoring%20isn't%20a%20brute-force%20endeavor%3B%20it%20is%20an%20exercise%20in%20**incremental%20surgery**.%20If%20you%20approach%20a%20thousand-line%20component%20written%20during%20the%20early%20Webpack%20era%E2%80%94littered%20with%20%60any%60%20types%20and%20obsolete%20data%20patterns%E2%80%94and%20try%20to%20rewrite%20it%20all%20in%20a%20single%20evening%2C%20reality%20will%20break%20you.%0A%0AModern%20software%20engineering%20mandates%20defensive%20coding%20patterns%20to%20mitigate%20risk.%20System%20migration%20requires%20the%20exact%20same%20approach%3A%20a%20**Defensive%20Refactoring%20Tree**.%20Before%20altering%20a%20single%20line%20of%20core%20business%20logic%2C%20you%20must%20isolate%20the%20dependency%20chain%2C%20define%20public%20interface%20contracts%2C%20and%20decouple%20atomic%20modification%20steps%20exactly%20like%20an%20Abstract%20Syntax%20Tree%20(AST).%0A%0A%23%23%23%20%F0%9F%9B%A0%EF%B8%8F%20The%20Atomic%20Blueprint%20for%20Progressive%20Refactoring%0A%0ANever%20rely%20on%20vague%20mental%20blueprints%20when%20altering%20production%20paths.%20By%20feeding%20the%20input%2Foutput%20boundaries%20of%20your%20legacy%20component%20along%20with%20your%20target%20tech%20stack%20(e.g.%2C%20migrating%20to%20React%2019%20with%20strict%20TypeScript%20flags)%20into%20an%20AI%20pipeline%2C%20you%20can%20generate%20a%20resilient%20sequence%20of%20entirely%20decoupled%20checkpoints.%0A%0AThink%20of%20it%20as%20arranging%20a%20data%20processing%20pipeline%20where%20nodes%20cannot%20execute%20out%20of%20order%3A%0A%0A%60%60%60text%0A%5BPhase%201%3A%20Establish%20Sandbox%5D%20%E2%94%80%E2%94%80%3E%20Write%20comprehensive%20unit%20tests%20for%20the%20existing%20component%20boundaries%20(Freeze%20current%20inputs%20%26%20outputs).%0A%5BPhase%202%3A%20Decouple%20Side%20Effects%5D%20%E2%94%80%E2%94%80%3E%20Extract%20tangled%20business%20logic%20into%20stateless%2C%20pure%20functions%20and%20apply%20strict%20typing.%0A%5BPhase%203%3A%20Progressive%20Migration%5D%20%E2%94%80%E2%94%80%3E%20Introduce%20modern%20hooks%20(e.g.%2C%20swapping%20bloated%20useEffect%20data%20fetches%20with%20React%2019's%20native%20%60use%60%20API).%0A%5BPhase%204%3A%20Cleanup%20%26%20Commit%5D%20%20%20%20%20%20%E2%94%80%E2%94%80%3E%20Permanently%20purge%20deprecated%20%60.bak%60%20file%20footprints%20and%20close%20out%20with%20a%20semantic%20commit%20flag.%0A%0A%60%60%60%0A%0AUnder%20this%20layout%2C%20refactoring%20stops%20being%20a%20high-anxiety%20black%20box%20and%20shifts%20into%20a%20completely%20**predictable%2C%20automated%20pipeline**.%20If%20any%20step%20breaks%2C%20your%20previously%20established%20type%20boundaries%20and%20unit%20tests%20act%20as%20an%20instant%20safety%20net.%0A%0A%23%23%23%20%F0%9F%92%A1%20Keeping%20the%20Refactoring%20Flow%20Inside%20Your%20IDE%0A%0ADeep%20refactoring%20demands%20an%20extreme%20cognitive%20load.%20When%20your%20hands%20are%20flying%20across%20the%20keyboard%20and%20your%20mind%20is%20tracking%20complex%20variable%20transformations%20across%20multiple%20files%2C%20forcing%20your%20eyes%20to%20leave%20the%20editor%20to%20check%20an%20external%20documentation%20tab%20or%20standalone%20task%20tracker%20ruins%20your%20concentration.%0A%0A**The%20very%20second%20you%20switch%20app%20contexts%2C%20your%20mental%20cache%20of%20the%20codebase%20is%20wiped%20clean.**%0A%0ATo%20eliminate%20this%20friction%2C%20**aicupa%20%C2%B7%20Todo%20List**%20brings%20your%20refactoring%20blueprint%20directly%20inside%20a%20native%20**VS%20Code%20Extension**%20pane.%0A%0AAs%20an%20engineer%2C%20you%20never%20have%20to%20reach%20for%20your%20mouse%20or%20exit%20your%20development%20runtime.%20To%20the%20right%20of%20your%20working%20files%2C%20a%20raw%2C%20high-contrast%20%60TreeView%60%20displays%20your%20atomic%20refactoring%20checkpoints.%20You%20rewrite%20messy%20legacy%20code%20on%20the%20left%2C%20and%20instantly%20collapse%20or%20strike%20through%20completed%20sub-tasks%20on%20the%20right.%0A%0AFeaturing%20a%20cold%2C%20minimalist%20dark%20aesthetic%2C%20it%20strips%20away%20all%20distracting%20gamification%20and%20UI%20noise.%20Backed%20by%20an%20ultra-fast%20live%20synchronization%20engine%2C%20every%20update%20to%20your%20local%20%60*.todo%60%20state%20reflects%20in%20real%20time%20across%20all%20targets%2C%20whether%20running%20on%20a%20local%20desktop%20client%20or%20a%20private%20Docker%20instance.%0A%0AStop%20blindly%20hacking%20away%20at%20ancient%20code%20bases.%20Let%20an%20AI%20deconstruct%20the%20dependency%20tree%2C%20and%20keep%20your%20execution%20focused%20exactly%20where%20it%20belongs%E2%80%94inside%20your%20editor.%0A%0A%F0%9F%91%89%20**%5BGo%20to%20aicupa.com%20and%20start%20tuning%20your%20personal%20biology%20like%20production%20code%20today.%5D(https%3A%2F%2Faicupa.com%2F)**%0A`
+    window.__updateTime = "1780983924"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="legacy codebase refactoring, progressive refactoring tool, TypeScript type safety migration, abstract syntax tree mental model, AI todo refactor blueprint, VS Code code extension, dev focus flow"><meta name="description" content="Don't let legacy code trigger a TypeScript type avalanche. Use an AST-inspired defensive refactoring tree with aicupa to break down monolithic codebases into atomic, safe checkpoints right inside your IDE."><script async src="/click-mask/click-mask.min.js"></script><title>Deconstructing legacy codebase refactor via ai todo - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d7794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da33711794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c62794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb5610794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd2794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da6794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd8794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27545368794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f440794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d0794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed40794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a874794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b78794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a6939037794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d09794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa00794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~27723891794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f0141674794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e83794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a05794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d997794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e588139794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e36794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~79123188794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb5794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~bde52cb3794acaaae2e2ce773c44.min.js"></script><script defer="defer" src="/release/index~31743c5a794acaaae2e2ce773c44.min.js"></script><link href="/release/index~e96e9bea794acaaae2e2ce773c44.css" rel="stylesheet"><link href="/release/index~31743c5a794acaaae2e2ce773c44.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">DeconstructingLegacyCodebaseRefactorViaAiTodo</h1>
+        <div class="ssr-content-main"><h2 id="breakingdownamonolithiclegacycomponentwithanastmentalmodel">Breaking Down a Monolithic Legacy Component with an AST Mental Model</h2>
+<p>Tackling deep legacy code bases generally leads to one of two outcomes: either you lose yourself halfway through a maze of implicit side effects and abandon the branch, or you touch a single utility function and trigger a massive, cascading TypeScript type avalanche that breaks local compilation entirely.</p>
+<p>Refactoring isn't a brute-force endeavor; it is an exercise in <strong>incremental surgery</strong>. If you approach a thousand-line component written during the early Webpack era—littered with <code>any</code> types and obsolete data patterns—and try to rewrite it all in a single evening, reality will break you.</p>
+<p>Modern software engineering mandates defensive coding patterns to mitigate risk. System migration requires the exact same approach: a <strong>Defensive Refactoring Tree</strong>. Before altering a single line of core business logic, you must isolate the dependency chain, define public interface contracts, and decouple atomic modification steps exactly like an Abstract Syntax Tree (AST).</p>
+<h3 id="theatomicblueprintforprogressiverefactoring">🛠️ The Atomic Blueprint for Progressive Refactoring</h3>
+<p>Never rely on vague mental blueprints when altering production paths. By feeding the input/output boundaries of your legacy component along with your target tech stack (e.g., migrating to React 19 with strict TypeScript flags) into an AI pipeline, you can generate a resilient sequence of entirely decoupled checkpoints.</p>
+<p>Think of it as arranging a data processing pipeline where nodes cannot execute out of order:</p>
+<pre><code class="text language-text">[Phase 1: Establish Sandbox] ──&gt; Write comprehensive unit tests for the existing component boundaries (Freeze current inputs &amp; outputs).
+[Phase 2: Decouple Side Effects] ──&gt; Extract tangled business logic into stateless, pure functions and apply strict typing.
+[Phase 3: Progressive Migration] ──&gt; Introduce modern hooks (e.g., swapping bloated useEffect data fetches with React 19's native `use` API).
+[Phase 4: Cleanup &amp; Commit]      ──&gt; Permanently purge deprecated `.bak` file footprints and close out with a semantic commit flag.
+</code></pre>
+<p>Under this layout, refactoring stops being a high-anxiety black box and shifts into a completely <strong>predictable, automated pipeline</strong>. If any step breaks, your previously established type boundaries and unit tests act as an instant safety net.</p>
+<h3 id="keepingtherefactoringflowinsideyouride">💡 Keeping the Refactoring Flow Inside Your IDE</h3>
+<p>Deep refactoring demands an extreme cognitive load. When your hands are flying across the keyboard and your mind is tracking complex variable transformations across multiple files, forcing your eyes to leave the editor to check an external documentation tab or standalone task tracker ruins your concentration.</p>
+<p><strong>The very second you switch app contexts, your mental cache of the codebase is wiped clean.</strong></p>
+<p>To eliminate this friction, <strong>aicupa · Todo List</strong> brings your refactoring blueprint directly inside a native <strong>VS Code Extension</strong> pane.</p>
+<p>As an engineer, you never have to reach for your mouse or exit your development runtime. To the right of your working files, a raw, high-contrast <code>TreeView</code> displays your atomic refactoring checkpoints. You rewrite messy legacy code on the left, and instantly collapse or strike through completed sub-tasks on the right.</p>
+<p>Featuring a cold, minimalist dark aesthetic, it strips away all distracting gamification and UI noise. Backed by an ultra-fast live synchronization engine, every update to your local <code>*.todo</code> state reflects in real time across all targets, whether running on a local desktop client or a private Docker instance.</p>
+<p>Stop blindly hacking away at ancient code bases. Let an AI deconstruct the dependency tree, and keep your execution focused exactly where it belongs—inside your editor.</p>
+<p>👉 <strong><a href="https://aicupa.com/">Go to aicupa.com and start tuning your personal biology like production code today.</a></strong></p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ssr-a-active">Deconstructing legacy codebase refactor via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>

@@ -1,0 +1,41 @@
+# Todolist
+
+> Markdown index for LLM consumption.
+
+## SEO
+- title: Todolist TreeView
+- keywords: todolist,smalltask,tree,manager,vscode-extension,web-app
+- description: TodoList TreeView Editor. Check your todo list with a TreeView
+
+## Markdown Files
+- [Todolist](https://docs.aicupa.com/posts/607884429.md)
+- [Author words](https://docs.aicupa.com/posts/1949634023/2414495387.md)
+- [Features](https://docs.aicupa.com/posts/1949634023/1186381381.md)
+- [Privacy policy](https://docs.aicupa.com/posts/1949634023/886977854.md)
+- [Deconstructing legacy codebase refactor via ai todo](https://docs.aicupa.com/blog/1613233789/851534948.md)
+- [Designing system architecture via ai todo](https://docs.aicupa.com/blog/1613233789/3519968650.md)
+- [Generating japanese study plan with ai todo](https://docs.aicupa.com/blog/1613233789/2920321416.md)
+- [Generating micro saa slaunch with ai todo](https://docs.aicupa.com/blog/1613233789/563064912.md)
+- [Optimizing developer wellness plan with ai todo](https://docs.aicupa.com/blog/1613233789/11619683.md)
+- [Streamlining open source issues with ai todo](https://docs.aicupa.com/blog/1613233789/4104145235.md)
+- [Why aicupa is the ultimate todo for developers](https://docs.aicupa.com/blog/1613233789/2745630000.md)
+- [Aiexecution](https://docs.aicupa.com/posts/287994228/2025200286.md)
+- [Advance copy](https://docs.aicupa.com/posts/287994228/4081234018.md)
+- [Agent chat](https://docs.aicupa.com/posts/287994228/4127679399.md)
+- [App troubleshooting guide](https://docs.aicupa.com/posts/287994228/602927981.md)
+- [Auto sort](https://docs.aicupa.com/posts/287994228/1707528157.md)
+- [Background image](https://docs.aicupa.com/posts/287994228/680425711.md)
+- [Backup version history](https://docs.aicupa.com/posts/287994228/1498034918.md)
+- [Cloud sync](https://docs.aicupa.com/posts/287994228/1638689331.md)
+- [Daily planning](https://docs.aicupa.com/posts/287994228/892905180.md)
+- [Desktop app](https://docs.aicupa.com/posts/287994228/667772353.md)
+- [Docker deploy](https://docs.aicupa.com/posts/287994228/2832432038.md)
+- [Generate htmltable](https://docs.aicupa.com/posts/287994228/1490081406.md)
+- [Generate markdown](https://docs.aicupa.com/posts/287994228/2693304080.md)
+- [In github dev](https://docs.aicupa.com/posts/287994228/4128846036.md)
+- [Mcpserver](https://docs.aicupa.com/posts/287994228/2702224676.md)
+- [Play mode](https://docs.aicupa.com/posts/287994228/1573151734.md)
+- [Plugin](https://docs.aicupa.com/posts/287994228/4005700258.md)
+- [Script automation](https://docs.aicupa.com/posts/287994228/3541821642.md)
+- [Search](https://docs.aicupa.com/posts/287994228/3009207953.md)
+- [Webhook](https://docs.aicupa.com/posts/287994228/1170812618.md)
