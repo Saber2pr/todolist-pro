@@ -13,7 +13,7 @@ docker pull saber2pr/todolist-app:master
 docker run -d -p 3000:3000 saber2pr/todolist-app:master
 ```
 
-Then confirm the board is up at `http://<board-host>:3000/`. See [DockerDeploy](/posts/Usage/DockerDeploy) for details.
+Then confirm the board is up at `http://<board-host>:3000/`. See the [DockerDeploy guide](https://github.com/Saber2pr/todolist-pro/blob/master/Usage/DockerDeploy.md) for details.
 
 ### Step 2: Install the Skill
 
