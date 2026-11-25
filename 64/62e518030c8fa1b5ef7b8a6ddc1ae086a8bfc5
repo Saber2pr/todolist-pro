@@ -1,0 +1,19 @@
+Blog/WhyTodoListsStillMatterInTheAgeOfAI.md
+  s_32e74d7c8a1330::t_5aedecea09b5f7 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6462e518030c8fa1b5ef7b8a6ddc1ae086a8bfc5",
+  "prompts": {},
+  "sessions": {
+    "s_32e74d7c8a1330": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0be23-60f4-7bd1-abad-6d19da24dd16",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "muhai <muhai.li@tuya.com>"
+    }
+  }
+}
