@@ -1,0 +1,287 @@
+<!doctype html><html lang="en"><head>
+      <link rel="icon" href="//saber2pr.top/MyWeb/resource/image/todolist-logo.png" type="image/x-icon" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CLMYWGQBH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6CLMYWGQBH');
+      </script>
+    <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    .skeleton-loading-list {
+      margin: 3rem 1rem 10rem;
+    }
+
+    .skeleton-loading-item {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+      background-size: 400% 100%;
+      animation-name: skeleton-loading;
+      animation-duration: 1.4s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      height: 16px;
+      margin-top: 16px;
+    }
+    </style>
+
+    <style>
+      .ssr-a {
+        color: #6d6d6d;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .ssr-a:hover {
+        color: black;
+      }
+
+      .ssr-a-active {
+        color: black;
+        font-weight: 700;
+        border-left: 0.25rem solid #61dafb;
+        padding-left: 10px;
+      }
+
+      .ssr-li {
+        line-height: 2rem;
+      }
+
+      .ssr-ul {
+        list-style: none;
+        padding-left: 16px;
+        margin: 4px;
+      }
+
+      .ssr-dir {
+        color: #6d6d6d;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .ssr-dir-active {
+        color: #1a1a1a;
+      }
+
+      .ssr-div-name:hover {
+        outline: -webkit-focus-ring-color auto 1px;
+        color: #1a1a1a;
+      }
+
+      .ssr-topheader {
+        width: 100%;
+        height: 40px;
+        background-color: #20232a;
+        position: fixed;
+        left:0;
+        top:0;
+      }
+      .ssr-topheader-a {
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        display: inline-block;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        color: #d5d5d7;
+        border-bottom: none;
+        line-height: 40px;
+      }
+
+      .ssr-content-title {
+        word-break: break-all;
+        font-size: 3rem;
+        margin-top: calc(3rem + 40px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .ssr-wiki {
+        margin: 0 4.5rem;
+        display: flex;
+      }
+
+      .ssr-wiki-content {
+        width:70%;
+      }
+
+      .ssr-wiki-menu {
+        width: 30%;
+        background-color: #f7f7f7;
+        border-left: 1px solid #ececec;
+        height: calc(100vh - 40px);
+        position: fixed;
+        right:-1rem;
+        top:40px;
+        overflow-y:auto;
+      }
+
+      .ssr-content-main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #root-pre {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: fixed;
+        left:0;
+        top:0;
+        z-index:999;
+      }
+      #root {
+        position: relative;
+        z-index:0;
+      }
+
+      @media screen and (max-width: 740px) {
+        .ssr-topheader {
+          height: 2rem;
+        }
+        .ssr-topheader-a {
+          line-height: 2rem;
+        }
+        .ssr-wiki {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ssr-wiki-content {
+          width: 100%;
+        }
+
+        .ssr-wiki-menu {
+          position: relative;
+          width: 100%;
+          right: 0;
+        }
+
+        .ssr-content-title {
+          font-size: 2rem;
+          margin-top: 4rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        .ssr-content-main {
+          margin: 0.5rem;
+          padding: 0.5rem;
+          line-height: 1.5rem;
+          font-size: 14px;
+        }
+      }
+    </style>
+    <script>
+    window.__navlist = ["blog"]
+    window.__navFirst = {"posts":"607884429","blog":"1613233789/851534948"}
+    window.__nav = "blog"
+    window.__title = "Why todo lists still matter in the age of ai"
+    window.__backgroundImage = ""
+    window.__basename = ''
+    window.__buttomlinksUri = ''
+    window.__expandAllMenu = 'on'
+    window.__adsSlotHtml = ''
+    window.__i18nConfig = null
+    window.__expandDirs = ["/blog/Blog","/blog/Blog"]
+    window.__wiki = `
+Todolist:607884429
+Usage
+  DockerDeploy:287994228/2832432038
+  AdvanceCopy:287994228/4081234018
+  Webhook:287994228/1170812618
+  InGithubDev:287994228/4128846036
+  DesktopApp:287994228/667772353
+  BackgroundImage:287994228/680425711
+  AIAgentBoard:287994228/3102261127
+  AppTroubleshootingGuide:287994228/602927981
+  BackupVersionHistory:287994228/1498034918
+  AutoSort:287994228/1707528157
+  Search:287994228/3009207953
+  ScriptAutomation:287994228/3541821642
+  AIExecution:287994228/2025200286
+  PlayMode:287994228/1573151734
+  CloudSync:287994228/1638689331
+  MCPServer:287994228/2702224676
+  AgentChat:287994228/4127679399
+  GenerateHTMLTable:287994228/1490081406
+  DailyPlanning:287994228/892905180
+  Plugin:287994228/4005700258
+  GenerateMarkdown:287994228/2693304080
+About
+  Features:1949634023/1186381381
+  AuthorWords:1949634023/2414495387
+  PrivacyPolicy:1949634023/886977854
+Blog
+  GeneratingJapaneseStudyPlanWithAiTodo:1613233789/2920321416:blog
+  DesigningSystemArchitectureViaAiTodo:1613233789/3519968650:blog
+  WhyAicupaIsTheUltimateTodoForDevelopers:1613233789/2745630000:blog
+  OptimizingDeveloperWellnessPlanWithAiTodo:1613233789/11619683:blog
+  StreamliningOpenSourceIssuesWithAiTodo:1613233789/4104145235:blog
+  GeneratingMicroSaaSLaunchWithAiTodo:1613233789/563064912:blog
+  WhyTodoListsStillMatterInTheAgeOfAI:1613233789/3219809218:blog
+  DeconstructingLegacyCodebaseRefactorViaAiTodo:1613233789/851534948:blog
+`
+    window.__blog = `%0A%23%23%20Why%20We%20Still%20Need%20a%20Todo%20List%20in%20the%20Age%20of%20AI%0A%0AOpen%20your%20laptop%20and%20the%20day%20is%20already%20waiting%20for%20you%3A%20a%20customer%20issue%2C%20a%20feature%20request%2C%20a%20report%20due%20soon%2C%20an%20idea%20you%20had%20on%20the%20way%20to%20work.%20An%20AI%20agent%20can%20investigate%20the%20issue%2C%20draft%20the%20report%2C%20write%20code%2C%20and%20check%20its%20own%20work.%20If%20so%20much%20of%20the%20doing%20can%20be%20delegated%2C%20why%20keep%20a%20todo%20list%20at%20all%3F%0A%0ABecause%20getting%20things%20done%20was%20never%20the%20whole%20problem.%20The%20harder%20question%20is%20which%20things%20deserve%20to%20be%20done.%0A%0AAn%20agent%20can%20help%20answer%20that%20question%2C%20but%20it%20cannot%20own%20the%20consequences%20of%20the%20answer.%20It%20does%20not%20know%2C%20without%20your%20judgment%2C%20which%20customer%20promise%20you%20must%20protect%2C%20which%20project%20will%20make%20a%20real%20difference%2C%20or%20which%20exciting%20idea%20can%20wait.%20More%20execution%20capacity%20makes%20those%20choices%20more%20important%2C%20not%20less.%0A%0A%23%23%23%20A%20faster%20engine%20still%20needs%20a%20direction%0A%0AImagine%20three%20requests%20arriving%20at%20once%3A%20fix%20a%20problem%20affecting%20customers%2C%20prepare%20a%20report%20that%20shows%20the%20value%20of%20your%20team's%20work%2C%20and%20explore%20a%20promising%20new%20feature.%20Hand%20all%20three%20to%20agents%20as%20an%20undifferentiated%20pile%2C%20and%20you%20may%20get%20three%20polished%20results.%20You%20may%20also%20find%20that%20the%20feature%20proposal%20is%20ready%20while%20the%20customer%20problem%20is%20still%20unresolved.%0A%0APolish%20is%20not%20priority.%20Speed%20is%20not%20direction.%0A%0AThis%20is%20where%20the%20work%20before%20execution%20matters.%20Mark%20the%20customer%20issue%20as%20a%20P0%20boundary%20that%20cannot%20slip.%20Make%20room%20for%20the%20report%20because%20it%20communicates%20value%20that%20might%20otherwise%20go%20unseen.%20Put%20the%20feature%20idea%20in%20a%20pool%20until%20there%20is%20a%20reason%20to%20pursue%20it.%20Some%20tasks%20should%20be%20deferred%3B%20some%20should%20be%20dropped%20altogether.%20A%20todo%20list%20is%20useful%20not%20because%20it%20can%20hold%20everything%2C%20but%20because%20it%20gives%20you%20a%20place%20to%20make%20those%20distinctions%20visible.%0A%0A%23%23%23%20Turn%20intentions%20into%20work%20an%20agent%20can%20actually%20do%0A%0A%E2%80%9CMake%20the%20project%20better%E2%80%9D%20is%20an%20intention%2C%20not%20a%20task.%20Before%20handing%20it%20off%2C%20someone%20has%20to%20decide%20what%20outcome%20counts%20as%20better%2C%20what%20depends%20on%20what%2C%20how%20the%20result%20will%20be%20checked%2C%20and%20when%20the%20agent%20should%20stop%20and%20ask%20for%20help.%0A%0AOnce%20those%20boundaries%20are%20clear%2C%20an%20agent%20can%20do%20what%20it%20is%20good%20at%3A%20act%2C%20inspect%20the%20result%2C%20adjust%2C%20and%20try%20again.%20Whether%20you%20call%20that%20loop%20PDCA%20or%20ReAct%2C%20the%20execution%20can%20move%20quickly.%20The%20human%20role%20is%20to%20keep%20judging%20whether%20the%20goal%20still%20matters%20and%20whether%20the%20risks%20are%20acceptable.%0A%0AA%20task%20tree%20makes%20this%20handoff%20easier%20than%20a%20flat%20pile%20of%20reminders.%20A%20goal%20can%20contain%20the%20decisions%2C%20smaller%20actions%2C%20and%20checks%20that%20belong%20to%20it%2C%20without%20treating%20them%20as%20equally%20important.%20In%20aicupa%2C%20you%20can%20mark%20the%20work%20that%20needs%20your%20focus%2C%20attach%20the%20links%20or%20files%20an%20agent%20will%20need%2C%20hand%20over%20a%20task%20or%20its%20subtasks%2C%20and%20follow%20their%20progress%20through%20task%20status.%20The%20tool%20carries%20the%20context%3B%20you%20keep%20the%20judgment.%0A%0A%23%23%23%20Let%20your%20mind%20think%2C%20not%20remember%0A%0AWithout%20a%20trusted%20place%20for%20commitments%2C%20the%20mind%20keeps%20running%20a%20quiet%20background%20process%3A%20*Don't%20forget%20that%20other%20thing.*%20It%20is%20a%20poor%20use%20of%20attention.%20Recording%20what%20is%20in%20progress%2C%20what%20is%20blocked%2C%20and%20why%20something%20was%20deferred%20frees%20you%20from%20rehearsing%20the%20list%20all%20day.%0A%0AThe%20AI-era%20todo%20list%20should%20not%20be%20an%20ever-growing%20inventory%20of%20chores.%20It%20should%20be%20a%20boundary%20between%20incoming%20noise%20and%20deliberate%20work.%20It%20helps%20you%20decide%20what%20to%20protect%2C%20what%20to%20pursue%2C%20and%20what%20to%20leave%20alone.%20The%20agent%20can%20take%20the%20heavy%20lifting%20from%20there.%0A%0AAI%20may%20be%20the%20engine.%20The%20steering%20wheel%20still%20belongs%20in%20human%20hands.%0A`
+    window.__updateTime = "1795593013"
+    window.__copyrightName = "aicupa"
+    </script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="keywords" content="AI agents, todo list, task prioritization, human-AI collaboration, aicupa"><meta name="description" content="AI agents can take on the work of execution, but people still need to choose what matters. A todo list gives that judgment a clear place to live."><script async src="/click-mask/click-mask.min.js"></script><title>Why todo lists still matter in the age of ai - Todolist TreeView</title><script defer="defer" src="/release/%5Bname%5D~39a3c0d748da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~47e8b7ab48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0da3371148da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~cdd60c6248da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d2eb561048da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f82e0cd248da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~10451da648da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0bc0478e48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~c6386b1a48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~91c40cd848da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcc0128f48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2754536848da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9378f44048da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f5af7a0d48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ce5372d048da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7aa4ed4048da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2f39a87448da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~9b0f8f8c48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~99384b7848da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a693903748da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~3c502aef48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~8ca52d0948da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~20d076e548da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~bcd5aa0048da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~2772389148da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~612698fa48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~f014167448da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~fb8298aa48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~12d03e8348da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~d0d5dccd48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~ee280a0548da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0a75d99748da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~6617dea548da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~0e58813948da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~b3f46e3648da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~7912318848da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~229eafb548da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/%5Bname%5D~a5ce148e48da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/index~bde52cb348da960f8180ee183bfe.min.js"></script><script defer="defer" src="/release/index~31743c5a48da960f8180ee183bfe.min.js"></script><link href="/release/index~e96e9bea48da960f8180ee183bfe.css" rel="stylesheet"><link href="/release/index~31743c5a48da960f8180ee183bfe.css" rel="stylesheet"></head><body><div id="root-pre"><div class="ssr-topheader">
+    <a class="ssr-topheader-a" href="/">Todolist</a>
+    <a class="ssr-topheader-a" href="/blog/1613233789/851534948/">blog</a>
+    </div><div class="ssr-wiki">
+      <div class="ssr-wiki-content">
+        <h1 class="ssr-content-title">WhyTodoListsStillMatterInTheAgeOfAI</h1>
+        <div class="ssr-content-main"><h2 id="whywestillneedatodolistintheageofai">Why We Still Need a Todo List in the Age of AI</h2>
+<p>Open your laptop and the day is already waiting for you: a customer issue, a feature request, a report due soon, an idea you had on the way to work. An AI agent can investigate the issue, draft the report, write code, and check its own work. If so much of the doing can be delegated, why keep a todo list at all?</p>
+<p>Because getting things done was never the whole problem. The harder question is which things deserve to be done.</p>
+<p>An agent can help answer that question, but it cannot own the consequences of the answer. It does not know, without your judgment, which customer promise you must protect, which project will make a real difference, or which exciting idea can wait. More execution capacity makes those choices more important, not less.</p>
+<h3 id="afasterenginestillneedsadirection">A faster engine still needs a direction</h3>
+<p>Imagine three requests arriving at once: fix a problem affecting customers, prepare a report that shows the value of your team's work, and explore a promising new feature. Hand all three to agents as an undifferentiated pile, and you may get three polished results. You may also find that the feature proposal is ready while the customer problem is still unresolved.</p>
+<p>Polish is not priority. Speed is not direction.</p>
+<p>This is where the work before execution matters. Mark the customer issue as a P0 boundary that cannot slip. Make room for the report because it communicates value that might otherwise go unseen. Put the feature idea in a pool until there is a reason to pursue it. Some tasks should be deferred; some should be dropped altogether. A todo list is useful not because it can hold everything, but because it gives you a place to make those distinctions visible.</p>
+<h3 id="turnintentionsintoworkanagentcanactuallydo">Turn intentions into work an agent can actually do</h3>
+<p>“Make the project better” is an intention, not a task. Before handing it off, someone has to decide what outcome counts as better, what depends on what, how the result will be checked, and when the agent should stop and ask for help.</p>
+<p>Once those boundaries are clear, an agent can do what it is good at: act, inspect the result, adjust, and try again. Whether you call that loop PDCA or ReAct, the execution can move quickly. The human role is to keep judging whether the goal still matters and whether the risks are acceptable.</p>
+<p>A task tree makes this handoff easier than a flat pile of reminders. A goal can contain the decisions, smaller actions, and checks that belong to it, without treating them as equally important. In aicupa, you can mark the work that needs your focus, attach the links or files an agent will need, hand over a task or its subtasks, and follow their progress through task status. The tool carries the context; you keep the judgment.</p>
+<h3 id="letyourmindthinknotremember">Let your mind think, not remember</h3>
+<p>Without a trusted place for commitments, the mind keeps running a quiet background process: <em>Don't forget that other thing.</em> It is a poor use of attention. Recording what is in progress, what is blocked, and why something was deferred frees you from rehearsing the list all day.</p>
+<p>The AI-era todo list should not be an ever-growing inventory of chores. It should be a boundary between incoming noise and deliberate work. It helps you decide what to protect, what to pursue, and what to leave alone. The agent can take the heavy lifting from there.</p>
+<p>AI may be the engine. The steering wheel still belongs in human hands.</p></div>
+      </div>
+      <div class="ssr-wiki-menu">
+        <div style="margin: 3rem 0 10rem"><ul class="ssr-ul"><li class="ssr-li"><a href="/posts/607884429/" class="ssr-a ">Todolist</a></li>
+<li class="ssr-li"><div class="ssr-dir ssr-dir-active">
+  <svg class="TreeBtn" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10" height="10" style="transform: rotateX(0deg); transition: transform 0.2s ease 0s;"><g transform="translate(904.92214,-879.1482)"><path d=" m -673.67664,1221.6502 -231.2455,-231.24803 55.6165, -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894, 0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892, -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696, -174.68583 0.6895,0 26.281,25.03215 56.8701, 55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864 -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688, -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path></g></svg>
+  <span class="ssr-div-name">Blog</span></div><ul class="ssr-ul"><li class="ssr-li"><a href="/blog/1613233789/2920321416/" class="ssr-a ">Generating japanese study plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3519968650/" class="ssr-a ">Designing system architecture via ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/2745630000/" class="ssr-a ">Why aicupa is the ultimate todo for developers</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/11619683/" class="ssr-a ">Optimizing developer wellness plan with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/4104145235/" class="ssr-a ">Streamlining open source issues with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/563064912/" class="ssr-a ">Generating micro saa slaunch with ai todo</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/3219809218/" class="ssr-a ssr-a-active">Why todo lists still matter in the age of ai</a></li>
+<li class="ssr-li"><a href="/blog/1613233789/851534948/" class="ssr-a ">Deconstructing legacy codebase refactor via ai todo</a></li></ul></li></ul></div>
+      </div>
+    </div></div><div id="root"></div></body></html>
